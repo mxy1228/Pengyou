@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relationship_circle_header_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="@color/empty_bg">
+
+    <LinearLayout
+        android:id="@+id/game_circle_message_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/relation_circle_msg_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+	    android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip" >
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+           <com.cyou.mrd.pengyou.widget.RelationshipRoundImageView
+            android:id="@+id/game_circle_message_avatar_iv"
+            android:layout_width="@dimen/round_avatar_width"
+	        android:layout_height="@dimen/round_avatar_height"
+            attrs:bg_color="#666666"
+            attrs:small="true" />
+           <ImageView
+               android:layout_width="32.8dip"
+               android:layout_height="32.8dip"
+               android:layout_gravity="center"
+               android:src="@drawable/relation_circle_msg_hv_bg" 
+               />
+       </FrameLayout>
+
+        <TextView
+            android:id="@+id/game_circle_message_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="1条新消息"
+	        android:layout_marginLeft="20dip"
+            android:layout_weight="1.0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:adjustViewBounds="true"
+            android:src="@drawable/relationship_circle_msg_pic" />
+    </LinearLayout>
+  
+
+</LinearLayout>

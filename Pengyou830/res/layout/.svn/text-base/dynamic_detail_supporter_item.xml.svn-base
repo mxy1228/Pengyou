@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.cyou.mrd.pengyou.widget.SupporterRoundImageView
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dynamic_detail_supporter_iv"
+    android:layout_width="@dimen/support_avatar_width"
+    android:layout_height="@dimen/support_avatar_height"
+    attrs:small="true"
+    android:layout_gravity="center"
+    attrs:bg_color="#656565"/> 
+    <ImageView
+    android:layout_width="44dip"
+    android:layout_height="44dip"
+    android:layout_gravity="center"
+    android:src="@drawable/relation_circle_msg_hv_bg" 
+    /> 
+</FrameLayout>
+

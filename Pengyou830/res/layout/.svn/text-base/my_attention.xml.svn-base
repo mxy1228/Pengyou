@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+    <include 
+        android:id="@+id/my_attention_header_bar"
+        layout="@layout/sub_header_bar"/>
+    
+    <com.cyou.mrd.pengyou.widget.SearchBar
+	        android:id="@+id/my_focus_searchbar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/my_focus_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/empty_text_color"
+        android:gravity="center"
+        android:textSize="@dimen/main"
+        android:visibility="gone"
+        android:layout_marginTop="60.0dip"
+        android:text="@string/no_focus"/>
+    
+    <LinearLayout 
+        android:id="@+id/my_focus_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+        
+	    <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView  
+		   xmlns:attrs="http://schemas.android.com/apk/res-auto"
+		   android:id="@+id/my_attention_lv"
+		   android:layout_width="match_parent"
+		   android:layout_height="match_parent"
+		   android:fadingEdge="none"
+		   attrs:open_pull_refresh="false"/>
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="3px"
+	        android:background="@drawable/list_divider"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/my_focus_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+</LinearLayout>

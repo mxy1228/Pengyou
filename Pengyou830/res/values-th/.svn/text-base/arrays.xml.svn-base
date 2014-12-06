@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="constellation">
+        <item>มังกร </item>
+        <item>กุมภ์ </item>
+        <item>ราศีมีน </item>
+        <item>ราศีเมษ</item>
+        <item>ราศีพฤษภ</item>
+        <item>ราศีเมถุน</item>
+        <item>แคนเซอร์</item>
+        <item>ราศีสิงห์</item>
+         <item>ราศีกันย์ </item>
+        <item>ราศีตุล </item>
+        <item>ราศีพิจิก</item>
+        <item>ราศีธนู</item>
+    </string-array>
+    <string-array name="parents">
+        <item>ปักกิ่ง</item>
+        <item>เทียนจิน </item>
+        <item>เซี่ยงไฮ้</item>
+        <item> ฉงชิ่ง </item>
+        <item> เหอเป่ย์ </item>
+        <item>ชานซี</item>
+        <item>ไต้หวัน </item>
+        <item> มณฑลเหลียวหนิง</item>
+        <item>จี๋หลิน </item>
+        <item>มณฑลเฮยหลงเจียง</item>
+        <item> มณฑลเจียงซู</item>
+        <item>เจ้อเจียง</item>
+        <item>อานฮุย</item>
+        <item>ฝูเจี้ยน </item>
+        <item>เจียงซี </item>
+        <item> มณฑลซานตง</item>
+        <item> เหอหนาน </item>
+        <item>จังหวัดหูเป่ย</item>
+        <item>จังหวัดหูหนาน</item>
+        <item>มณฑลกวางตุ้ง</item>
+        <item>มณฑลกานซู</item>
+        <item>มณฑลเสฉวน</item>
+        <item>กุ้ยโจว</item>
+        <item>ไหหลำ </item>
+        <item>ยูนนาน</item>
+        <item>จังหวัดชิงไห่</item>
+        <item> มณฑลส่านซี</item>
+        <item>กวางสี</item>
+        <item>เขตปกครองตนเองทิเบต</item>
+        <item> หนิงเซี่ย</item>
+        <item>ซินเจียง</item>
+        <item> มองโกเลีย </item>
+        <item>มาเก๊าsAR </item>
+        <item>ฮ่องกงSAR</item>
+    </string-array>
+    <string-array name="xuanfen_style">
+<item>เวอร์ชั่นภาษาจีน </item>
+         <item> คลาสสิก </item>
+     </string-array>
+     <string-array name="child0">
+         <item> ปักกิ่ง </item>
+     </string-array>
+     <string-array name="child1">
+         <item> เทียนจิน </item>
+     </string-array>
+     <string-array name="child2">
+         <item> เซี่ยงไฮ้ </item>
+     </string-array>
+     <string-array name="child3">
+         <item> ฉงชิ่ง </item>
+     </string-array>
+     <string-array name="child4">
+<item> เมืองฉือเจียจวง </item>
+         <item> Tangshan </item>
+         <item> Qinhuangdao </item>
+         <item> Handan </item>
+         <item> Xingtai </item>
+         <item> Baoding </item>
+         <item> Zhangjiakou </item>
+         <item> เมืองเฉิงเต๋อ </item>
+         <item> Cangzhou </item>
+         <item> Langfang </item>
+         <item> Hengshui </item>
+</string-array>
+     <string-array name="child5">
+         <item> ไท่หยวน </item>
+         <item> ต้าถง </item>
+         <item> Yangquan </item>
+         <item> Changzhi </item>
+         <item> Jincheng </item>
+         <item>shuozhou </item>
+         <item> Jinzhong </item>
+         <item> Yuncheng </item>
+         <item> Xinzhou </item>
+         <item> Linfen </item>
+         <item> Luliang </item>
+</string-array>
+     <string-array name="child6">
+         <item> ไทเป </item>
+         <item> เกาสง </item>
+         <item> Keelung </item>
+         <item> Taichung City </item>
+         <item> tainan city</item>
+         <item> Hsinchu </item>
+         <item> jiayi city</item>
+         <item> Taibei County </item>
+         <item> Yilan </item>
+         <item> Taoyuan County </item>
+         <item> Hsinchu </item>
+         <item> Miao li</item>
+         <item> Taichung County </item>
+         <item> Changhua </item>
+         <item> Nantou </item>
+         <item> Yunlin</item>
+         <item> Chiayi County </item>
+         <item> Tainan County </item>
+         <item> Kaohsiung County </item>
+         <item> Pingtung </item>
+         <item>Penghu </item>
+         <item> Taidong </item>
+         <item> Hualian </item>
+</string-array>
+     <string-array name="child7">
+         <item> เสิ่นหยาง </item>
+         <item> Dalian City </item>
+         <item> Anshan </item>
+         <item> Fushun City </item>
+         <item> Benxi City </item>
+         <item> Dandong City </item>
+         <item> Jinzhou City </item>
+         <item> Yingkou City </item>
+         <item> Fuxin City </item>
+         <item> Liaoyang City </item>
+         <item> Panjin City </item>
+         <item> Tieling City </item>
+         <item> Chaoyang City </item>
+         <item> Huludao City </item>
+</string-array>
+    <string-array name="child8">
+        <item> เมืองฉางชุน</item>
+        <item> Jilin </item>
+        <item>siping City </item>
+        <item> Liaoyuan City </item>
+        <item> Tonghua City </item>
+        <item> Hakusan City </item>
+        <item>songyuan City </item>
+        <item> White City </item>
+        <item> Yanbian Korean Autonomous Prefecture </item>
+    </string-array>
+    <string-array name="child9">
+        <item> ฮาร์บิน</item>
+        <item> Qiqihar </item>
+        <item> Hegang </item>
+        <item>shuangyashan </item>
+        <item> Jixi City </item>
+        <item> Daqing City </item>
+        <item> Yichun City </item>
+        <item> Mudanjiang City </item>
+        <item> Jiamusi City </item>
+        <item> Qitaihe </item>
+        <item> Heihe City </item>
+        <item>suihua City </item>
+        <item> Daxinganling region </item>
+    </string-array>
+    <string-array name="child10">
+        <item> หนานจิง</item>
+        <item> Wuxi City </item>
+        <item> Xuzhou City </item>
+        <item> Changzhou </item>
+        <item>suzhou City </item>
+        <item> Nantong City </item>
+        <item> Lianyungang </item>
+        <item> Huaian </item>
+        <item> Yancheng </item>
+        <item> Yangzhou City </item>
+        <item> Zhenjiang City </item>
+        <item> Taizhou City </item>
+        <item>suqian City </item>
+</string-array>
+    <string-array name="child11">
+        <item> หางโจว </item>
+        <item> Ningbo </item>
+        <item> Wenzhou City </item>
+        <item> Jiaxing City </item>
+        <item> Huzhou City </item>
+        <item>shaoxing City </item>
+        <item> Jinhua </item>
+        <item> Quzhou City </item>
+        <item> Zhoushan </item>
+        <item> Taizhou </item>
+        <item> Lishui City </item>
+    </string-array>
+    <string-array name="child12">
+        <item> เหอเฟย์</item>
+        <item> Wuhu </item>
+        <item> Bengbu </item>
+        <item> Huainan City </item>
+        <item> Ma anshan </item>
+        <item> Huaibei City </item>
+        <item> Tongling City </item>
+        <item> Anqing City </item>
+        <item> Huangshan City </item>
+        <item> Chuzhou </item>
+        <item> Fuyang City </item>
+        <item>suzhou City </item>
+        <item> Chaohu City </item>
+        <item> Lu an City </item>
+        <item> Bozhou City </item>
+        <item> Chizhou </item>
+        <item> Xuancheng </item>
+    </string-array>
+    <string-array name="child13">
+        <item> ฝูโจว</item>
+        <item> Xiamen City </item>
+        <item> Putian City </item>
+        <item>sanming City </item>
+        <item> Quanzhou </item>
+        <item> Zhangzhou </item>
+        <item> Nanping City </item>
+        <item> Longyan City </item>
+        <item> Ningde City </item>
+    </string-array>
+    <string-array name="child14">
+        <item> หนางฉาง</item>
+        <item> Jingdezhen City </item>
+        <item> Pingxiang City </item>
+        <item> Jiujiang </item>
+        <item> Xinyu City </item>
+        <item> Yingtan City </item>
+        <item> Ganzhou </item>
+        <item> Ji an City </item>
+        <item> Yichun City </item>
+        <item> Fuzhou City </item>
+        <item>shangrao City </item>
+    </string-array>
+    <string-array name="child15">
+        <item> จี่หนาน</item>
+        <item> Qingdao City </item>
+        <item> Zibo City </item>
+        <item> Zaozhuang City </item>
+        <item> Dongying City </item>
+        <item> Yantai </item>
+        <item> Weifang City </item>
+        <item> Jining City, </item>
+        <item> Tai an City </item>
+        <item> Weihai </item>
+        <item> Rizhao City </item>
+        <item> Laiwu </item>
+        <item> Linyi City </item>
+        <item> Dezhou </item>
+        <item> Liaocheng </item>
+        <item> Binzhou City </item>
+        <item> Heze City </item>
+    </string-array>
+    <string-array name="child16">
+        <item>Zhengzhou City </item>
+        <item> Kaifeng City </item>
+        <item> Luoyang </item>
+        <item> Pingdingshan </item>
+        <item> Anyang City </item>
+        <item> Hebi City </item>
+        <item> Xinxiang </item>
+        <item> Jiaozuo City </item>
+        <item> Puyang City </item>
+        <item> Xuchang City </item>
+        <item> Luohe City </item>
+        <item>sanmenxia City </item>
+        <item> Nanyang City </item>
+        <item>shangqiu City </item>
+        <item> Xinyang City </item>
+        <item> Zhoukou City </item>
+        <item> Zhumadian City </item>
+        <item> Jiyuan City </item>
+    </string-array>
+    <string-array name="child17">
+        <item> หวู่ฮั่น </item>
+        <item> Huangshi City </item>
+        <item>shiyan City </item>
+        <item> Jingzhou City </item>
+        <item> Yichang City </item>
+        <item> Xiangfan City </item>
+        <item> Ezhou </item>
+        <item> Jingmen City </item>
+        <item> Xiaogan </item>
+        <item> Huanggang City </item>
+        <item> Xianning City </item>
+        <item>suizhou </item>
+        <item> Xiantao </item>
+        <item> Tianmen </item>
+        <item> Qianjiang City </item>
+        <item>shennongjia </item>
+        <item> Enshi Tujia and Miao Autonomous Prefecture </item>
+    </string-array>
+    <string-array name="child18">
+        <item>ฉางชา </item>
+        <item> Zhuzhou City </item>
+        <item> Xiangtan City </item>
+        <item> Hengyang </item>
+        <item>shaoyang </item>
+        <item> Yueyang City </item>
+        <item> Changde City </item>
+        <item> Zhangjiajie City </item>
+        <item> Yiyang </item>
+        <item> Chenzhou City </item>
+        <item> Yongzhou </item>
+        <item> Huaihua City </item>
+        <item> Loudi </item>
+        <item> Xiangxi Tujia and Miao Autonomous Prefecture </item>
+    </string-array>
+    <string-array name="child19">
+        <item> กวางโจว</item>
+        <item>shenzhen </item>
+        <item> Zhuhai </item>
+        <item>shantou City </item>
+        <item>shaoguan </item>
+        <item> Foshan </item>
+        <item> Jiangmen </item>
+        <item> Zhanjiang </item>
+        <item> Maoming City </item>
+        <item> Zhaoqing City </item>
+        <item> Huizhou City </item>
+        <item> Meizhou </item>
+        <item>shanwei City </item>
+        <item> Heyuan City </item>
+        <item> Yangjiang </item>
+        <item> Qingyuan City </item>
+        <item> Dongguan City </item>
+        <item> Zhongshan </item>
+<item> Chaozhou </item>
+        <item> Jieyang City </item>
+        <item> Yunfu City </item>
+    </string-array>
+    <string-array name="child20">
+        <item>หลานโจว </item>
+        <item> Jinchang </item>
+        <item>silver City </item>
+        <item> Tianshui City </item>
+        <item> Jiayuguan City </item>
+        <item> Wuwei City </item>
+        <item> Zhangye City </item>
+        <item> Pingliang City </item>
+        <item> Jiuquan </item>
+        <item> Qingyang City </item>
+        <item> Dingxi City </item>
+        <item> Longnan </item>
+        <item> Linxia Hui Autonomous Prefecture </item>
+        <item> Gannan Tibetan Autonomous Prefecture </item>
+    </string-array>
+    <string-array name="child21">
+        <item>เฉิงตู </item>
+        <item> Zigong City </item>
+        <item> Panzhihua City </item>
+        <item> Luzhou </item>
+        <item> Deyang City </item>
+        <item> Mianyang City </item>
+        <item> Guangyuan </item>
+        <item>suining City </item>
+        <item> Neijiang </item>
+        <item> Leshan City </item>
+        <item> Nanchong City </item>
+        <item> Meishan City </item>
+        <item> Yibin </item>
+        <item> Guang an </item>
+        <item> Dazhou </item>
+        <item> Ya an </item>
+        <item> Bazhong </item>
+        <item> Ziyang </item>
+        <item> Aba Tibetan and Qiang Autonomous Prefecture </item>
+        <item> Ganzi Tibetan Autonomous Prefecture </item>
+        <item> Liangshan Yi Autonomous Prefecture </item>
+    </string-array>
+    <string-array name="child22">
+        <item> กุ้ยหยาง</item>
+        <item> Liupanshui City </item>
+        <item> Zunyi City </item>
+        <item> Anshun City </item>
+        <item> Tongren Prefecture </item>
+        <item> Bijie area </item>
+        Buyi and Miao Autonomous Prefecture insouthwest Guizhou <item> </item>
+        <item> QianDongBan </item>
+        <item> Qiannan Buyi and Miao Autonomous Prefecture </item>
+    </string-array>
+    <string-array name="child23">
+        <item> ไหโข่ว</item>
+        <item>sanya </item>
+        <item> Wuzhishan </item>
+        <item> Qionghai </item>
+        <item> Danzhou </item>
+        <item> Wenchang City </item>
+        <item> Wanning City </item>
+        <item> Dongfang City </item>
+        <item> Chengmai County </item>
+        <item> Ding an </item>
+        <item> Tunchang </item>
+        <item> Lingao County </item>
+        <item> Baisha Li Autonomous County </item>
+        <item> Changjiang Li Autonomous County </item>
+        <item> Ledong County </item>
+        <item> Lingshui County </item>
+        <item> Baoting </item>
+        <item> Qiongzhong Li and Miao Autonomous County </item>
+    </string-array>
+    <string-array name="child24">
+        <item> คุณหมิง </item>
+        <item> Qujing </item>
+        <item> Yuxi City </item>
+        <item> Baoshan City </item>
+        <item> Zhaotong City </item>
+        <item> Lijiang </item>
+        <item>simao City </item>
+        <item> Lincang </item>
+        <item> Wenshan Zhuang and Miao Autonomous Prefecture </item>
+        <item> Honghe Hani and Yi Autonomous Prefecture </item>
+        <item> Xishuangbanna Dai Autonomous Prefecture </item>
+        <item> Chuxiong Yi Autonomous Prefecture </item>
+        <item> Dali Bai Autonomous Prefecture </item>
+        <item> Dehong Dai and Jingpo Autonomous Prefecture </item>
+        <item> Nujiang Lisu Autonomous Prefecture </item>
+        <item> Diqing Tibetan Autonomous Prefecture </item>
+    </string-array>
+    <string-array name="child25">
+        <item> ซีหนิง</item>
+        <item> Haidong Prefecture </item>
+        <item> Haibei </item>
+        <item> Huangnan Tibetan Autonomous Prefecture </item>
+        <item> Hainan Tibetan Autonomous Prefecture </item>
+        <item> Golog Tibetan Autonomous Prefecture </item>
+        <item> Yushu Tibetan Autonomous Prefecture </item>
+        <item> Haixi Mongolian- Tibetan Autonomous Prefecture </item>
+    </string-array>
+    <string-array name="child26">
+        <item>ซีอาน </item>
+        <item> Tongchuan City </item>
+        <item> Baoji City </item>
+        <item> Xianyang City </item>
+        <item> Weinan City </item>
+        <item> Yan an City </item>
+        <item> Hanzhong City </item>
+        <item> Yulin City </item>
+        <item> Ankang City </item>
+        <item>shangluo City </item>
+    </string-array>
+    <string-array name="child27">
+        <item> หนานหนิง </item>
+        <item> Liuzhou </item>
+        <item> Guilin </item>
+        <item> Wuzhou City </item>
+        <item> Beihai </item>
+        <item> Fangchenggang </item>
+        <item> Qinzhou City </item>
+        <item> Guigang </item>
+        <item> Yulin City </item>
+        <item> Baise City </item>
+        <item> Hezhou </item>
+        <item> Hechi City </item>
+        <item> Laibin </item>
+        <item> Chongzuo </item>
+    </string-array>
+    <string-array name="child28">
+        <item>ลาซา </item>
+        <item> Nagqu </item>
+        <item> Qamdo </item>
+        <item>shannan </item>
+        <item> Xigaze </item>
+        <item> Ngari </item>
+        <item> Nyingchi </item>
+    </string-array>
+    <string-array name="child29">
+        <item> ยินฉวน </item>
+        <item>shizuishan </item>
+        <item> Wuzhong City </item>
+        <item> Guyuan City </item>
+        <item> Zhongwei </item>
+    </string-array>
+    <string-array name="child30">
+        <item> อุรุมชี</item>
+        <item> Karamay City </item>
+        <item>shihezi </item>
+        <item> Alar </item>
+        <item> Tumushuke </item>
+        <item> Wujiaqu </item>
+        <item> Turpan </item>
+        <item> Aksu </item>
+        <item> Kashi City </item>
+        <item> Hami City </item>
+        <item> Hotan city </item>
+        <item> Atux </item>
+        <item> Korla City </item>
+        <item> Changji City </item>
+        <item> Fukang City </item>
+        <item> Miquan </item>
+        <item> Bole </item>
+        <item> Yining </item>
+        <item> Kuitun </item>
+        <item> Tower City </item>
+        <item> Usu </item>
+        <item> Altay City </item>
+    </string-array>
+    <string-array name="child31">
+        <item> Hohhot </item>
+        <item> Baotou </item>
+        <item> Wuhai City </item>
+        <item> Chifeng City </item>
+        <item> Tongliao </item>
+        <item> Ordos City </item>
+        <item> Hulunbeir </item>
+        <item> Bayannao er </item>
+        <item> Wulanchabu </item>
+        <item> Xilin Gol League </item>
+        <item> Hing an </item>
+        <item> Alashanmeng </item>
+</string-array>
+    <string-array name="child32">
+        <item> มาเก๊า</item>
+    </string-array>
+    <string-array name="child33">
+        <item>ฮ่องกง </item>
+</string-array>
+<string-array name="personal_center_array">
+        <item>หมายเลขโทรศัพท์ที่จะผูก / เข้าสู่ระบบ;1;com.cyou.mrd.pengyou.ui.ValidateTelActivity</item>
+        <item>คะแนนของฉัน;3;com.cyou.mrd.pengyou.ui.ExchangeIntegralWebActivity</item>
+        <item>ข้อความของฉัน;1;com.cyou.mrd.pengyou.ui.MessageCenterActivity</item>
+        <item>เพื่อนของฉัน;2;com.cyou.mrd.pengyou.ui.MyFriendActivity</item>
+        <item>บริเวณของฉัน;2;com.cyou.mrd.pengyou.ui.MyNearByActivity</item>
+        <item>รายการโปรดของฉัน;3;com.cyou.mrd.pengyou.ui.MyCollectionActivity</item>
+        <item>แบ่งปันให้เพื่อน;1;com.cyou.mrd.pengyou.ui.FeedBackActivity</item>
+        <item>ข้อเสนอแนะ;2;com.cyou.mrd.pengyou.ui.FeedBackActivity</item>
+        <item>การจัดตั้ง;3;com.cyou.mrd.pengyou.ui.SettingActivity</item>
+    </string-array>
+
+        <string-array name="num_wheel_array">
+        <item>0</item>
+    </string-array>
+    
+    <string-array name="setting">
+        <item>ประกาศ;4;3</item>
+        <item>ตรวจหาการปรับปรุง;4;1</item>
+    </string-array>
+</resources>

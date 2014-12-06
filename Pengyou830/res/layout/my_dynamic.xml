@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/empty_bg">
+    <include 
+        android:id="@+id/my_dynamic_header_bar"
+        layout="@layout/sub_header_bar"/>
+    
+    <TextView 
+        android:id="@+id/my_dynamic_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/empty_text_color"
+        android:gravity="center"
+        android:textSize="@dimen/main"
+        android:visibility="gone"
+        android:layout_marginTop="60.0dip"
+        android:text="@string/my_no_dynamic"/>
+    
+    <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView  
+	   xmlns:attrs="http://schemas.android.com/apk/res-auto"
+	   android:id="@+id/my_dynamic_lv"
+	   android:layout_width="match_parent"
+	   android:layout_height="0.0dip"
+	   android:layout_weight="1.0"
+	   android:fadingEdge="none"
+	   attrs:open_pull_refresh="false"
+	   attrs:divider="false"/>
+    
+    <LinearLayout 
+        android:id="@+id/my_dynamic_comment_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="4.0dip"
+	    android:gravity="center_vertical"
+	    android:layout_gravity="bottom"
+	    android:visibility="gone"
+	    android:background="@drawable/friend_search_bg">
+	    <EditText
+	        android:id="@+id/my_dynamic_comment_et"
+	        android:layout_width="0.0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        style="@style/comment_edit"
+	        android:background="@drawable/search_bg"/>
+	    <Button
+	        android:id="@+id/my_dynamic_comment_send_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/main"
+	        android:layout_marginLeft="@dimen/small_padding"
+	        android:background="@drawable/header_btn_xbg"
+	        android:text="@string/comment"/>
+	</LinearLayout>
+</LinearLayout>

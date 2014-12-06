@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/item_xbg"
+    android:gravity="center_vertical"
+    android:padding="@dimen/padding" xmlns:app="http://schemas.android.com/apk/res/com.cyou.mrd.pengyou">
+    
+    <com.cyou.mrd.pengyou.widget.RoundImageView
+        xmlns:attrs="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/share_to_friend_item_avatar"
+        android:layout_width="@dimen/small_avatar_width"
+        android:layout_height="@dimen/small_avatar_height"
+        android:layout_marginRight="@dimen/small_padding"
+        attrs:small="true"/>
+
+    <TextView
+        android:id="@+id/share_to_friend_item_nickname_tv"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:textSize="@dimen/main"
+        android:textColor="@color/main"
+        android:layout_marginRight="@dimen/small_padding"/>
+    
+    <CheckBox 
+        android:id="@+id/share_to_friend_item_chb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/share_to_friend_checkbox_xbg"/>
+</LinearLayout>

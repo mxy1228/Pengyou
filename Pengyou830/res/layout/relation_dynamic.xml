@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="@dimen/small_padding"
+    android:paddingBottom="@dimen/small_padding"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+	
+    <TextView 
+        android:id="@+id/relationship_circle_empty"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:textColor="@color/empty_text_color"
+        android:gravity="center|bottom"
+        android:textSize="@dimen/main"
+        android:visibility="gone"
+        android:text="@string/no_dynamic"/>
+     <com.cyou.mrd.pengyou.widget.CircleListView
+	        android:id="@+id/relationship_circle_lv"
+	        android:layout_width="match_parent"
+	        android:layout_height="0.0dip"
+	        android:fadingEdge="none"
+			attrs:open_pull_refresh="true"	
+			android:cacheColorHint="#00000000"  
+	        android:layout_weight="1.0"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="@dimen/header_bar_height"
+	    android:background="@drawable/header_bar_bg">
+	    <ImageButton
+            android:id="@+id/sub_header_bar_left_ibtn"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/back_btn_xbg"
+            android:src="@drawable/back_btn_bg" />
+
+	    <TextView
+	        android:id="@+id/sub_header_bar_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:text=""
+	        android:textColor="@color/white"
+	        android:textSize="22.0sp" />
+
+	    <ImageButton
+            android:id="@+id/sub_header_bar_share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitCenter"
+        	android:layout_toLeftOf="@+id/sub_header_bar_refresh_btn"
+            android:layout_centerInParent="true"
+            android:src="@drawable/headbar_share"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/sub_header_bar_refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8.0dip"
+        	android:layout_marginRight="8.0dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/headbar_refresh" />
+	    
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

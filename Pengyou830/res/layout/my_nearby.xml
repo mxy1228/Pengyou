@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/empty_bg">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="@dimen/header_bar_height"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/header_bar_bg">
+		<ImageButton 
+	        android:id="@+id/my_nearby_back_ibtn"
+	        android:layout_width="50.0dip"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/back_btn_xbg"
+	        android:src="@drawable/back_btn_bg"/>
+	    <TextView
+	        android:layout_width="0.0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:text="@string/my_nearby"
+	        android:textColor="@color/white"
+	        android:textSize="22.0sp" />
+		<ImageButton
+            android:id="@+id/my_nearby_select_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_margin="6.0dip"
+            android:src="@drawable/nearby_pop_btn" />
+    </LinearLayout>
+    
+    <!-- <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView 
+        android:layout_margin="@dimen/padding" 
+        android:id="@+id/my_nearby_lv"
+	    android:fadingEdge="none"
+	    attrs:open_pull_refresh="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/> -->
+    <LinearLayout 
+        android:id="@+id/my_nearby_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nearby_fail"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:paddingRight="@dimen/padding"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:scaleType="fitCenter"     
+            android:src="@drawable/mynearby_fail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="44dip"
+            android:singleLine="true"
+            android:text="@string/my_nearby_fail"
+            android:textColor="#bdbdbd"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_nearby_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dip"
+            android:background="@drawable/my_nearby_fail_btn"
+            android:gravity="center"
+            android:text="@string/my_nearby_reset"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <TextView
+       android:id="@+id/my_friend_recommend_divider_tv"
+       style="@style/divider"
+       android:text="@string/game_store_friend_add"/>
+    
+    <LinearLayout
+        android:id="@+id/my_friend_add_friend_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_xbg"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="13.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="10.0dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="@dimen/small_padding"
+            android:src="@drawable/my_friend_add_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:text="@string/game_store_friend_add"
+            android:textColor="#333333"
+            android:textSize="@dimen/main" />
+
+        <TextView
+            android:id="@+id/my_friend_add_friend_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="2dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2.0dip"
+            android:background="@drawable/message_count"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/msg_count_text_color"
+            android:textSize="@dimen/msg_count_text_size"
+           android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/next_grey" />
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@drawable/list_divider"/>
+    
+    <LinearLayout
+        android:id="@+id/my_friend_guess_friend_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_xbg"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="13.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="10.0dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="@dimen/small_padding"
+            android:src="@drawable/my_friend_guess_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:text="@string/guess_you_know"
+            android:textColor="#333333"
+            android:textSize="@dimen/main" />
+
+        <TextView
+            android:id="@+id/my_friend_guess_friend_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2.0dip"
+            android:background="@drawable/message_count"
+            android:gravity="center"
+            android:text="0"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/msg_count_text_color"
+            android:textSize="@dimen/msg_count_text_size"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/next_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_friend_recommend_title"
+        style="@style/divider" >
+
+        <TextView
+            android:id="@+id/my_friend_recommend_divider_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:text="@string/friends_recommend"
+            android:textColor="@color/divider_text_color"
+            android:textSize="@dimen/divider_text_size" />
+
+        <ImageButton
+            android:id="@+id/my_friend_recommend_ignore_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:src="@drawable/friend_recommend_ignore_btn_normal" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/my_friend_recommend_gv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recommend_friend_item_height"
+        android:background="@color/empty_bg"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:padding="@dimen/padding"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/my_friend_recommend_loading_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recommend_friend_item_height"
+        android:background="@color/empty_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            style="@style/loading_progressbar"
+            android:layout_width="23dip"
+            android:layout_height="23dip"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/loading_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_friend_count_tv"
+        style="@style/divider" />
+
+    <TextView
+        android:id="@+id/my_friend_empty"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/no_friends"
+        android:textColor="@color/empty_text_color"
+        android:background="@color/empty_bg"
+        android:textSize="@dimen/main"
+        android:visibility="gone" />
+
+</LinearLayout>

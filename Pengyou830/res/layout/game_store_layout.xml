@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.cyou.mrd.pengyou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ryot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_bar_height"
+        android:background="@drawable/header_bar_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:id="@+id/game_store_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/header_bar_search_btn" />
+
+            <ImageButton
+                android:id="@+id/vertical_divider_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6.0dip"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/vertical" />
+
+            <ImageButton
+                android:id="@+id/game_store_header_download_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.0dip"
+                android:layout_marginRight="8.0dip"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/header_bar_download_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/game_store_header_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/game_library"
+            android:textColor="@color/white"
+            android:textSize="22.0sp" />
+
+        <TextView
+            android:id="@+id/game_store_header_download_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/message_count"
+            android:gravity="center"
+            android:textColor="@color/msg_count_text_color"
+            android:textSize="@dimen/msg_count_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.cyou.mrd.pengyou.widget.OrderView
+            android:id="@+id/refreshview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ScrollView
+                android:id="@+id/sc_root"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/empty_bg"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlot_game_store_top"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:background="@color/empty_bg" >
+
+                        <org.taptwo.android.widget.ViewFlow
+                            android:id="@+id/viewflow_recom_game"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/gamestore_recommend_defaul_bg"
+                            android:focusable="true" />
+
+                        <RelativeLayout
+                            android:id="@+id/ryot_top"
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:layout_alignParentBottom="true"
+                            android:background="#99000000"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dip"
+                            android:paddingRight="10dip"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:id="@+id/txt_game_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="#f3f3f3"
+                                android:textSize="12sp" />
+
+                            <org.taptwo.android.widget.CircleFlowIndicator
+                                android:id="@+id/indicator_recom_game"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="2dip"
+                                app:activeColor="#0c88fb"
+                                app:activeType="fill"
+                                app:inactiveColor="#FFFFFF"
+                                app:inactiveType="fill"
+                                app:radius="3dip" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <include
+                        android:id="@+id/theview"
+                        layout="@layout/menu_bar" />
+
+                    <TextView
+                        android:id="@+id/txt_recommend"
+                        style="@style/divider"
+                        android:text="@string/recommend_good_title" />
+
+                    <com.cyou.mrd.pengyou.widget.GameGridView
+                        android:id="@+id/gv_recommend_game"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_marginTop="8dip"
+                        android:layout_weight="1"
+                        android:horizontalSpacing="4dip"
+                        android:numColumns="2"
+                        android:verticalSpacing="8dip" >
+                    </com.cyou.mrd.pengyou.widget.GameGridView>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_more_recommend"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_marginTop="8dip"
+                        android:background="@drawable/game_store_refresh_btn" >
+
+                        <TextView
+                            android:id="@+id/txt_more_recommand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="@string/gamestore_more_recommand"
+                            android:textColor="#7c7c7c"
+                            android:textSize="13.5sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dip"
+                            android:layout_toRightOf="@id/txt_more_recommand"
+                            android:src="@drawable/gamestore_next" />
+                    </RelativeLayout>
+
+                    <LinearLayout style="@style/divider" >
+
+                        <TextView
+                            android:id="@+id/txt_hot_game"
+                            style="@style/divider"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="4dip"
+                            android:paddingLeft="0dip"
+                            android:paddingRight="0dip"
+                            android:text="@string/gamestore_rank_hot_game" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/gamestore_icon_hot" />
+                    </LinearLayout>
+
+                    <com.cyou.mrd.pengyou.widget.GameGridView
+                        android:id="@+id/gv_hot_game"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:layout_marginTop="8dip"
+                        android:horizontalSpacing="6dip"
+                        android:numColumns="4"
+                        android:verticalSpacing="8dip" >
+                    </com.cyou.mrd.pengyou.widget.GameGridView>
+
+                    <TextView
+                        android:id="@+id/txt_seminar_game"
+                        style="@style/divider"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/game_special_title" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dip"
+                        android:layout_marginBottom="0dip"
+                        android:background="@drawable/recommended_game_item_bg"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/ryot_viewflow"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.1dip"
+                            android:layout_marginRight="0.1dip"
+                            android:layout_marginTop="0.1dip"
+                            android:background="@drawable/gamestore_sp_bg"
+                            android:focusable="true"
+                            android:gravity="center_vertical" >
+
+                            <org.taptwo.android.widget.ViewFlow
+                                android:id="@+id/viewflow_seminar_game"
+                                android:layout_width="fill_parent"
+                                android:layout_height="100dip"
+                                android:focusable="false" />
+
+                            <TextView
+                                android:id="@+id/txt_game_info_seminar"
+                                android:layout_width="fill_parent"
+                                android:layout_height="20dip"
+                                android:layout_alignParentBottom="true"
+                                android:background="#80000000"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="8dip"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="#f3f3f3"
+                                android:textSize="12sp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlot_seminar_game"
+                            android:layout_width="fill_parent"
+                            android:layout_height="36dip"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingRight="6dip" >
+
+                            <org.taptwo.android.widget.CircleFlowIndicator
+                                android:id="@+id/indicator_seminar_game"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                app:activeColor="#0252e1"
+                                app:activeType="fill"
+                                app:inactiveColor="#c9c9c9"
+                                app:inactiveType="fill"
+                                app:isimgbg="true"
+                                app:radius="4.0dip" />
+
+                            <Button
+                                android:id="@+id/btn_more_seminar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/gamestore_more_seminar_xbg"
+                                android:gravity="center_vertical"
+                                android:textColor="#7c7c7c"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/divider" >
+
+                        <TextView
+                            android:id="@+id/txt_new_game"
+                            style="@style/divider"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="4dip"
+                            android:paddingLeft="0dip"
+                            android:paddingRight="0dip"
+                            android:text="@string/game_new_title" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/gamestore_icon_new" />
+                    </LinearLayout>
+
+                    <com.cyou.mrd.pengyou.widget.GameGridView
+                        android:id="@+id/gv_new_game"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dip"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="3dip"
+                        android:layout_marginTop="8dip"
+                        android:horizontalSpacing="4dip"
+                        android:numColumns="4"
+                        android:verticalSpacing="8dip" >
+                    </com.cyou.mrd.pengyou.widget.GameGridView>
+                </LinearLayout>
+            </ScrollView>
+        </com.cyou.mrd.pengyou.widget.OrderView>
+
+        <include
+            android:id="@+id/theviewstay"
+            layout="@layout/menu_bar_static"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

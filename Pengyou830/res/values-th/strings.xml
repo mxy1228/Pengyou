@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+ <string name="app_name">Pengyou</string>
+  <string name="guess_you_know"> คิดว่าคุณ รู้ </string>
+<string name="guess_from_contacts"> รายชื่อในโทรศัพท์ </string>
+<string name="guess_from_sina"> Sina Weibo </string>
+<string name="guess_from_same_game_player"> เรากำลังเล่น </string>
+<string name="from_QRCode"> กวาดรหัส สองมิติ </string>
+<string name="from_contact"> เพิ่มจากรายชื่อ สมุดโทรศัพท์ </string>
+<string name="from_sina"> นำเข้าจาก Sina Weibo </string>
+<string name="find_friend"> ค้นหาเพื่อน </string>
+<string name="phone_contact"> รายชื่อในโทรศัพท์ </string>
+<string name="they_already_install"> พวกเขา ได้ติดตั้ง PengYou</string>
+<string name="they_not_install"> พวกเขา ไม่ได้ติดตั้ง PengYou</string>
+<string name="foced_already"> คุณได้ ให้ความสนใจกับ พวกเขา </string>
+<string name="already_invite"> รับเชิญ </string>
+<string name="feedbacksub"> โปร ~ ขอขอบคุณสำหรับ ความคิดเห็นของคุณ เราจะพิจารณา ความเห็น ของคุณและ มุ่งมั่นที่จะให้คุณด้วยบริการ ที่ดี </string>
+<string name="feed"> คิดเห็น </string>
+<string name="calear_all"> ลบหมด</string>
+<string name="dialog_title"> ลบ </string>
+
+<string name="dialog_message"> จะลบเพื่อน ที่แนะนำไหม </string>
+
+<string name="dialog_ok"> ตกลง </string>
+
+<string name="dialog_cancel"> ยกเลิก </string>
+
+<string name="networks_available" >เครือข่าย ความผิดปกติ </string>
+
+<string name="search_friend_text"> กรุณา ใส่ชื่อเล่น PengYouหมายเลขโทรศัพท์ ที่คุณต้องการจะหา </string>
+ 
+<string name="search_friend_hint"> กรุณากรอกชื่อเล่น /โทรศัพท์ </string>
+<string  name="text_not_empty"> อย่าให้ว่างเปล่า </string>
+
+<string name="channel_name"> เว็บไซต์ Pengyou </string>
+<string name="action_settings"> การตั้งค่า </string>
+<string name="list_loading"> พยายาม โหลด ... </string>
+<string name="do_loading"> ในการดำเนินงาน ... </string>
+<string name="download_error_network_error">เครือข่ายไม่ดี </string>
+<string  name="download_error_no_memory">พื้นที่จัดเก็บ ไม่เพียงพอ </string>
+
+<string name="download_error_had_downloaded"> ได้รับการดาวน์โหลด หามัน ที่ผู้จัดการดาวน์โหลด </string>
+<string name="game_library"> ห้องสมุดเกม </string>
+
+<string name="me"> ผม</string>
+
+<string name="relationship_circle">วงกลม ความสัมพันธ์ </string>
+
+<string name="more"> เพิ่มเติม </string>
+
+<string name="personal_center"> ศูนย์ ส่วนบุคคล </string>
+<string name="personal_info"> ข้อมูลส่วนบุคคล </string>
+<string name="login_tele_title">หมายเลขโทรศัพท์ เข้าสู่ระบบ </string>
+<string name="regist_tele_title"> ผูกหมายเลขโทรศัพท์ </string>
+<string name="reset_password_title"> รีเซ็ตรหัสผ่าน </string>
+<string name="search_game_title"> ค้นหา เกม </string>
+<string name="personal_dcode"> รหัส สองมิติ ของฉัน </string>
+<string name="dynamic_detail"> รายละเอียด แบบไดนามิก </string>
+<string name="my_friend"> เพื่อน ของฉัน </string>
+<string name="my_nearby"> ใกล้เคียงของฉัน </string>
+<string name="add_friends"> เพื่อนใหม่ </string>
+<string name="friends_recommend"> เพื่อน แนะนำ</string>
+
+<string name="focus">การ ติดตาม </string>
+
+<string name="cancel_focus"> เลิกติดตาม </string>
+<string name="hufen"> เพื่อน ของฉัน ( %1$s) </string>
+<string name="letter"> ข้อความ ส่วนตัว </string>
+<string name="send_letter"> ส่งข้อความ ส่วนตัว </string>
+<string name="contacts"> ติดต่อ</string>
+<string name="import_friends"> ค้นหาเพื่อน </string>
+<string name="add_sns_friend_title"> เพื่อน weiboของคุณ </string>
+<string name="qr_code">รหัส สองมิติ </string>
+<string  name="invite"> เชิญ </string>
+<string name="state_initing"> การเริ่มต้น ... </string>
+<string name="state_connecting"> การเชื่อมต่อกับ เซิร์ฟเวอร์ ... </string>
+
+<string name="state_loading"> ... เข้าสู่ระบบอยู่</string>
+<string name="bind_hint1"> คุณไม่ได้ ผูกหมายเลขโทรศัพท์</string>
+<string name="bind_hint2"> ผูกพันหมายเลขโทรศัพท์    เข้าสู่โลกเสมใหม่ </string>
+<string name="regist_text_login_txt"> หากคุณ ผูกพัน หมายเลขโทรศัพท์แล้ว   กรุณาเข้าระบบ </string>
+
+<string name="regist_text_info"> * ผูกพันหมายเลขโทรศัพท์   อัพโหลด ความสัมพันธ์ผู้ติดต่อ สามารถช่วยคุณค้นหา เพื่อนเพิ่มขึ้น    Pengyou จะ อัปโหลด ข้อมูล ไดเรกทอรี โดยไม่เปิดเผยข้อมูล ส่วนบุคคลของคุณ ให้กับผู้ อื่น ๆ </string>
+
+<string name="bind_hint3"> หมายเลขโทรศัพท์ของคุณ </string>
+
+<string name="validate">การตรวจสอบ </string>
+
+<string name="bind_hint4">รหัสยืนยัน </string>
+<string name="bind_error1"> โปรดป้อนหมายเลขโทรศัพท์</string>
+<string name="bind_error2"> รูปแบบ หมายเลขโทรศัพท์ ไม่ถูกต้อง </string>
+<string name="bind_error3">รหัสยืนยัน ว่างอยู่ </string>
+<string name="bind_error_pwd"> กรุณาใส่รหัสผ่าน </string>
+<string name="please_input_validate"> ส่ง รหัสยืนยันใหม่ ( %1$s) </string>
+
+<string name="download_game_size"> %1$sM </string>
+
+<string name="re_get_validate"> ส่ง รหัสยืนยัน ใหม่</string>
+<string name="get_validate">ได้รับ รหัสยืนยัน</string>
+<string name="ok"> ตกลง </string>
+<string name="done"> เสร็จ </string>
+<string  name="invite_friend">เชิญ </string>
+<string name="loading"> พยายามที่จะ โหลด ... </string>
+
+<string name="intro_loading"> โหลดเกม อยู่</string>
+
+<string name="intro_null"> ไม่ได้รับข้อมูล เกม</string>
+
+<string name="tell_friends_hint"> เพื่อนของคุณไม่รู้pengyou</string>
+
+<string  name="icon_user"> รูปหน้า: </string>
+<string name="nickname"> ชื่อเล่น: </string>
+<string name="default_gender"> ชาย </string>
+<string name="default_locate"> ปักกิ่ง </string>
+<string name="default_player_style"> ผู้เล่น ธรรมดา </string>
+
+<string  name="default_nickname">  ผู้เล่น ของPengyou </string>
+
+<string  name="gender"> เพศ</string>
+
+<string name="locate"> เขต: </string>
+
+<string name="birthday"> วันเกิด </string>
+
+<string name="change_header"> เปลี่ยนรูปภาพหัว </string>
+
+<string name="save"> บันทึก </string>
+<string name="edit_personal_info"> แก้ไขข้อมูลส่วนตัว </string>
+<string  name="from_camera">ถ่าย ภาพ</string>
+
+<string  name="from_album"> เลือกจากมือถือ </string>
+<string name="edit_nickname_hint"> 1-16 ตัวอักษร   สนับสนุนภาษาอังกฤษ จีนและ ตัวเลข </string>
+<string name="edit_tag_hint"> 0-40 ตัวอักษร  สนับสนุน ภาษาอังกฤษ จีน ตัวเลข </string>
+<string  name="edit_nickname"> ชื่อเล่น: </string>
+
+<string name="edit_nickname_title"> แก้ไข ชื่อเล่น </string>
+
+<string name="save_success"> แก้ไขเรียบร้อย </string>
+
+<string name="nickname_error1"> กรุณากรอก 1-20 ตัวอักษร </string>
+
+<string  name="personal_tag">คำพูด : </string>
+
+<string name="txt_default_sign"> คลิกแก้คำพูด</string>
+
+<string name="upload_avatar_success"> ประสบความสำเร็จใน การอัปโหลด </string>
+
+<string name="start_up"> เริ่มต้น </string>
+
+
+
+<string name="re_upload_avatar"> คลิกอัปโหลด </string>
+
+<string name="avatar_uploading"> อัพโหลดอยู่ กรุณารอสักครู่</string>
+<string name="cancel"> ยกเลิก </string>
+<string name="boy"> ผู้ชาย </string>
+<string name="girl"> ผู้หญิง </string>
+<string name="all"> ทั้งหมด </string>
+<string name="birthday_error"> กรุณาตรวจสอบ วันที่ กลับเข้า ใหม่</string>
+<string  name="nickname_exception"> ชื่อเล่น ผิดกฎหมาย โปรด ป้อน อีกครั้ง </string>
+<string name="error_login"> โปรดป้อนหมายเลขโทรศัพท์ และ รหัสผ่าน ที่ถูกต้อง </string>
+<string name="game_store_recomm">แนะนำ </string>
+<string name="game_store_category">จำแนก </string>
+
+<string name="game_store_top">รายชื่อTop </string>
+
+<string name="new_friends">เพื่อนใหม่ </string>
+
+<string name="mygame_playercount"> %1$s เพื่อน เล่น </string>
+
+<string name="mygame_recent_does_not_play"> ยังไม่ได้ เริ่มที่จะ เล่น </string>
+<string name="mygame_recent_play_duration"> %1$sเล่นและ %2$s </string>
+<string name="recom_game_name"> [ %1$s ] %2$s </string>
+<string name="classify_game_new_gameinfo"> %1$s %2$sM </string>
+<string name="gamestore_new_gameinfo"> %1$s %2$s </string>
+<string name="classify_game_hot_gameinfo"> มี %1$s ผู้เล่น เล่น อยู่ </string>
+<string name="rank_game_world"> มี  %1$s ผู้เล่นเล่นอยู่ </string>
+<string name="rank_game_friend"> มี เพื่อน %1$sคน เล่น </string>
+<string name="rank_game_near">  มี%1$s ผู้เล่นที่ ใกล้เคียง เล่นอยู่ </string>
+<string name="mygame_myrank"> จัดอันดับของฉัน : %1$s </string>
+
+<string name="share_txt"> pengyou ดีมาก ! หาเพื่อนได้ หาคู่ได้ ในพื้นที่ใกล้เคียงที่   มีpengyou ก็มีเพื่อนทุกที่   ไม่เพียง แต่จะหาเกมได้  สามารถหา ของเล่น ได้ด้วย! ดาวน์โหลดเล่นเลย </string>
+
+<string  name="add_friend_sina_text"> ขอแนะนำ [ pengyou ] โปรแกรมนี้ สามารถหา เกม หาเพื่อนได้ทุกที่ ยังได้ เห็นสิ่งที่คน อื่น ได้เล่น     คลิกเพื่อ ดาวน์โหลด : </string>
+<string name="select_share_app"> เลือก เส้นทาง แบ่งปัน </string>
+
+<string name="my_dynamic"> แบบไดนามิก ของฉัน </string>
+<string name="friend_message">ข้อมูล เพื่อน </string>
+<string name="offical_message"> ข้อมูลอย่างเป็นทางการ </string>
+<string name="private_message"> ข้อความ ส่วนตัว </string>
+
+<string name="recent_games"> เล่น ล่าสุด : </string>
+<string name="play_game_count">เคย เล่น       เกม</string>
+<string name="game_classify_person">จำแนก บุคลิกภาพ </string>
+<string name="mygame_count"> เกมของฉัน ( %1$s) </string>
+<string name="mygame_count_empty"> เกมของฉัน (0) </string>
+<string name="play_mygame_error"> ไม่ได้ติดตั้ เกม   โปรดดาวน์โหลด     หรือตรวจสอบ SD การ์ด ว่าจะเป็น ปกติ ไม่</string>
+
+<string name="back"> กลับ </string>
+
+<string name="get_contacts_hint"> เปิด รายชื่อในโทรศัพท์  ระบบจะ ช่วยให้คุณ หาเพื่อน ที่เล่นpengyou    โดยจะไม่บันทึก ข้อมูลเกี่ยวกับสมุดโทรศัพท์ที่ติดต่อ  </string>
+<string  name="upload_contacts"> รายชื่อในโทรศัพท์ หาเพื่อน โดยอัตโนมัติ </string>
+
+<string name="load_contacts_failed"> ได้รับรายชื่อในโทรศัพท์ ล้มเหลว </string>
+
+<string name="no_contacts"> หรือตรวจสอบรายชื่อในโทรศัพท์ ไม่มี </string>
+
+<string name="had_invited"> เพิ่มแล้ว </string>
+
+<string name="invite_myfriend"> เชิญ</string>
+
+<string name="contacts_friend">เพื่อนในรายชื่อในโทรศัพท์ </string>
+
+<string name="search"> ค้นหา </string>
+<string name="my_fans"> แฟน ๆ ของฉัน </string>
+
+<string name="his_fans"> แฟน ของเขา </string>
+
+<string name="my_focus"> การติดตามของฉัน </string>
+<string name="his_focus"> การติดตาม ของเขา</string>
+<string name="notification"> แจ้งเตือน</string>
+<string name="please_waite"> พยายาม โหลด ... </string>
+<string name="checking_update">  กำลังพยายามที่จะ ตรวจสอบการปรับปรุง ... </string>
+<string name="select_location"> พื้นที่การแก้ไข </string>
+
+<string name="select_sign"> แก้ไข คำพูด</string>
+
+
+<string name="dcode_info"> กวาด รูปแบบรหัสสองมิติ ข้างต้น มา ติดตามฉันนะ </string>
+<string name="share_game_fzone_text"> ฉันเล่น  %1$s , คุณมา เล่น กับฉันนะ </string>
+<string name="share_game_sina_text"> ฉันเพิ่ง เล่น เกมสนุก" %1$s เราเล่น ด้วยกันที่pengyou  คลิกเพื่อดาวน์โหลด : %2$s </string>
+<string name="his_dynamic">ไดนามิกของเขา</string>
+<string   name="shield_dynamic"> ปิดไดนามิก วงกลมความสัมพันธ์ </string>
+<string name="shield_letter"> ปิดข้อความส่วนตัว </string>
+<string name="go_back_home"> กลับหน้าแรก </string>
+<string name="her"> เธอ </string>
+<string name="dynamic_hint">%1$s </string>
+<string name="play_count"> %1$d ง คน เล่น </string>
+<string name="list_no_data"> ไม่มี เนื้อหา </string>
+<string name="classify_game_detail_news"> ล่าสุด </string>
+
+<string name="classify_game_detail_hot">=ชอบสุด </string>
+<string name="classify_game_detail_good">สรรเสริญ </string>
+<string name="download_down"> ดาวน์โหลด </string>
+<string name="download_fav"> เก็บ </string>
+
+<string name="no_download_task"> นี้ไม่มีการ ดาวน์โหลด งาน </string>
+<string name="pengyou_download_manager"> การจัดการ ดาวน์โหลด </string>
+
+<string name="download"> ดาวน์โหลด </string>
+<string name="search_ios_download"> ค้นหา รุ่น Android </string>
+<string name="begin_download_gamename"> เริ่มต้นการดาวน์โหลด </string>
+
+<string name="had_contain_download_task"> เกมดาวน์โหลดแล้ว  ไปดูที่การจัดการ ดาวน์โหลด  </string>
+<string name="had_contain_download_task_pause"> ดาวน์โหลด เกมหยุด  โปรดดาวน์โหลดที่ การจัดการดาวน์โหลด เพื่อ ดาวน์โหลดต่อ</string>
+<string name="had_contain_download_task_done">ดาวน์โหลด เกม เสร็จสมบูรณ์  ไปติดตั้งหน้าดาวน์ </string>
+<string name="download_exception"> ดาวน์โหลด ล้มเหลว </string>
+
+<string name="downloading"> ดาวน์โหลด (%1$s) </string>
+
+<string name="download_done">ได้ดาวน์โหลด ( %1$s) </string>
+
+<string name="download_complete"> %1$s ดาวน์โหลด เสร็จสมบูรณ์ </string>
+<string name="download_percent" formatted="false"> %1$s ได้รับการดาวน์โหลด %2$ ง </string>
+<string name="download_ready"> %1$s  รอสำหรับการดาวน์โหลด... </string>
+<string name="pause_download"> หยุดชั่วคราว </string>
+<string name="continue_download"> ดำเนินการต่อ </string>
+<string name="waiting_download"> รอ </string>
+<string name="install"> การติดตั้ง </string>
+<string name="download_finish"> %1$s ดาวน์โหลด เสร็จสมบูรณ์ </string>
+<string name="delete_download_task"> ลบ ดาวน์โหลด งาน </string>
+
+<string name="speed"> ความเร็ว     </string>
+<string name="share_game_friend"> แบ่งกับเพื่อน </string>
+<string name="unfav_game"> ยกเลิก บันทึก</string>
+<string name="share_game_fzone"> แบ่งปัน วงกลมความสัมพันธ์ </string>
+
+<string name="share_game_others">แบ่งปันที่ อื่น ๆ </string>
+<string  name="share_app_others"> แบ่งปันที่ อื่น ๆ </string>
+
+<string name="publish_mydynamic"> เผยแพร่ แบบไดนามิก </string>
+<string name="send_myact">เปิด แบบไดนามิก </string>
+<string name="share_game_sina"> โพสต์ที่ sina weibo </string>
+<string name="share_app_sina">โพสต์ที่ sina weibo </string>
+<string name="relation_circle_dynamic">แบบไดนามิก </string>
+<string name="relation_circle_sns"> ชุมชน </string>
+<string name="appraisal"> คะแนนของผู้ใช้ </string>
+<string name="you_may_like"> ชอบเกมนี้ ยังต้องการ </string>
+<string name="more_comment"> ความเห็น เพิ่มเติม </string>
+<string name="comment_count_p"> %1$s ง คน </string>
+<string name="download_count"> ทั้ง เครือข่าย การดาวน์โหลด %1$s  %2$s </string>
+
+<string name="friends_play_same_game"> เพื่อน กำลังเล่น ( %1$s) </string>
+<string name="comment_count"> %1$s  ตอบ </string>
+<string name="dynamic_comment_count"> ( %1$s)ความเห็น </string>
+<string name="pack_up">  หยิบ</string>
+<string name="cancel_shield_dynamic"> เปิดโปง แบบไดนามิก </string>
+<string name="cancel_shield_letter"> เปิดโปง ข้อความ ส่วนตัว </string>
+<string name="share_to_friend">  แบ่งปัน กับเพื่อน </string>
+<string name="share_to_friend_hint"> ฉันเพิ่ง เล่น เกมสนุก %1$s คุณมาเล่นกับฉัน นะ</string>
+<string name="pub_a_dynamic"> %1$s ได้เปิดตัว แบบไดนามิกใหม่ </string>
+<string  name="comment">ความเห็น </string>
+<string name="game_info">%1$s&#160;&#160;|&#160;&#160;%2$sM&#160;&#160;|&#160;&#160;%3$s</string>
+<string  name="addressee">ผู้รับ </string>
+<string name="send_sms_success"> ส่งเรียบร้อยแล้ว </string>
+<string name="please_input_sms_content"> กรุณากรอก ข้อความเนื้อหา </string>
+<string name="sms_content"> ผมได้เล่น[ pengyou]     มันมีเกมเยอะมากและ ได้เห็น สิ่งที่ผู้คน กำลังเล่น อยู่  คุณสามารถลอง เล่นกับผมนะ   : %1$s </string>
+<string name="login_out"> ออก และสลับ บัญชี </string>
+<string name="please_input_feed_back">ที่รัก  ถ้าคุณมีความคิดเห็น และข้อเสนอแนะ บอกให้เรานะ  ข้อเสนอและการสนับสนุนของคุณ เป็น แรงจูงใจ ที่ยิ่งใหญ่ที่สุด ของเรา </string>
+<string name="commit"> ส่ง </string>
+<string name="empty_message"> ที่รัก ~ อยากให้ว่าง? ! -_- ! </string>
+<string name="message_send_failed">  ส่งข้อความ ล้มเหลว </string>
+
+<string name="message_send_success"> ข้อความ ส่งไป เรียบร้อยแล้ว </string>
+<string name="ignore"> ไม่สนใจ </string>
+<string name="begin_update"> เริ่มต้นการปรับปรุง </string>
+<string name="from_sina_weibo"> จากSina Weibo  </string>
+<string name="press_to_con"> คลิกดำเนินการต่อ </string>
+
+<string name="press_to_pause"> คลิก หยุดชั่วคราว </string>
+
+<string name="unpublished"> ไม่มี แพคเกจ </string>
+<string name="can_not_find_the_game"> ไม่พบ เกม</string>
+<string name="play_same_game"> เล่นเกม เดียวกัน </string>
+<string name="new_message_from_pengyou"> ข่าวจากเพื่อน pengyou </string>
+<string name="game_from"> มาจาก: %1$s </string>
+<item name="dynamic_aid" type="id"/>
+<item name="dynamic_comment_et" type="id"/>
+<item name="dynamic_position" type="id"/>
+<item name="intro_comment_top_tv" type="id"/>
+<item name="intro_comment_ll" type="id"/>
+<item name="my_nearby_item_focus_btn" type="id"/>
+<item name="you_may_known_item_focus_btn" type="id"/>
+<item name="chat_game_icon_iv" type="id"/>
+<item name="chat_game_name_tv" type="id"/>
+<item name="letter_notification" type="id"/>
+<string name="btn_finish"> เสร็จ </string>
+<string name="btn_next"> ถัดไป </string>
+<string name="btn_next_finish"> เสร็จ </string>
+<string name="btn_send"> โพสต์ </string>
+<string name="btn_share"> เปิด </string>
+<string name="title_rank_friend"> รายชื่ออันดับการติดตาม </string>
+<string name="title_rank_world">รายชื่ออันดับโลก </string>
+<string name="title_rank_near"> รายชื่ออันดับใกล้ตัว </string>
+<string name="basic_setting">ตั้งค่าพื้นฐาน </string>
+<string  name="feedback"> คิดเห็น</string>
+
+<string name="share"> แบ่งปัน </string>
+<string name="main_view"> การปรับปรุง อินเตอร์เฟซหลัก </string>
+ <string name="img_download"> ในเครือข่าย2G/3G  ต้องห้าม ดาวน์โหลด ภาพ </string>
+<string name="clear_cache"> ล้างข้อมูลแคช </string>
+<string name="cal_cache_size">คิด คำนวณ ... </string>
+<string name="check_update"> ตรวจสอบการปรับปรุง </string>
+<string name="guess_game_title"> : ประเภท </string>
+
+<string name="guess_game_frd_playcount"> มี  เพื่อน เล่น---คน  </string>
+
+<string name="delete"> ลบ </string>
+<string name="recomend_game"> แนะนำ เกม %1$s </string>
+<string name="recomend_game_tag"> แบ่งปัน เกม </string>
+  <string name="playing_game">เล่น เกม%1$s อยู่ </string>
+<string name="share_captrue"> แบ่งปัน ภาพหน้าจอ</string>
+<string name="photo_show_title"> ดูรูปขนาดใหญ่ </string>
+<string name="date_minute"> %1$s  นาทีที่ผ่านมา </string>
+<string name="date_today"> วันนี้ %1$s </string>
+<string name="date_yesterday"> เมื่อวาน %1$s </string>
+<string name="fav_success">ได้ เก็บ</string>
+<string name="fav_error">การ เก็บล้มเหลวโปรด ลองอีกครั้ง </string> 
+<string name="unfav_success"> ได้ยกเลิกเก็บ</string>
+<string name="unfav_error"> ยกเลิกเก็บ ล้มเหลว โปรด ลองอีกครั้ง </string> 
+<string name="fav_game_title">  ได้เก็บ( %1$s) </string>
+<string name="mygame_fav_title_count"> รายการเก็บของฉัน ( %1$s) </string>
+<string name="game_intro">คำอธิบาย เกม </string>
+<string name="game_intro_head"> รายละเอียดเกม </string>
+<string name="rating_hint"> ให้ \ "%1$s \ " ให้คะแนน</string>
+<string name="had_comment">ได้ให้ความคิด เห็น </string>
+<string name="no_more_comment"> ได้แสดง ความคิดเห็น ทั้งหมด </string>
+<string name="no_comment"> ไม่มีความคิดเห็น มา ให้ความคิดเห็น</string>
+<string name="no_recent_game"> เขา ไม่เคยเล่น เกมOh! </string>
+
+<string name="he_no_dynamic"> เขา ไม่มี แบบไดนามิก</string>
+<string name="game_play"> เริ่มต้น </string>
+
+<string name="game_download"> ดาวน์โหลด </string>
+
+<string name="game_downloading"> ดาวน์โหลด อยู่</string>
+<string name="download_can_get_score"> ดาวน์โหลด </string>
+
+<string name="no_rating"> คะแนน เสร็จก่อน เพื่อแสดงความคิดเห็นOh! </string>
+<string name="rank_friend_empty_text"> ไม่มีข้อมูล ไปเพิ่ม เพื่อนก่อน </string>
+<string name="new_msg"> % 1 $ d ข้อความใหม่ </string>
+
+<string name="focus_success">ได้ติดตาม </string>
+<string  name="focus_failed">ไม่ ได้ติดตาม  ลองอีกที</string>
+<string name="cancel_focus_success">ได้ยก เลิกติดตาม</string>
+
+<string name="bind_weibo"> ผูกพัน weibo</string>
+<string name="hide_failed"> การตั้งค่า ความเป็นส่วนตัวล้มเหลว   โปรดลองอีกครั้ง ในภายหลัง </string>
+<string name="upload_avatar_failed"> อัพโหลด รูป ล้มเหลวโปรด ลองอีกครั้ง </string>
+
+<string name="modify_failed"> แก้ไข ล้มเหลว โปรดลองอีกครั้ง </string>
+<string name="send_dynamic_success">พบ ความสำเร็จ ในการเผยแพร่ แบบไดนามิก </string>
+ <string name="send_dynamic_empty">พูดอะไรดี </string>
+<string name="search_game_item_txt"> %1$s เพื่อน เล่น     ดาวน์โหลด %2$s ครั้ง </string>
+
+<string name="bind_sina_hint1"> คุณยังไม่ได้ ผูกพัน </string>
+
+<string name="bind_sina_hint2"> Sina  Weibo </string>
+
+<string name="bind_sina_hint3"> เพื่อน Sina  Weibo </string>
+<string name="send"> ส่ง </string>
+
+<string name="delete_success"> ลบเรียบร้อยแล้ว </string>
+
+<string name="error_txt"> การเชื่อมต่อเครือข่ายไม่ดี  โปรดลองอีกครั้งในภายหลัง </string>
+
+<string name="we_are_friends"> เราตอนนี้เป็นเพื่อน แล้ว</string>
+
+<string name="invite_success"> เชิญพบความสำเร็จ </string>
+
+<string  name="invite_failed">เชิญ ล้มเหลว </string>
+<string name="they_are_not_pengyou_user"> พวกเขาไม่ใช่ผู้ใช้pengyou </string>
+
+<string  name="you_may_known"> พวกเขาได้ติดตั้งpengyou</string>
+<string name="private_classify">จำแนกบุคลิกภาพ </string>
+
+<string name="game_classify"> ประเภทของเกม </string>
+<string name="recent_update_date"> เวลาปรับปรุง ล่าสุด:%1$s </string>
+<string  name="updating">ปรับปรุง </string>
+<string name="scret_setting_failed"> การตั้งค่าความเป็นส่วนตัวล้มเหลว  โปรดลองอีกครั้งในภายหลัง </string>
+
+<string name="scret_setting_success"> ได้ตั้งค่าความเป็นส่วนตัวเกม </string>
+
+<string name="meter"> น้อยกว่า%1$s เมตร </string>
+<string name="kilo_meter">%1$s กิโลเมตร </string>
+
+<string  name="source">ที่มา</string>
+<string name="load_qr_code_failed"> โหลดรหัส สองมิติ  ล้มเหลว </string>
+
+<string name="sina_weibo">  sina_weibo </string>
+
+<string name="bind_sina_weibo_failed"> ผูกพัน _weibo ล้มเหลว โปรดลอง อีกครั้ง </string>
+
+<string name="point"> เคล็ดลับ </string>
+<string name="modify_nickname_failed"> แก้ไข ชื่อเล่น ล้มเหลวโปรด ลองอีกครั้ง ในภายหลัง </string>
+<string name="nickname_repeat">ชื่อเล่น ซ้ำ โปรด ป้อน อีกครั้ง </string>
+
+<string name="please_input_nickname"> กรุณา ใส่ชื่อเล่น! </string>
+
+<string name="nickname_too_long"> ชื่อเล่น ควรอยู่ระหว่าง 1-16 ตัวอักษร! </string>
+
+<string name="share_success"> แบ่งปันพบความสำเร็จ </string>
+<string name="no_relationcircle_msg">ไม่มี ข่าว จากวงกลม ความสัมพันธ์         ไปหาดูข่าว ที่วงกลม ความสัมพันธ์         นะ</string>
+
+<string name="share_failed"> แบ่งปัน ล้มเหลว </string>
+<string name="no_friends"> คุณไม่ได้มี เพื่อนร่วมกัน! </string>
+<string name="contants_is_empty"> รายชื่อของคุณ ว่างเปล่า Oh! </string>
+<string name="search_is_empty"> ไม่มี ผล </string>
+<string name="guess_is_empty"> ไม่ ได้เดาถูก  ไปหาเพื่อน ในขณะนี้! </string>
+<string  name="no_fans"> ไม่มีใคร ติดตามคุณ นะ! </string>
+<string name="ta_no_fans"> ไม่มีใคร ติดตามเขา ! </string>
+
+<string name="no_focus"> ไม่ ได้ติดตามใคร! </string>
+<string name="update_nickname_suc"> แก้ไข ชื่อเล่น เรียบร้อยแล้ว </string>
+
+<string name="update_sign_suc"> แก้ไข คำพูดเรียบร้อยแล้ว </string>
+<string  name="tele_regist_error"> ผูก การลงทะเบียนโทรศัพท์   โปรดลองอีกครั้ง ในภายหลัง </string>
+<string   name="tele_reset_password_error">มีการเปลี่ยนแปลงรหัสผ่าน โทรศัพท์   โปรดลองอีกครั้ง ในภายหลัง </string>
+<string  name="reset_password_success">ได้ เปลี่ยนรหัสผ่าน  กรุณา เข้าสู่ระบบ </string>
+<string  name="reset_password_fail"> เปลี่ยนรหัสผ่าน ล้มเหลวโปรดลอง อีกครั้ง </string>
+
+
+<string name="tele_vacode_timeout"> รหัสยืนยันหมดอายุแล้ว โปรรับ อีกครั้ง </string>
+
+<string  name="vacode_error">รหัสยืนยัน ไม่ถูกต้อง โปรด ป้อน อีกครั้ง! </string>
+
+<string name="regist_success"> ลงทะเบียนเรียบร้อยแล้ว </string>
+
+<string name="getvacode_error"> การรั รหัส ในการตรวจสอบ ล้มเหลวโปรดลองอีกครั้ง ในภายหลัง </string>
+
+<string name="password_length_error"> รหัสผ่าน อย่างน้อย 6 ตัว</string>
+
+<string name="update_sign_error"> แก้ไข คำพูดล้มเหลวโปรด ลองอีกครั้ง ในภายหลัง </string>
+
+<string  name="comment_success">ให้ ความเห็นประสบความสำเร็จ </string>
+<string name="no_data"> ไม่มีข้อมูล </string>
+
+<string name="update_userinfo"> กรุณา ปรับปรุงข้อมูล </string>
+<string name="has_regist_error"> หมายเลขโทรศัพท์ที่ ได้รับการ ผูกพัน </string>
+<string name="hassend_vacode"> ได้ส่งการตรวจสอบ ไปยังโทรศัพท์ มือถือของคุณ โปรดตรวจสอบ </string>
+
+<string name="hassend_vacode_error"> หมายเลขโทรศัพท์ได้รับแล้ว  โปรดอย่าส่ง ซ้ำ ! </string>
+
+<string name="game_search_nokey"> กรุณา ใส่คำ</string>
+
+<string name="game_search_nodata"> ไม่พบ เกม </string>
+
+<string name="user_search_nokey"> กรุณา ใส่ชื่อเล่นหรือหมายเลขโทรศัพท์ </string>
+<string name="user_search_nodata"> ไม่มีผู้ใช้คน นี้ </string>
+
+<string name="user_search_nodata_hint"> ผู้ใช้ไม่มี  ป้อนชื่อผู้ใช้หรือหมายเลขโทรศัพท์ ที่ถูกต้อง </string>
+<string name="send_mydynamic_error"> เผยแพร่ แบบไดนามิก ล้มเหลว โปรดลองอีกครั้ง ในภายหลัง </string>
+<string  name="loadgame_error"> ล้มเหลว ที่จะได้รับ ข้อมูลเกม </string>
+<string name="sharegame_rc_error"> แบ่งปัน เกมไปถึงวงกลม ความสัมพันธ์ ล้มเหลวโปรด ลองอีกครั้ง ในภายหลัง </string>
+<string name="sharegame_rc_operating">"> แบ่งปันอยู่ </string> 
+<string name="sharegame_rc_success"> แบ่งปัน เกมประสบความสำเร็จ </string>
+
+<string name="sharegame_rc_nocontent"> ใส่ เนื้อหา แบ่งปัน </string>
+<string name="sharegame_sina_error"> "> แบ่งปัน Weibo ล้มเหลว โปรด ลองอีกครั้ง ในภายหลัง </string>
+<string name="shareapp_sina_error">"> แบ่งปัน Weibo ล้มเหลวโปรด ลองอีกครั้ง ในภายหลัง </string>
+<string name="sharegame_sina_success">  แบ่งปัน Weibo ความสำเร็จ </string>
+<string name="user_does_not_exists"> ไม่มีผู้ใช้คนนี้ </string>
+<!-- 20003-->
+<string name="out_of_limit"> ส่ง Weibo มากเกินไป  ขอพักหน่อย</string>
+
+<string name="repeat_siminal_content"> คุณ ได้ส่งเนื้อหาคล้ายกัน  ขอพักหน่อย </string>
+
+<string name="repeat_same_content"> ส่งหนึ่งทีก็พอ </string>
+
+
+<string name="token_expired"> Token หมดอายุแล้ว กรุณาเข้าสู่ระบบ Weibo อีกครั้ง ! </string>
+
+
+<string name="shareapp_sina_success">แบ่ง ปันWeiboพบ ความสำเร็จ </string>
+<string name="invalid_access_token"> access_token ไม่มีอยู่หรือ ถูกลบไปแล้ว หรือ ผู้ใช้ปรับเปลี่ยน รหัสผ่านกรุณา เข้าสู่ระบบ Weibo อีกครั้ง ! </string>
+<string name="pic_load_error">โหลด ภาพ ล้มเหลวโปรดลอง อีกครั้ง </string>
+<string name="load_snsfriend_error"> โหลด เพื่อน Weibo ล้มเหลว </string>
+
+<string name="load_snsfriend_nodata"> ไม่มี เพื่อน Weibo </string>
+<string name="tele_regist_ok"> บัญชี นี้ยังไม่ได้ ขอไปสมัคร </string>
+<string name="do_clear_pic"> ลบภาพถ่าย  </string>
+
+<string name="sharegame_sina_nocontent"> ใส่ เนื้อหา แบ่งปัน </string>
+
+<string name="shareapp_sina_nocontent"> ใส่ เนื้อหา แบ่งปัน </string>
+<string name="download_install"> ถอนการติดตั้ง </string>
+<string name="image_add_txt"> เพิ่มภาพถ่าย </string>
+
+<string name="game_update_title"> สามารถปรับปรุง </string>
+<string name="allupdate_game_txt"> ปรับปรุงทั้งหมด </string>
+<string name="download_update"> สามารถปรับปรุง </string>
+<string name="nodata_update_game"> ไม่มีเกม ที่ปรับปรุง </string>
+<string name="nodata_install_game">ไม่มี เกมที่ถอนการติดตั้ง ได้</string>
+
+<string name="download_btn_uninstall"> ถอนการติดตั้ง </string>
+
+<string name="download_btn_updatting"> การปรับปรุงอยู่ </string>
+<string name="download_btn_update">ปรับปรุง </string>
+<string name="download_installapp_error"> โปรแกรมไม่มีอยู่   หรือ ได้รับการติดตั้ง </string>
+<string name="waitting"> รอ ( %1$s) </string>
+
+<string name="download_pause_title">หยุด ( %1$s) </string>
+
+<string name="download_done_title"> เสร็จ ( %1$s) </string>
+
+<string name="allcontinue_game_txt"> เริ่มต้นทั้งหมด </string>
+
+<string name="allpause_game_txt"> หยุดชั่วคราว ทั้งหมด </string>
+
+<string name="allclear_game_txt"> ล้างทั้งหมด </string>
+
+<string name="relationship_square"> สแควร์ </string>
+
+<string name="number_feel_support"> ได้สรรเสริญ %1$s  ได้ชอบ </string>
+<string name="people_feel_support"/>
+
+<string name="people_give_comment"> มี %1$s comments </string>
+
+<string name="had_focus"> มีการติดตาม</string>
+<string name="republish_dynamic"> เผยแพร่ ใหม่</string>
+
+<string name="add_friend_dcode_hint"> ไป สแกน รหัส สองมิติ , ติดตามบัญชีของ เพื่อน pengyou</string>
+
+<string name="userinfo_dcode_title">รหัสบัตร มิติ </string>
+
+<string name="userinfo_gamefav_title">การนิยมเกม </string>
+<string name="userinfo_nickname_hint"> กรุณา ใส่ชื่อเล่น</string>
+
+<string name="userinfo_icon_title"> อัพโหลด รูป </string>
+
+<string name="userinfo_pwd_hint"> ตั้งรหัสผ่านอย่างน้อย 6 คำ</string>
+
+<string name="userinfo_sign_hint"> ใส่ คำพูด </string>
+
+<string name="mygame_fav_title"> รายการโปรดของฉัน </string>
+<string name="mygame_fav_count"> รายการโปรดของฉัน ( %1$s) </string>
+<string name="search_user_title"> ค้นหา เพื่อน </string>
+<string name="search_user_sina_title"> หาเพื่อน ผ่านบัญชี weiboมัน </string>
+<string name="login_tele_hint"> โปรดป้อนหมายเลขโทรศัพท์</string>
+
+<string name="login_pwd_hint"> กรุณาใส่รหัสผ่าน </string>
+
+<string name="login_btn"> เข้าสู่ระบบ </string>
+
+<string name="regist_btn"> ลงทะเบียน </string>
+
+<string name="login_tele_btn"> เข้าสู่ระบบ หมายเลขโทรศัพท์ </string>
+
+<string name="login_tele_reset_password"> รีเซ็ตรหัสผ่าน </string>
+
+<string name="phone_bind"> ผูกหมายเลขโทรศัพท์ </string>
+<string name="login_qq_btn"> เข้าสู่ระบบบัญชี QQ </string>
+
+<string name="login_sina_btn">  เข้าสู่ระบบ weibo</string>
+
+<string name="login_cyou_btn"> เข้าสู่ระบบ ผ่าน changyou</string>
+
+<string name="login_guest_btn"> เข้าถึงโดยตรง </string>
+
+<string name="mygame_guess_youlike_title"> คิดว่าคุณ ชอบ </string>
+
+<string name="mygame_nodata"> คุณไม่มี เกม    ไปหาเลย </string>
+
+<string name="pc_attention_title">การติดตาม </string>
+<string name="mygame_item_btn_detail"> รายละเอียด </string>
+
+<string name="mygame_item_btn_share"> แบ่งปัน </string>
+
+<string name="mygame_item_btn_update">ปรับปรุง </string>
+
+<string name="recommend_guess_youlike_title"> คิดว่าคุณชอบ </string>
+
+<string name="recommend_good_title"> แนะนำ ของดี</string>
+
+<string name="regist_telenum_is"> หมายเลขโทรศัพท์ของคุณคือ </string>
+
+<string name="please_enter_vacode"> กรุณาใส่รหัสตรวจสอบข้อความที่ได้รับ: </string>
+
+<string name="please_enter_vacode_hint"> กรุณากรอกรหัสสอบ </string>
+
+<string name="resend_vacode"> ส่งรหัสยืนยัน ใหม่</string>
+
+<string name="send_dynamic_hint"> แบ่งปันความสุขให้เพื่อน </string>
+
+<string name="get_userinfo_error"> ได้รับข้อมูลผู้ใช้ล้มเหลว </string>
+
+<string name="load_dcode_error"> โหลดรหัสสองมิติ  ล้มเหลว </string>
+
+<string name="pc_fans_title">แฟน </string>
+<string name="pc_dynamic_title"> เปิด </string>
+
+<string  name="pc_msg_title">ข้อความ </string>
+
+<string name="no_game_dynamic"> ไม่มีคนเขียนแบบไดนามิก    ไปเขียนอะไรบ้างในขณะนี้! </string>
+<string name="nodata_sinafriend"> บัญชี weibo ของคุณไม่มีเพื่อน Oh! </string>
+
+<string name="nodata_favgame"> คุณไม่มีเกม   ไปหาเลย</string>
+<string name="nodata_friend_rankgame"> คุณยังไม่ได้ดิดตามคนอื่น  </string>
+<string name="unbind_sina_text"> กรุณาผูก Sina weibo </string>
+
+<string name="no_new_version"> ที่คุณได้ติดตั้งคือรุ่นล่าสุด :) </string>
+<string  name="mydynamic_pic_maxsize"> ภาพที่เลือกมาก กว่า   %1$sM โปรดอัปโหลด อีกครั้ง</string>
+
+<string name="txt_bindtele"> หมายเลขโทรศัพท์ผูกพัน:%1$s </string>
+
+ <string name="txt_tele_binded">:%1$s </string>
+
+<string name="btn_bindtele_unbind"> ฟรีผูกพัน </string>
+
+<string name="btn_bindtele_unbind_sns"> ผูกพัน </string>
+
+<string  name="btn_bindtele_change"> เปลี่ยน </string>
+
+<string name="txt_bindsina"> ผูก Sina microblogging </string>
+
+<string name="txt_bindsina_state"> ผูกพัน </string>
+
+<string name="txt_bind_sina_name">Sina  Weibo </string>
+
+<string name="txt_pwd_hint"> กรุณาใส่รหัสผ่าน </string>
+
+<string name="bind_tele_suc"> ผูกพันประสบความสำเร็จ! </string>
+<string name="please_enter_pwd_hint"> ตั้งรหัสผ่านเข้าสู่ระบบไม่น้อยกว่า 6คำ </string>
+<string name="please_enter_pwd_title"> แก้ไขรหัสผ่าน: </string>
+
+<string name="bind_tele_info"> สำหรับการรักษาความปลอดภัยบัญชีของคุณโปรดผูกพันหมายเลขโทรศัพท์หรือบัญชีของบุคคลที่สาม </string>
+
+<string name="bind_sns_bined_error"> บัญชี microblogging ได้รับการผูกพัน </string>
+<string  name="sim_error"> ซิมการ์ดไม่ดี </string>
+
+<string name="download_clear_all"> ว่าจะ ลบทั้งหมดหรือไม่ </string>
+
+<string name="download_state_pause"> หยุด การดาวน์โหลด </string>
+
+<string name="download_state_waiting"> รอ สำหรับการดาวน์โหลด </string>
+
+<string name="download_state_waitingpause"> หยุด รอ </string>
+<string name="download_state_installed"> ติดตั้งแล้ว </string>
+
+<string name="download_state_done"> ไม่ได้ติดตั้ง </string>
+
+
+<string name="game_unpublished"> เกมที่ได้ รับการ ออกจากชั้นวาง </string>
+
+<string name="search_game_download_counts"> ดาวน์โหลด เครือข่ายทั้งหมด : %1$s </string>
+
+<string name="search_game_security"> การรักษาความปลอดภัย </string>
+<string name="search_game_adsdisplay"> มี โฆษณา ข้างใน </string>
+
+<string name="search_game_feetype"> ชำระเงินข้างใน </string>
+
+<string name="search_game_official"> อย่างเป็นทางการ </string>
+
+<string name="search_game_noads"> ไม่มีโฆษณา </string>
+<string name="search_game_count_thousand"> หมื่น </string>
+
+<string name="search_game_count_millon"> หนึ่งร้อยล้าน </string>
+
+<string  name="game_circle"> วงกลมเกม </string>
+<string  name="game_circle_count">:วงกลมเกม   วันนี้%1$s, รวม  %2$s </string>
+<string name="download_btn_start"> เริ่มต้น </string>
+
+<string  name="download_btn_clear"> ล้างบันทึก </string>
+
+<string name="download_btn_continue"> ยังคงดาวน์โหลด </string>
+<string name="download_btn_detail"> รายละเอียด </string>
+
+<string name="download_btn_back"> กลับ </string>
+
+<string name="download_btn_down_first"> ดาวน์โหลดลำดับความสำคัญ </string>
+
+<string name="download_btn_delete"> ลบ </string>
+
+<string name="download_btn_waiting"> รอ </string>
+
+<string name="download_btn_install">การติดตั้ง  </string>
+<string name="download_btn_pause"> หยุดชั่วคราว </string>
+
+<string name="yesterday"> เมื่อวาน%1$s </string>
+<string name="press_check_more_msg"> คลิกเพื่อดู ข่าว เพิ่มเติม </string>
+
+<string name="find_new_version"> พบรุ่นใหม่ ( %1$s) </string>
+
+<string name="letter_notification_title"> %1$s รายชื่อ ส่งมา%2$s ข้อความ </string>
+
+<string name="re_send_the_message"> ยืนยันการ ส่ง ข้อความอีกครั้ง หรือไม่ </string>
+<string   name="user_sign_max_count">คำพูด ไม่สามารถ จะมากกว่า %1$s </string>
+
+<string  name="send_sms_failed">ส่งข้อความ ล้มเหลว </string>
+
+<string  name="sim_essrror"> ซิมการ์ดไม่ดี </string>
+
+<string  name="version_source">ที่ มาของทุก รุ่น</string>
+<string name="download_install_file_noexit"> ไม่พบ แฟ้มการติดตั้ง โปรด ดาวน์โหลดอีกครั้ง </string>
+<string name="person_info_progress_text"> ความซับซ้อน ข้อมูลส่วนบุคคล : </string>
+
+<string name="arg_stars"> %1$s ดาว </string>
+
+<string name="official"> อย่างเป็นทางการ </string>
+
+<string name="safe"> การรักษาความปลอดภัย </string>
+
+<string name="noads"> ไม่มีโฆษณา </string>
+
+<string name="ads">  โฆษณา ข้างใน </string>
+
+<string name="charge">ชำระเงิน ข้างใน </string>
+
+<string  name="message"> ข้อความ</string>
+<string name="update_game_version">  ปรับปรุง ไปยัง %1$sM %2$s </string>
+
+<string name="game_code_null"> หา เกมนี้ ไม่เจอ</string>
+
+<string name="check_network"> กรุณาตรวจสอบ การเชื่อมต่อ เครือข่ายของคุณ </string>
+<string name="no_dynamic"> ไม่มีใครเขียนเรื่อง ไปเขียนเลย</string>
+<string name="my_no_dynamic"> คุณยังไม่ได้ ตีพิมพ์ แบบไดนามิก  ไปเขียนอะไรบางอย่าง ในขณะนี้! </string>
+<string  name="feed_back_btn">ให้ ความเห็น </string>
+
+<string name="sdcard_write_error"> กรุณาตรวจสอบการ์ด SD หรืออุปกรณ์เก็บข้อมูล ภายใน </string>
+<string name="download_url_error">ที่อยู่ ดาวน์โหลดมี ปัญหา! </string>
+
+
+<string name="letter_notification_tickerText"> %1$s %2$s  ส่ง ข้อความ </string> 
+<string name="dynamic_text_hint"> ความคิดของคุณ ในขณะ นี้ ... </string> 
+<string name="letter_notification_tickerText_single"> %1$s       ส่ง      ข้อความ </string>
+
+<string name="relation_circle_msg_from"> จาก %1$s </string>
+
+<string name="gamescore_poor_comment"> คุณจะให้คะแนน ไม่ดี ในเกมนี้ คลิกที่ \" ปล่อย \ " ส่ง </string>
+<string  name="gamescore_gengeral_comment">คุณจะให้คะแนนทั่วไป ในเกมนี้ ปให้คลิกที่ \" ปล่อย \ " ส่ง </string>
+ <string name="gamescore_good_comment"> คุณจะให้คะแนน ที่ดี สำหรับเกมนี้ คลิกที่ \" ปล่อย \ " ส่ง </string>
+<string name="game_score_display"> เขาให้คะแนน กับเกม </string>
+
+<string name="me_game_score_display"> ผม ให้คะแนน กับเกม </string>
+
+<string name="unkown_source"> ไม่ทราบ ที่มา </string>
+<string name="game_name_default"> กรุณากรอก ชื่อของเกม </string>
+
+<string name="no_letter"> โอ้ คุณไม่ได้มีข้อความ ส่วนตัว ที่จะติดต่อกับ เพื่อนของคุณ </string>
+
+<string name="btn_bind_telephone">ผูกพัน หมายเลขโทรศัพท์ </string>
+<string  name="input_empty"> การพิมพ์ว่างเปล่า อยู่ ~ </string>
+
+<string name="my_nearby_fail"> การตั้งตำแหน่งล้มเหลวโปรด คลิกที่ปุ่ม เพื่อเปลี่ยนตำแหน่ง </string>
+
+<string name="my_nearby_reset"> ลองใหม่ </string>
+<string name="my_nearby_retry_fail"> ตั้งตำแหน่ง ล้มเหลว </string>
+<string name="dynamic_had_been_deleted"> แบบไดนามิก นี้ถูกลบ </string>
+
+<string name="reply"> ตอบ </string>
+<string  name="average"> เฉลี่ย </string>
+
+<string name="cannot_fav">  เกมIOS  เกมนี้เก็บไม่ได้  </string>
+
+<string name="cannot_share"> เกมนี้เป็น เกม IOS ไม่สามารถที่จะ แบ่งปัน </string>
+
+<string name="tenthousand"> หมื่น </string>
+
+<string name="tenthousandmore"> หมื่น + </string>
+
+<string name="tenmillion"> หนึ่งร้อยล้าน </string>
+
+<string name="tenmillionmore"> หนึ่งร้อยล้าน + </string>
+<string name="get_circlepersons_fail"> รับคนใน เกมล้มเหลว </string>
+<string name="see_all_text"> ดูข้อความเต็ม </string>
+
+<string name="age"> %1$s ปี </string>
+
+<string name="fail_login"> เข้าสู่ระบบ ล้มเหลว </string>
+<string name="support_failed_comments">มี ความผิดปกติ ของเครือข่าย    likeไม่ได้ เครือข่ายดีแล้ว ส่งได้</string>
+
+<string name="cancel_support_failed_comments"> มี ความผิดปกติ ของเครือข่าย   ยกเลิก likeไม่ได้ เครือข่ายดีแล้ว ส่งได้</string>
+<string name="support_failed_notify">มี ความผิดปกติ ของเครือข่าย    likeไม่ได้ เครือข่ายดีแล้ว ส่งได้ </string>
+
+<string name="cancel_support_failed_notify">  มี ความผิดปกติ ของเครือข่าย   ยกเลิก likeไม่ได้ เครือข่ายดีแล้ว ส่งได้</string>
+<string name="support_success"> Likeความสำเร็จ </string>
+
+<string name="cancel_support_success">ยกเลิก Like พบความสำเร็จ </string>
+<string name="add_sina_frd_error"> รับข้อมูลของผู้ใช้ ล้มเหลว </string>
+
+<string name="gamecircledetailactivity_pending"> รอ ... </string>
+
+<string name="share_to_friend_empty"> พูดอะไร :) </string>
+
+<string name="relationship_dynamic_top">ไป บน </string>
+
+<string name="game_shown"> มองเห็นได้ </string>
+
+<string  name="game_gone">ซ่อน </string>
+
+<string name="refreshing"> กำลังโหลด </string>
+
+<string name="release_to_refresh"> ปล่อย รีเฟรช </string>
+<string name="pull_to_refresh"> ดึง เพื่อรีเฟรช </string>
+
+<string name="pull_to_refresh_update_time"> การปรับปรุงล่าสุด : %1$s </string>
+<string name="pull_to_refresh_loading"> พยายามที่จะ โหลด ... </string>
+<string name="publish_hint_text"> ความคิดของคุณ ในขณะ นี้ ... </string>
+<string name="friend_info_recent_games_counts"> เล่นล่าสุด ( %1$s) </string>
+<string name="complete_regist"> ปรับปรุงข้อมูล ส่วนบุคคล </string>
+
+<string name="guider1_text1"> เกม ที่สมบูรณ์ มากที่สุดในประวัติศาสตร์ </string>
+
+<string name="guider1_text2"> ค้นหาเครือข่าย เกม ทุกอย่างมี ที่นี่ </string>
+
+<string name="guider2_text1"> ปลอดภัยในการดาวน์โหลด </string>
+<string name="guider2_text2"> เตือน การรักษาความปลอดภัย ทรัพยากร เกม สีเขียว </string>
+<string name="guider3_text1"> วงการ สนใจ    เพื่อน ร่วม </string>
+
+<string  name="guider3_text2">หาเพื่อน, เกมสนุก ร่วมกัน </string>
+<string name="guider4_text1"> พบรอบ ผู้เล่น </string>
+<string name="guider4_text2"> ตำแหน่งที่แม่นยำ หาคนรอบข้าง ที่เล่นเกม </string>
+<string name="guider5_text1"> ได้รับคะแนน สะสมของดี </string>
+<string name="guider5_text2"> เล่นเกม มากขึ้น     ได้รับคะแนน   ของขวัญ </string>
+<string name="delete_comment"> ลบความคิดเห็น </string>
+
+<string name="complete_user_info"> กรุณากรอกข้อมูล ส่วนตัวของคุณ </string>
+
+<string name="please_edit_your_nickname"> โปรดแก้ไข ชื่อเล่นของคุณ </string>
+<string  name="net_error">  เชื่อมต่อเครือข่าย ล้มเหลว กรุณาคลิก ลองใหม่ </string>
+
+<string name="net_error_loading_data"> ความผิดปกติ ของเครือข่าย  โหลดข้อมูล ล้มเหลว </string>
+
+<string name="publish_maskword_failed">คำพูดผิด  ส่งไม่ได้! </string>
+
+<string name="comment_maskword_failed">คำพูดผิด  ส่งไม่ได้ </string>
+
+<string name="modify_maskword_failed">คำพูดผิด  ส่งไม่ได้ </string>
+<string  name="comment_deleted_send_failed"> ส่งล้มเหลว      แบบไดนามิกนี้ ถูกลบออก </string>
+<string name="comment_operation_send_failed"> ใช้งานมากเกินไป โปรดลองอีกครั้ง หลังจาก 30 นาที </string>
+<string name="comment_send_failed"> การดำเนิน ล้มเหลว ผู้ใช้ สิทธิ์ หรือ ข้อผิดพลาด </string>
+<string name="comment_sending_waiting"> ส่งความคิดอยู่     โปรดรอสักครู่ </string>
+<string name="dynamic_send_sucess"> แบบไดนามิก นี้ได้ รับความสำเร็จ </string>
+<string name="dynamic_sending"> แบบไดนามิก นี้จะ ส่งไป กรุณารอสักครู่ </string>
+<string name="game_gave_stars">  ให้คะแนนประสบความสำเร็จ   ไม่ สามารถทำคะแนน อีก</string>
+<string name="play_game"> เล่น เกม</string>
+
+<string name="had_public"> สาธารณะ </string>
+
+<string  name="had_hide"> ซ่อน</string>
+
+<string  name="dynamic">แบบไดนามิก </string>
+
+<string name="change"> สำหรับการเปลี่ยนแปลง </string>
+
+<string  name="have_a_change">เปลี่ยน</string>
+
+<string name="setting"> การตั้งค่า </string>
+<string name="no_collection"> คุณ ยังไม่เกม เก็บ  </string>
+<string name="default_constellation"> ดาวฤกษ์ </string>
+
+<string name="game_circle_notexist"> ห่วง เกมไม่ มี </string>
+<string name="check_update_net_error"> ไม่ได้ ที่จะบังคับให้ เครือข่าย ให้ลอง อีกครั้งในภายหลัง </string>
+
+<string name="friend_sign_default"> เขา ไม่ได้ กล่าวว่าอะได </string>
+
+<string  name="location_default">พื้นที่ </string>
+
+<string name="search_for_game"> หาเกม </string>
+<string name="game_new_title"> เกมล่าสุด </string>
+
+<string  name="game_hot_title">เกมชอบ สุด </string>
+
+<string  name="game_special_title">รูปแบบ เกม </string>
+
+<string name="game_store_nearby_play"> เล่นใกล้เคียง </string>
+<string name="game_store_friend_play"> เพื่อน เล่น </string>
+
+<string  name="game_store_classify_play">จำแนก กินเนสส์ </string>
+
+<string name="game_store_youmaylike_play"> คิดว่าคุณ ชอบ </string>
+
+<string name="game_store_friend_add"> เพิ่มเพื่อน </string>
+
+<string name="game_store_friend_add_more"> เพิ่มเพื่อน เพื่อน ดู กำลังเล่น </string>
+
+
+
+<string name="game_store_refresh"> สำหรับการเปลี่ยนแปลง </string>
+
+<string name="game_store_guess_info"> %1$sM | %2$s </string>
+
+<string name="game_store_guess_size"> %1$sM </string>
+
+<string  name="game_store_classify"> จำแนก </string>
+
+<string name="gamestore_more_recommand"> เพิ่มเติม บูติค </string>
+
+<string name="game_special_gameinfo"> %1$sM %2$s %3$s </string>
+
+<string name="gamestore_rank_hot_game"> ล่าสุด ที่ร้อนแรง </string>
+
+<string name="gamestore_more_game"> เกมมากขึ้น </string>
+
+<string name="gamestore_more"> เพิ่มเติม </string>
+
+<string name="gamestore_error_params"> รับข้อผิดพลาด  โปรดลอง อีกครั้ง </string>
+
+<string  name="game_gift">ชุดของขวัญ </string>
+
+<string  name="game_gift_game_type">ชนิดของเกม </string>
+
+<string   name="game_gift_game_size"> ขนาด เกม</string>
+
+<string  name="game_gift_game_date">หมดเขต : %1$s </string>
+
+<string name="game_gift_game_detail"> รายละเอียดเกม </string>
+<string  name="game_gift_game_got">มารับ </string>
+
+<string name="game_gift_game_copy"> คัดลอก </string>
+
+ <string name="game_gift_game_download"> ดาวน์โหลดเกม </string>
+
+<string name="game_gift_game_start"> เริ่มเกม </string>
+
+<string name="game_gift_game_install"> ติดตั้งเกม </string>
+
+<string name="game_gift_game_downloading"> ดาวน์โหลด ( %1$s) </string>
+
+<string name="game_gift_game_wel_got"> มา คลิก เพื่อรับคูปอง! </string>
+
+
+<string  name="game_gift_game_got_outdate"> หมดอายุ เพื่อน ไป ดู ชุด อื่น ๆ ! </string>
+
+<string  name="game_gift_game_got_nothing"> ไม่มีของแล้ว    ไป ดู ชุด อื่น ๆ ! </string>
+
+<string name="game_gift_game_got_failed"> Oops!  ไม่ได้รับ ไป ลองใหม่ ! </string>
+
+<string name="game_gift_game_got_noexist"> แพ็ค ก็ไม่มี </string>
+<string name="game_gift_game_got_notopen"> ไม่เปิด ของขวัญ Oh! </string>
+
+<string  name="game_gift_game_got_end"> ได้รับ   โอ้ ! </string>
+
+<string name="game_gift_game_got_success"> ได้รับ </string>
+
+<string name="game_gift_game_got_success_number"> ได้รับ: %1$s </string>
+<string name="game_gift_game_gift_intro"> แพ็ค คำอธิบาย </string>
+
+<string name="game_gift_game_req_failed">ขอ ล้มเหลว </string>
+
+ <string name="game_gift_game_got_nobind"> คุณยังไม่ได้ ผูกพัน หมายเลขโทรศัพท์มือถือ   จะไปผูกหมายเลขโทรศัพท์  </string>
+<string name="update_prompt">คำเตือน ปรับปรุง  </string>
+
+<string name="update_prompt_content"> สวัสดี รุ่นล่าสุดของ \ "%1$s \ " กับรุ่นเก่า ไม่ตรงกับ    คุณจะต้อง ถอนการติดตั้งรุ่นเก่า ก่อนจะ  ได้รับการปรับปรุง ! </string>
+<string name="feed_back_error"> ดำเนินงานของคุณ บ่อยเกินไป กรุณาส่ง ได้ในภายหลัง </string>
+
+ <string name="game_update_confirm"> ถอนการติดตั้ง แพคเกจ เดิม ปรับปรุง </string>
+<string name="game_update_cancel"> ไม่ปรับปรุง </string>
+
+<string  name="search_friend_empty_hint"> เพื่อนไม่มี </string>
+
+<string name="share_to_friend_failed"> แบ่งปัน ล้มเหลว </string>
+<string name="notification_downloading_text"> %1$s เกมดาวน์โหลด อยู่</string>
+
+<string name="notification_all_pause_text"> %1$s เกมรอดาวน์โหลด </string>
+<string name="notification_update_text"> %1$s เกมปรับปรุง  </string>
+
+<string   name="login_out_title">ออฟไลน์ แจ้งเตือน </string>
+<string name="login_out_hint">โทรศัพท์ อื่น เข้าสู่ระบบบัญชี ของคุณ ตัวเองต้อง ทราบ ความปลอดภัยของบัญชี</string>
+<string name="relogin"> เข้าสู่ระบบ อีกครั้ง </string>
+
+<string name="guider_guess_divider_hint"> พวกเขาและคุณ เล่นเกม เดียวกัน </string>
+
+<string name="focus_all">ติดตาม ทุกคน </string>
+<string name="jump"> ข้าม </string>
+
+<string name="no_guessdata"> คิดว่าคุณ ไม่ชอบ ข้อมูล </string>
+<string name="download_not_wifi_titile"> คำเตือน </string>
+<string name="download_not_wifi_message"> ค่าใช้จ่าย ในปัจจุบันของคุณ สำหรับเครือข่าย ที่ไม่ใช่ WIFI- ดาวน์โหลดอาจก่อให้เกิด ภาษี  . </string>
+
+<string name="download_not_wifi_continue"> ยังคง ดาวน์โหลด </string>
+<string name="download_not_wifi_pause"> หยุด การดาวน์โหลด </string>
+
+<string name="wating_for_get_data"> ดึง ข้อมูลอยู่    </string>
+
+<string name="validate_account"> บัญชี ตรวจสอบ </string>
+<string name="scores"> คะแนนของฉัน: %1$s </string>
+
+<string name="exchange_scores"> แลกคะแนนสะสม </string>
+
+
+
+
+
+<string name="search_game_more_string"> ผลการค้นหา เพิ่มเติม </string>
+
+<string name="gamestore_guess_you_like_recdesc1"> นิยม ล่าสุด </string>
+
+<string name="gamestore_guess_you_like_recdesc2"> ตาม </string>
+
+<string  name="gamestore_guess_you_like_recdesc3"> ขึ้นอยู่กับความชอบ ของคุณ </string>
+
+<string name="clear_memory_dialog_content"> pengyou ปล่อย หน่วยความจำ %1$s , เล่นเกม ได้อย่างราบรื่น มากขึ้น </string>
+<string name="copy_text"> ต้องคัดลอก %1$s ไปยังคลิปบอร์ด </string>
+
+<string  name="exchange_not_conform_rules"> คะแนนได้มาถึง ขีด จำกัด และ ไม่สามารถ ได้รับ โอ้ </string>
+<string name="network_not_steady"> เก็บคะแนน ล้มเหลว </string>
+<string  name="personal_info_can_getscore">ข้อมูล เสร็จสมบูรณ์ใน ระดับที่สามารถรับได้ถึง 100%% จะได้คะแนน   %1$s  </string>
+<string name="delete_hint"> คุณจะทำการ ดำเนินการลบไม่ </string>
+
+<string name="share_success_and_get_score"> แบ่งปันพบความสำเร็จ คุณจะได้รับ คะแนน %1$s </string>
+<string  name="share_success_but_get_score_limit"> คะแนนถึงขีด จำกัด</string>
+
+<string name="share_success_but_get_score_failed"> เก็บคะแนน ล้มเหลว </string>
+<string name="appraisal_tip1">下载该游戏，点亮评分按钮！</string>
+ <string name="appraisal_tip3">已评分</string>
+ <string name="play_game_timestamp_invalid">您的系统时间设置有误，领取积分失败</string>
+ <string name="forbidden_comment">数据刷新中，稍后评论哦！</string>
+ <string name="share_no_friends">请选择好友</string>
+  <string name="appraisal_tip5">今日已达到获取积分上限！</string> 
+   <string name="appraisal_tip2">评分送%1$s积分！</string>
+</resources>
+
+
+
+
+

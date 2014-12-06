@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_personal_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/add_friend_headerbar"
+        layout="@layout/sub_header_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4.0"
+        android:background="#f3f3f3"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+            <EditText
+                android:id="@+id/edit_sharegame"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="90dip"
+                android:padding="8.0dip"
+                android:gravity="left|top"
+                style="@style/comment_edit"
+                android:background="@drawable/search_bg"/>
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="3dip"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:id="@+id/image_layout"
+                android:layout_width="87dip"
+                android:layout_height="98dip" >
+
+                <ImageView
+                    android:id="@+id/img_add_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_take_photo"
+                    android:scaleType="centerInside"/>
+
+                <ImageView
+                    android:id="@+id/img_delete_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/img_delete_icon"
+                    android:visibility="invisible"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/img_add_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_gravity="center_vertical"
+                android:text="@string/image_add_txt"
+                android:textColor="#C6C6C6"
+                android:textSize="@dimen/main"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

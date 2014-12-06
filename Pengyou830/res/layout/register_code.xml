@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/edit_headerbar"
+        layout="@layout/sub_header_bar" />
+
+    <TextView
+        android:id="@+id/txt_telephone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/regist_telenum_is"
+        android:textSize="16sp"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/please_enter_vacode"
+        android:textColor="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <EditText
+            android:id="@+id/edit_telephone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_text_height"
+            android:background="@drawable/telephone_gray_boder"
+            android:hint="@string/please_enter_vacode_hint"
+            android:numeric="integer"
+            android:maxLength="4"
+            android:paddingLeft="5dip"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txt_resend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_telephone"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="right"
+            android:text="@string/resend_vacode"
+            android:textColor="#265fa5" />
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_resend"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/personal_line" />
+
+        <TextView
+            android:id="@+id/txt_pwd_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_line"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/please_enter_pwd_title"
+            android:textColor="@color/gray" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_text_height"
+            android:layout_below="@id/txt_pwd_title"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/telephone_gray_boder"
+            android:hint="@string/please_enter_pwd_hint"
+            android:paddingLeft="5dip"
+            android:password="true"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</LinearLayout>

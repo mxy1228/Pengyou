@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ll_search_user_result"
+        layout="@layout/sub_header_bar" />
+
+    <RelativeLayout
+        android:id="@+id/add_friend_contacts_content_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+            android:id="@+id/search_user_result_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:cacheColorHint="#00000000" />
+
+        <TextView
+            android:id="@+id/search_result_txt_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text=""
+            android:textColor="@color/empty_date_text"
+            android:textSize="@dimen/empty_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

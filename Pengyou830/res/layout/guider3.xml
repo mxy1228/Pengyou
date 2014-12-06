@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guider_bg"
+    android:orientation="vertical" >
+	<RelativeLayout 
+	    android:id="@+id/guider3_top_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.0dip"
+	    android:layout_weight="2.0">
+	    <ImageView
+	        android:id="@+id/guider3_iv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:scaleType="fitCenter"
+	        android:visibility="gone"
+	        android:src="@drawable/guider3_img"
+	        android:adjustViewBounds="true"/>
+	    <ImageView
+	        android:id="@+id/guider3_mirror_iv"
+	        android:layout_width="100.0dip"
+	        android:layout_height="100.0dip"
+	        android:scaleType="fitCenter"
+	        android:adjustViewBounds="true"
+	        android:visibility="gone"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="180.0dip"
+	        android:layout_marginRight="70.0dip"
+	        android:src="@drawable/guider3_mirror"/>
+	</RelativeLayout>
+	<LinearLayout 
+	    android:id="@+id/guider3_bottom_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.0dip"
+	    android:layout_weight="1.0"
+	    android:paddingLeft="20.0dip"
+	    android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/guider3_tv1"
+	        android:text="@string/guider3_text1"
+	        android:visibility="gone"
+	        style="@style/guider_tv1"/>
+	    <TextView
+	        android:id="@+id/guider3_tv2"
+	        android:visibility="gone"
+	        android:text="@string/guider3_text2"
+	        style="@style/guider_tv2"/>
+	</LinearLayout>
+
+</LinearLayout>

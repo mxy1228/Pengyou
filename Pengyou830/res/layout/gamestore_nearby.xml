@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/gamestore_sub_header" />
+
+        <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+            android:id="@+id/lstview_near"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/empty_bg"
+            android:cacheColorHint="#00000000"
+            attrs:open_pull_refresh="true"
+        />
+
+</LinearLayout>

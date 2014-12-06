@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:drawable="@drawable/coin1" android:duration="60" />  
+   <item android:drawable="@drawable/coin2" android:duration="60" />
+   <item android:drawable="@drawable/coin3" android:duration="60" />
+   <item android:drawable="@drawable/coin4" android:duration="60" />
+   <item android:drawable="@drawable/coin5" android:duration="60" />
+   <item android:drawable="@drawable/coin6" android:duration="60" />
+   <item android:drawable="@drawable/coin7" android:duration="60" />
+   <item android:drawable="@drawable/coin8" android:duration="60" />
+</animation-list>

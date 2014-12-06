@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>  
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+	    android:layout_height="@dimen/header_bar_height"
+	    android:background="@drawable/header_bar_bg">
+		<ImageButton
+        android:id="@+id/gamestore_sub_header_back"
+        android:layout_width="50.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back_btn_xbg"
+        android:src="@drawable/back_btn_bg"/>
+
+   		<LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+        	android:orientation="horizontal" >
+
+        	<TextView
+            	android:layout_width="0.0dip"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1.0" />
+
+        	<ImageButton
+            	android:id="@+id/gamestore_sub_header_search"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:background="@null"
+            	android:scaleType="fitCenter"
+            	android:src="@drawable/header_bar_search_btn" />
+
+        	<ImageButton
+        	    android:id="@+id/gamestore_sub_header_divider"
+            	android:layout_width="wrap_content"
+           	 	android:layout_height="match_parent"
+            	android:layout_marginLeft="6.0dip"
+            	android:background="@null"
+            	android:scaleType="fitCenter"
+            	android:src="@drawable/vertical" />
+
+        	<ImageButton
+            	android:id="@+id/gamestore_sub_header_download"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="7.0dip"
+            	android:layout_marginRight="8.0dip"
+            	android:background="@null"
+            	android:scaleType="fitCenter"
+            	android:src="@drawable/header_bar_download_btn" />
+    	</LinearLayout>
+
+    	<TextView
+	        android:id="@+id/gamestore_sub_header_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:text="@string/game_store_nearby_play"
+	        android:textColor="@color/white"
+	        android:textSize="22.0sp" />
+
+    	<TextView
+        	android:id="@+id/gamestore_sub_header_download_count"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="2.0dip"
+        	android:layout_marginTop="2.0dip"
+        	android:background="@drawable/message_count"
+        	android:gravity="center"
+        	android:textColor="@color/msg_count_text_color"
+        	android:textSize="@dimen/msg_count_text_size"
+        	android:visibility="gone" />
+	</RelativeLayout>

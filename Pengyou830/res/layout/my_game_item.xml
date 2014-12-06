@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/empty_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/my_game_item_banner_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3.0dip"
+        android:background="@color/empty_bg"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/my_game_item_banner_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <ImageButton 
+            android:id="@+id/my_game_item_banner_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/my_game_banner_close_btn"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3.0dip"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/my_game_item_banner_diviver"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@drawable/list_divider"/>
+    
+    <RelativeLayout 
+        android:id="@+id/my_game_item_guess_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="74.0dip"
+        android:background="@drawable/my_game_guess_item_xbg">
+        
+        <ImageView
+            android:id="@+id/my_game_item_guess_icon_iv"
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginLeft="8.0dip"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_default" />
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/guess_game_item_recommend_pic"/>
+        
+        <Button
+            android:id="@+id/my_game_item_guess_download_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:textSize="@dimen/download_btn_text_size"
+	        android:textColor="@color/white"
+	        android:text="@string/download"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:layout_marginRight="8.0dip"
+            android:background="@drawable/download_btn_xbg"/>
+        
+        <Button
+            android:id="@+id/my_game_item_guess_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/my_game_item_guess_download_btn"
+            android:drawableTop="@drawable/my_game_item_guess_change_btn"
+            android:gravity="center"
+            android:minWidth="80.0dip"
+            android:text="@string/change"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textColor="#7c7c7c"
+            android:textSize="10.0sp" />
+        
+        <LinearLayout 
+            android:id="@+id/my_game_item_guess_pb_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/my_game_item_guess_download_btn"
+            android:layout_centerVertical="true"
+            android:minWidth="80.0dip"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ProgressBar 
+	            android:id="@+id/my_game_item_guess_pb"
+		        android:layout_width="23.0dip" 
+		        android:layout_height="23dip"
+		        style="@style/loading_progressbar"
+		        android:indeterminate="false"
+		        android:indeterminateDrawable="@anim/loading_small" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/my_game_item_guess_content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/my_game_item_guess_change_btn"
+            android:layout_toRightOf="@id/my_game_item_guess_icon_iv"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+           <TextView
+               android:id="@+id/my_game_item_guess_name_tv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:singleLine="true"
+               android:text="游戏名称"
+               android:textColor="@color/main"
+               android:layout_gravity="left"
+               android:textSize="@dimen/main" />
+
+            <TextView
+                android:id="@+id/my_game_item_guess_playcount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="4个好友在玩"
+                android:layout_marginTop="3.0dip"
+                android:layout_gravity="left"
+                android:textColor="@color/sub_main"
+                android:textSize="@dimen/game_list_sub" />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/my_game_item_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--  <TextView
+	        android:id="@+id/my_game_item_top_tv"
+	        style="@style/divider"
+	        android:text="我的游戏"
+	        android:textColor="#606060"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D8D9DA"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/my_game_item_click_ll"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:background="@drawable/item_xbg"
+        android:paddingTop="6dip" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_height" 
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_gameicon"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="@dimen/icon_height"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_default" />
+
+            <ImageView
+                android:id="@+id/img_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_mygame_show_new"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+           <TextView
+               android:id="@+id/my_game_item_name_tv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:singleLine="true"
+               android:text="游戏名称"
+               android:textColor="@color/main"
+               android:drawableRight="@drawable/img_game_update_new"
+               android:textSize="@dimen/main" />
+
+            <TextView
+                android:id="@+id/txt_playercount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="4个好友在玩"
+                android:layout_marginTop="1.0dip"
+                android:textColor="@color/sub_main"
+                android:textSize="@dimen/game_list_sub" />
+            <TextView
+                android:id="@+id/txt_playtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:layout_marginTop="1.0dip"
+                android:textColor="@color/sub_main"
+                android:textSize="@dimen/game_list_sub" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/game_circle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="2dip" >
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <ImageView
+	                android:id="@+id/my_game_item_game_circle_iv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/flag_show_comment"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="5.0dip"
+	                android:adjustViewBounds="true"/>
+                
+                <ImageView
+	                android:id="@+id/my_game_item_activity_iv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/my_game_item_activity_pic"
+	                android:layout_marginTop="5.0dip"
+	                android:layout_toLeftOf="@id/my_game_item_game_circle_iv"
+	                android:adjustViewBounds="true"/>
+                
+                <Button
+	                android:id="@+id/img_msg_count"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/my_game_item_game_circle_iv"
+	                android:background="@drawable/message_count_new"
+	                android:textColor="@color/msg_count_text_color"
+	                android:textSize="@dimen/msg_count_text_size" />
+                
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/my_game_item_game_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sub_main"
+                android:textSize="@dimen/game_center_comment_size"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="今日99+/999+"/>
+
+        </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="15.0dip"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/mygame_item_coins_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" 
+                 >
+                <ImageView
+                    android:id="@+id/mygame_item_coins_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/list_icon_60x60"/>
+
+                <ProgressBar
+                    android:id="@+id/mygame_item_coins_pb"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="40dip"
+                    android:layout_height="6dip"
+                    android:max="100"
+                    android:progressDrawable="@drawable/exchange_coins_progressbar_xbg" />
+            </LinearLayout>
+
+	        <Button
+	            android:id="@+id/mygame_item_playgame_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/play_btn_xbg"
+	            android:text="@string/game_play"
+	            android:gravity="center"
+	            android:textSize="@dimen/download_btn_text_size"
+	            android:textColor="@color/white"
+	             />
+	        
+	        <Button
+	            android:id="@+id/mygame_item_download"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/intro_download_btn_xbg"
+	            android:text="@string/download"
+	            android:visibility="gone"
+	            android:textSize="@dimen/download_btn_text_size"
+	            android:textColor="@color/white" />
+	    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_game_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_game_list_bar_height"
+        android:background="@drawable/mygame_item_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="10.7dip"
+        android:paddingBottom="6.7dip">
+
+        <LinearLayout 
+            android:layout_width="0.0dip"
+            android:layout_height="35.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/game_bar_public_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <Button
+	            android:id="@+id/btn_detail"
+	            android:layout_width="0.0dip"
+	            android:layout_weight="1.0"
+	            android:layout_height="match_parent"
+	            android:textColor="#333333"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:paddingTop="3.0dip"
+            	android:paddingBottom="3.0dip"
+            	android:paddingLeft="8.0dip"
+            	android:layout_marginTop="1.0dip"
+            	android:layout_marginBottom="2.0dip"
+            	android:layout_marginLeft="2.0dip"
+            	android:background="@drawable/my_game_bar_btn_left_xbg"
+            	android:drawableLeft="@drawable/my_game_item_bar_intro_pic"
+	            android:text="@string/mygame_item_btn_detail"/>
+	
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#666666"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="8.0dip"/>
+            
+	        <Button
+	            android:id="@+id/btn_share"
+	            android:layout_width="0.0dip"
+	            android:layout_weight="1.0"
+	            android:layout_height="match_parent"
+	            android:textColor="#333333"
+                android:textSize="12sp"
+                android:paddingTop="3.0dip"
+            	android:paddingBottom="3.0dip"
+            	android:paddingLeft="8.0dip"
+            	android:layout_marginTop="1.0dip"
+            	android:layout_marginBottom="2.0dip"
+                android:gravity="center"
+                android:background="@drawable/my_game_bar_btn_mid_xbg"
+                android:drawableLeft="@drawable/my_game_item_bar_share_pic"
+	            android:text="@string/mygame_item_btn_share"/>
+	
+	        <TextView
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#666666"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="8.0dip"/>
+	        
+	        <FrameLayout 
+	            android:layout_width="0.0dip"
+	            android:layout_weight="1.0"
+	            android:layout_height="match_parent">
+	            <Button
+		            android:id="@+id/my_game_item_updat_btn"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:textColor="#333333"
+	                android:textSize="12sp"
+	                android:paddingTop="3.0dip"
+	            	android:paddingBottom="3.0dip"
+	            	android:paddingRight="8.0dip"
+	            	android:paddingLeft="8.0dip"
+	            	android:layout_marginTop="1.0dip"
+            		android:layout_marginBottom="2.0dip"
+            		android:layout_marginRight="2.0dip"
+	            	android:background="@drawable/my_game_bar_btn_right_xbg"
+	            	android:drawableLeft="@drawable/my_game_item_bar_update_pic"
+	                android:gravity="center"
+		            android:text="@string/mygame_item_btn_update"/>
+	            <ImageView
+	                android:id="@+id/my_game_item_update_dot_iv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/message_dot"
+	                android:layout_gravity="right|top"
+	                android:layout_marginTop="2.0dip"
+	                android:layout_marginRight="4.0dip"
+	                android:adjustViewBounds="true"/>
+	        </FrameLayout>
+	        
+        </LinearLayout>
+
+            <Button 
+                android:id="@+id/my_game_item_showgame_btn"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dip"
+                android:layout_weight="1.0"
+                android:text="已隐藏"
+                android:textColor="#333333"
+                android:layout_marginLeft="6.7dip"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:background="@drawable/game_bar_public_btn_xbg"/>
+    </LinearLayout>
+
+</LinearLayout>

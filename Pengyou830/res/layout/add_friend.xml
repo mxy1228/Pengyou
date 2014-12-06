@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/empty_bg">
+    
+    <include 
+        android:id="@+id/add_friend_headerbar"
+        layout="@layout/sub_header_bar"/>
+    
+    <RadioGroup
+        android:id="@+id/add_friend_rg"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/small_padding"
+        android:layout_height="wrap_content">
+        <RadioButton 
+            android:id="@+id/add_friend_guess_rbtn"
+            style="@style/add_friend_tab"
+            android:text="@string/you_may_known"
+            android:drawableTop="@drawable/you_may_known_pic_normal"
+            android:background="#00FFFFFF"/>
+        <RadioButton 
+            android:id="@+id/add_friend_contacts_rbtn"
+            style="@style/add_friend_tab"
+            android:text="@string/contacts"
+            android:background="#00FFFFFF"
+            android:drawableTop="@drawable/contacts_pic_normal"/>
+        <RadioButton 
+            android:id="@+id/add_friend_import_rbtn"
+            style="@style/add_friend_tab"
+            android:text="@string/import_friends"
+            android:background="#00FFFFFF"
+            android:drawableTop="@drawable/import_pic_normal"/>
+        <RadioButton 
+            android:id="@+id/add_friend_code_rbtn"
+            style="@style/add_friend_tab"
+            android:text="@string/qr_code"
+            android:background="#00FFFFFF"
+            android:drawableTop="@drawable/qr_code_pic_normal" android:visibility="gone"/>
+    </RadioGroup>
+	
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_marginTop="@dimen/small_padding">
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_gravity="bottom"
+            android:background="#d8d9da"/>
+        <ImageView
+            android:id="@+id/add_friend_anim_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"/>
+    </FrameLayout> 
+    
+	<android.support.v4.view.ViewPager 
+	    android:id="@+id/add_friend_viewpager"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.0dip"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"/>
+</LinearLayout>

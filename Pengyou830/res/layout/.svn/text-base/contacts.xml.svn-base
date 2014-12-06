@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/contacts_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/empty_text_color"
+        android:textSize="@dimen/main"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="60.0dip"
+        android:text="@string/contants_is_empty"/>
+    
+    <LinearLayout 
+        android:id="@+id/contacts_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+        
+        <com.cyou.mrd.pengyou.widget.SearchBar
+	        android:id="@+id/contants_search_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+	        <TextView
+	            android:id="@+id/contacts_title_tv" 
+	            android:layout_width="match_parent"
+			    android:layout_height="@dimen/contact_title" 
+			    android:textStyle="bold"
+			    style="@style/divider"
+			    android:layout_alignParentTop="true"/>
+	        <com.cyou.mrd.pengyou.widget.PullTitleListView
+			    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+			    android:id="@+id/contacts_lv"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:fadingEdge="none"/>
+	        <com.cyou.mrd.pengyou.widget.ContactActionBar
+	            android:id="@+id/contacts_ab"
+	            android:layout_width="22dip"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/contact_letter_xbg"
+	            android:layout_alignParentRight="true"/>
+	        <TextView 
+	             android:id="@+id/contacts_dialog_tv"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:textColor="@color/white"
+	             android:textSize="@dimen/main"
+	             android:textStyle="bold"
+	             android:gravity="center"
+	             android:visibility="gone"
+	             android:layout_centerInParent="true"
+	             android:background="@drawable/contact_dialog_tv_bg"/>
+	    </RelativeLayout>
+	    
+    </LinearLayout>
+    
+</LinearLayout>

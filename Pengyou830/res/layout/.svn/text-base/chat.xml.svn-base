@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cyou.mrd.pengyou.widget.ChatImmeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_immelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/empty_bg">
+    <include 
+        android:id="@+id/chat_header_bar"
+        layout="@layout/sub_header_bar"/>
+
+    <com.cyou.mrd.pengyou.widget.ChatListView
+        android:id="@+id/chat_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@null"
+        android:listSelector="@null"
+        android:fadingEdge="none"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4.0dip"
+        android:orientation="horizontal"
+        android:background="@drawable/friend_search_bg"
+        android:gravity="center_vertical">
+        <EditText 
+            android:id="@+id/chat_bottom_et"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginRight="@dimen/small_padding"
+            style="@style/comment_edit"
+            android:background="@drawable/search_bg"/>
+        <Button
+            android:id="@+id/chat_bottom_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_comment_btn_xbg"
+            android:text="@string/send"
+            android:textSize="@dimen/main"
+            android:paddingTop="6.0dip"
+	        android:paddingBottom="6.0dip"
+	        android:paddingLeft="10.0dip"
+	        android:paddingRight="10.0dip"
+	        android:layout_marginLeft="4.0dip"
+	        android:layout_marginRight="2.0dip"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</com.cyou.mrd.pengyou.widget.ChatImmeLayout>

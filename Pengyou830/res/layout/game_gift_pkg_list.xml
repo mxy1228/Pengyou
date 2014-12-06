@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/game_gift_pkg_list_headerbar"
+        layout="@layout/sub_header_bar" />
+
+    <TextView
+        android:id="@+id/game_gift_pkg_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="没有礼包"
+        android:textColor="@color/empty_text_color"
+        android:textSize="@dimen/main"
+        android:visibility="gone" />
+
+    <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+        xmlns:attrs="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/game_gift_pkg_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        attrs:divider="true"
+        attrs:open_pull_refresh="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@drawable/pull_fresh_list_divider"/>
+ 
+
+</LinearLayout>

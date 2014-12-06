@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guider_bg"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+	    android:id="@+id/guider5_top_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.0dip"
+	    android:layout_weight="2.0">
+	    <ImageView
+	        android:id="@+id/guider5_iv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/guider5_img"
+	        android:visibility="gone"
+	        android:adjustViewBounds="true"/>
+	    <ImageView
+	        android:id="@+id/guider5_mirror_iv"
+	        android:layout_width="100.0dip"
+	        android:layout_height="100.0dip"
+	        android:scaleType="fitCenter"
+	        android:adjustViewBounds="true"
+	        android:layout_alignParentRight="true"
+	        android:visibility="gone"
+	        android:layout_marginTop="165.0dip"
+	        android:layout_marginRight="50.0dip"
+	        android:src="@drawable/guider5_mirror"/>
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/guider5_bottom_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.0dip"
+	    android:layout_weight="1.0"
+	    android:paddingLeft="20.0dip"
+	    android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/guider5_tv1"
+	        android:text="@string/guider5_text1"
+	        android:visibility="gone"
+	        style="@style/guider_tv1"/>
+	    <TextView
+	        android:id="@+id/guider5_tv2"
+	        android:text="@string/guider5_text2"
+	        android:layout_below="@id/guider5_tv1"
+	        android:visibility="gone"
+	        style="@style/guider_tv2"/>
+	    <ImageButton
+	        android:id="@+id/guider_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dip"
+	        android:visibility="gone"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginBottom="40.0dip"
+	        android:layout_marginTop="6.0dip"
+	        android:layout_below="@id/guider5_tv2"
+	        android:background="@drawable/guider_btn_xbg" />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/empty_bg">
+
+    <GridView
+        android:id="@+id/classify_game_gv"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="2" android:background="@color/empty_bg" android:listSelector="@color/empty_bg">
+    </GridView>
+
+</LinearLayout>

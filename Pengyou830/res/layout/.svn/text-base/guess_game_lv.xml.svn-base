@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/my_game_item_banner_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/my_game_guess_banner_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <ImageButton 
+            android:id="@+id/my_game_guess_banner_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/my_game_banner_close_btn"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/my_game_guess_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/list_divider"
+        android:layout_marginTop="6.7dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:dividerHeight="3px"
+        android:background="@drawable/guess_lv_bg"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none" />
+
+</LinearLayout>

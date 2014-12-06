@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_xbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/contact_item_top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/divider_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="" android:visibility="gone"
+        android:textColor="@color/main"
+        android:textStyle="bold" android:paddingLeft="5dip"/>
+
+    <LinearLayout
+        android:id="@+id/ll_sian_friend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding" >
+
+        <com.cyou.mrd.pengyou.widget.RoundImageView
+            android:id="@+id/img_usericon"
+            android:layout_width="@dimen/avatar_width"
+            android:layout_height="@dimen/avatar_height"
+            android:layout_marginRight="5.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/contact_item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/main"
+                android:textSize="@dimen/main"
+                android:textStyle="bold" android:maxLength="8"/>
+
+            <TextView
+                android:id="@+id/contact_item_nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/main"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contact_item_num_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/main"
+            android:textSize="@dimen/main" android:maxLength="8" />
+
+        <Button
+            android:id="@+id/contact_item_letter_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focus_btn_xbg" android:text="@string/focus"/>
+    </LinearLayout>
+
+</LinearLayout>

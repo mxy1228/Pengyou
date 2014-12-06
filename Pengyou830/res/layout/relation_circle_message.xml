@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+        android:id="@+id/relation_circle_message_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+	    attrs:open_pull_refresh="false"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@drawable/list_divider"/>
+    <TextView
+        android:id="@+id/relation_circle_message_empty"
+        android:layout_marginTop="60.0dip"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/empty_text_color"
+        android:text="@string/no_relationcircle_msg"
+        android:gravity="center"
+        android:textSize="@dimen/main"/>
+    <Button
+        android:id="@+id/relation_circle_message_load_more_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/relation_msg_load_more_btn_xbg"
+        android:textSize="17.3sp"
+        android:paddingTop="20.0dip"
+        android:textColor="#7c7c7c"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/press_check_more_msg"
+        android:paddingBottom="20.0dip"/>
+    
+</LinearLayout>

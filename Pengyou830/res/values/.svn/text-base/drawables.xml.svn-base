@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item type="drawable" name="dialog_btn_text_normal">#ff000000</item>
+    <item type="drawable" name="dialog_btn_text_press">#ffffffff</item>
+    <item type="drawable" name="location_select_empty">#f8f8f8</item>
+    <item type="drawable" name="more_tv_normal">#fff8f8f8</item>
+    <item type="drawable" name="more_tv_press">#e2e5ea</item>
+    <item type="drawable" name="comment_first_normal_bg">#f5f5f5</item>
+    <item type="drawable" name="comment_first_press_bg">#dcdcdc</item>
+    <item type="drawable" name="list_item_normal_bg">#f1f2f5</item>
+    <item type="drawable" name="list_item_press_bg">#dde0e5</item>
+    <item type="drawable" name="nearby_item_normal_bg">#66FFFFFF</item>
+    <item type="drawable" name="back_btn_press">#003366</item>
+    <item type="drawable" name="back_btn_normal">#00000000</item>
+    <item type="drawable" name="item_normal">#f3f3f3</item>
+    <item type="drawable" name="item_press">#e8e8e8</item>
+    <item type="drawable" name="dynamic_top">#e2e2e2</item>
+    <item type="drawable" name="dynamic_comment_normal">#e3e9f1</item>
+    <item type="drawable" name="dynamic_comment_press">#c2cedf</item>
+    <item type="drawable" name="relation_msg_load_more_btn_normal">#E8E8E8</item>
+    <item type="drawable" name="relation_msg_load_more_btn_poress">#cccccc </item>
+    <item type="drawable" name="pop_btn_normal">#00000000</item>
+    <item type="drawable" name="pop_btn_press">#e0000000</item>
+    <item type="drawable" name="friend_info_pop_btn_press">#e8000000</item>
+    <item type="drawable" name="personal_center_item_press">#508d8d8d</item>
+    <item type="drawable" name="guess_game_item_normal">#FFFFFF</item>
+    <item type="drawable" name="guess_game_item_press">#e0e0e0</item>
+    <item type="drawable" name="my_game_item_bar_bg">#303030</item>
+    <item type="drawable" name="my_game_item_bar_btn_press_d">#999999</item>
+    <item type="drawable" name="relation_item_normal_bg">#0F000000</item>
+    <item type="drawable" name="my_game_item_guess_item_normal">#f8f5e2</item>
+    <item type="drawable" name="my_game_item_guess_item_press">#e8e5ce</item>
+</resources>

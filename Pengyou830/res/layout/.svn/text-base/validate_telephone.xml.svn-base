@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/edit_headerbar"
+        layout="@layout/sub_header_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/line_gray_boder"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/validate_telephone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_text_height"
+                android:background="@color/white"
+                android:hint="@string/login_tele_hint"
+                android:numeric="integer"
+                android:paddingLeft="5dip"
+                android:gravity="center_vertical"
+                android:maxLength="11"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/bolid" />
+
+            <EditText
+                android:id="@+id/validate_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_text_height"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:hint="@string/login_pwd_hint"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:password="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20dip"
+            android:background="#dfe0e4" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/validate_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_login"
+                android:text="@string/validate"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/main" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:src="@drawable/line_or" android:visibility="gone"/>
+
+            <!-- <Button
+                android:id="@+id/validate_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_login_regist"
+                android:text="@string/regist_btn"
+                android:textColor="@color/black" 
+                android:visibility="gone"
+                android:textSize="@dimen/main" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

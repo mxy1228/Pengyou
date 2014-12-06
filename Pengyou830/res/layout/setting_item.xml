@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/empty_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+
+    <RelativeLayout 
+        android:id="@+id/setting_item_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+	        android:id="@+id/setting_item_name_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textColor="#747474"
+	        android:textSize="14.7sp"
+	        android:text="设置"/>
+		
+	    <ImageView 
+	        android:id="@+id/setting_item_arrow_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleType="center"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:visibility="gone"
+	        android:src="@drawable/next_grey"
+	        android:adjustViewBounds="true"/>
+	    
+	    <CheckBox
+            android:focusable="false"
+            android:id="@+id/setting_item_cb"
+            style="@style/more_checkbox"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dip" />
+	    
+	    <TextView
+            android:id="@+id/setting_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="17sp"
+            android:text="V1.1.0"/>
+    </RelativeLayout>
+    
+</LinearLayout>

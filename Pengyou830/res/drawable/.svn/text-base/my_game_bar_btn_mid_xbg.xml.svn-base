@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true">
+        <shape >
+            <solid android:color="@drawable/my_game_item_bar_btn_press_d" />
+            <corners android:topLeftRadius="1.0px" android:topRightRadius="1.0px" android:bottomLeftRadius="1.0px" android:bottomRightRadius="1.0px"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape >
+            <solid android:color="@drawable/my_game_item_bar_btn_press_d" />
+            <corners android:topLeftRadius="1.0px" android:topRightRadius="1.0px" android:bottomLeftRadius="1.0px" android:bottomRightRadius="1.0px"/>
+        </shape>
+    </item>
+    <item>
+        <shape >
+            <solid android:color="@drawable/back_btn_normal" />
+            <corners android:topLeftRadius="1.0px" android:topRightRadius="1.0px" android:bottomLeftRadius="1.0px" android:bottomRightRadius="1.0px"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+      <include 
+		    android:id="@+id/layout_headerbar"
+		    layout="@layout/gamestore_sub_header"/>
+    
+    <RadioGroup
+        android:id="@+id/me_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="@dimen/me_tab_padding"
+        android:paddingRight="@dimen/me_tab_padding"
+        android:paddingTop="5.0dip" >
+
+        <RadioButton
+            android:id="@+id/me_personal_center_btn"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:text="@string/classify_game_detail_news"
+            android:textColor="@color/tab_text_select" />
+
+        <RadioButton
+            android:id="@+id/me_myfriend_btn"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:text="@string/classify_game_detail_hot"
+            android:textColor="@color/tab_text_normal" />
+
+        <RadioButton
+            android:id="@+id/me_mynearby_btn"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:text="@string/classify_game_detail_good"
+            android:textColor="@color/tab_text_normal" />
+    </RadioGroup>
+
+     
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="5px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9"/>
+        <TextView
+	        android:id="@+id/me_anim_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="5px"
+	        android:layout_marginLeft="@dimen/me_tab_padding"
+	        android:background="#0094e9"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/me_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical" />
+
+</LinearLayout>

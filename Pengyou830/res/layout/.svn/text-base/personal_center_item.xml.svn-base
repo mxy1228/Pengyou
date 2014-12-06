@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6.7dip"
+    android:paddingRight="6.7dip"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/empty_bg">
+    
+    <RelativeLayout 
+        android:id="@+id/personal_center_item_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10.7dip"
+        android:paddingBottom="10.7dip"
+        android:paddingLeft="18.7dip"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:id="@+id/personal_center_item_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/personal_center_phone_pic"/>
+        
+        <TextView
+	        android:id="@+id/personal_center_item_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20.0dip"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@id/personal_center_item_iv"
+	        android:textColor="#747474"
+	        android:textSize="14.7sp"
+	        android:text="设置"/>
+		
+	    <Button 
+            android:id="@+id/personal_center_item_dot_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginRight="18.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_toRightOf="@id/personal_center_item_tv"
+            android:textColor="@color/msg_count_text_color"
+            android:textSize="@dimen/msg_count_text_size"
+            android:background="@drawable/message_count"/>
+	    
+	    <ImageView
+	        android:id="@+id/personal_center_item_arrow_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/next_grey"
+	        android:layout_centerVertical="true"
+	        android:scaleType="center"
+	        android:adjustViewBounds="true"
+	        android:layout_marginRight="6.0dip"
+	        android:layout_alignParentRight="true"/>
+	    
+	    <TextView
+	        android:id="@+id/personal_center_item_hint_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20.0dip"
+	        android:textColor="#747474"
+	        android:text="更换"
+	        android:textSize="14.7sp"
+	        android:layout_marginRight="6.7dip"
+	        android:layout_toLeftOf="@id/personal_center_item_arrow_iv"/>
+    </RelativeLayout>
+    
+</LinearLayout>

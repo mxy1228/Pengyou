@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_mygame_list_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/rank_game_rg"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/small_padding" >
+
+            <RadioButton
+                android:id="@+id/rbtn_rank_friend"
+                style="@style/add_friend_tab"
+                android:background="@color/rank_title_default"
+                android:drawableTop="@drawable/you_may_known_pic_normal"
+                android:gravity="top|center_horizontal"
+                android:text="@string/title_rank_friend" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/line_rank_img" />
+
+            <RadioButton
+                android:id="@+id/rbtn_rank_world"
+                style="@style/add_friend_tab"
+                android:background="@color/rank_title_default"
+                android:drawableTop="@drawable/btn_rank_world"
+                android:gravity="top|center_horizontal"
+                android:text="@string/title_rank_world" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/line_rank_img" />
+
+            <RadioButton
+                android:id="@+id/rbtn_rank_near"
+                style="@style/add_friend_tab"
+                android:background="@color/rank_title_default"
+                android:drawableTop="@drawable/btn_rank_near"
+                android:gravity="top|center_horizontal"
+                android:text="@string/title_rank_near" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_mygame_list_line" />
+
+</LinearLayout>

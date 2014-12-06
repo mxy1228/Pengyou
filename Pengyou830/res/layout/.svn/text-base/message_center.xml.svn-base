@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/empty_bg">
+    
+    <include android:id="@+id/message_center_header"
+        layout="@layout/sub_header_bar"/>
+    
+    <!--  <RadioGroup 
+        android:id="@+id/message_center_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/me_tab_padding"
+        android:paddingRight="@dimen/me_tab_padding"
+        android:paddingTop="5.0dip"
+        android:paddingBottom="5.0dip">
+        <RadioButton
+            android:id="@+id/message_center_personal_btn"
+            android:text="@string/private_message"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:textColor="@color/tab_text_select"/>
+        <RadioButton 
+            android:id="@+id/message_center_relation_circle_btn"
+            android:text="@string/notification"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:textColor="@color/tab_text_normal"/>"
+    </RadioGroup>-->
+    <LinearLayout 
+        android:id="@+id/message_center_tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/me_tab_padding"
+        android:paddingRight="@dimen/me_tab_padding"
+        android:paddingTop="5.0dip"
+        android:paddingBottom="5.0dip">
+        <TextView
+            android:id="@+id/message_center_personal_tv"
+            android:text="@string/private_message"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:textColor="@color/tab_text_select"/>
+        <TextView 
+            android:id="@+id/message_center_relation_circle_tv"
+            android:text="@string/notification"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:textColor="@color/tab_text_normal"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="5px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9"/>
+        <TextView
+	        android:id="@+id/message_center_anim_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="5px"
+	        android:layout_marginLeft="@dimen/me_tab_padding"
+	        android:background="#0094e9"/>
+    </RelativeLayout>
+    
+	<android.support.v4.view.ViewPager 
+	    android:id="@+id/me_viewpager"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.0dip"
+	    android:layout_weight="1.0"
+	    android:orientation="vertical"/>
+</LinearLayout>

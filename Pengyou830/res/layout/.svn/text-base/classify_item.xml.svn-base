@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/empty_bg" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/avatar_width"
+            android:layout_height="@dimen/avatar_height" >
+
+            <ImageView
+                android:id="@+id/classify_item_iv"
+                android:layout_width="@dimen/avatar_width"
+                android:layout_height="@dimen/avatar_height"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="5dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/game_classify_icon_default" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/classify_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:text=""
+            android:textColor="@color/main"
+            android:textSize="@dimen/main" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/line_classify" />
+
+</RelativeLayout>

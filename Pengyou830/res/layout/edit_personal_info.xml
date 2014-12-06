@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res/com.cyou.mrd.pengyou"
+    android:id="@+id/edit_personal_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/edit_headerbar"
+        layout="@layout/sub_header_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="7.9"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="3.0" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:background="#ffffffff" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:background="#ffdbdbdb" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffffff"
+                    android:orientation="vertical"
+                    android:padding="10.0dip" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/person_info_progress_text" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dip"  android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dip" android:gravity="center_vertical">
+
+                            <ProgressBar
+                                android:id="@+id/pb_personal_info"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_centerVertical="true"
+                                android:max="100"
+                                android:progressDrawable="@drawable/userinfo_pb" />
+
+                            <TextView
+                                android:id="@+id/txt_personal_sprogress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:textSize="11sp"
+                                 android:layout_centerVertical="true"
+                                android:text="94"
+                                android:textColor="@color/main" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_personal_score_discrib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="test" />
+
+                    <ImageView
+                        android:id="@+id/img_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:src="@drawable/personal_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:text="@string/bind_tele_info" />
+
+                    <LinearLayout
+                        style="@style/edit_info_ll"
+                        android:layout_margin="1px"
+                        android:layout_marginBottom="20dip"
+                        android:background="@drawable/table_whole_bg" >
+
+                        <ImageView
+                            android:id="@+id/img_tele_finish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dip"
+                            android:src="@drawable/img_info_finish"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/img_tele_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6.0" >
+
+                            <TextView
+                                android:id="@+id/txt_telephone"
+                                style="@style/edit_tabrow_hint"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginRight="5dip"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <Button
+                                android:id="@+id/btn_bindtele"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bind_telp_btn_xbg"
+                                android:gravity="center"
+                                android:text="@string/btn_bindtele_unbind"
+                                android:textColor="@color/bind_sns_text_state"
+                                android:textSize="@dimen/main" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:src="@drawable/personal_line" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_whole_bg"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/edit_icon_ll"
+                            style="@style/edit_info_ll"
+                            android:layout_margin="1px"
+                            android:background="@drawable/table_up_bg" >
+
+                            <ImageView
+                                android:id="@+id/img_usericon_finish"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dip"
+                                android:src="@drawable/img_info_finish"
+                                android:visibility="gone" />
+
+                            <TextView
+                                style="@style/edit_tabrow_hint"
+                                android:layout_height="wrap_content"
+                                android:text="@string/icon_user"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.0"
+                                android:gravity="right" >
+
+                                <com.cyou.mrd.pengyou.widget.RoundImageView
+                                    android:id="@+id/edit_info_header_iv"
+                                    android:layout_width="@dimen/avatar_width"
+                                    android:layout_height="@dimen/avatar_height"
+                                    android:layout_marginRight="5.0dip"
+                                    attrs:bg_color="#fff8f8f8" />
+                            </RelativeLayout>
+
+                            <ImageView style="@style/edit_tabrow_next" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/bolid" />
+
+                        <LinearLayout
+                            android:id="@+id/edit_nickname_ll"
+                            style="@style/edit_info_ll"
+                            android:layout_margin="1px"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/table_mid_bg" >
+
+                            <ImageView
+                                android:id="@+id/img_nickname_finish"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dip"
+                                android:src="@drawable/img_info_finish"
+                                android:visibility="gone" />
+
+                            <TextView
+                                style="@style/edit_tabrow_hint"
+                                android:layout_height="wrap_content"
+                                android:text="@string/nickname"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <TextView
+                                android:id="@+id/edit_info_nickname_tv"
+                                style="@style/edit_tabrow_tv"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5.0dip"
+                                android:gravity="right" />
+
+                            <ImageView style="@style/edit_tabrow_next" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/bolid" />
+
+                        <LinearLayout
+                            android:id="@+id/edit_gender_ll"
+                            style="@style/edit_info_ll"
+                            android:layout_margin="1px"
+                            android:background="@drawable/table_mid_bg" >
+
+                            <ImageView
+                                android:id="@+id/img_sex_finish"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dip"
+                                android:src="@drawable/img_info_finish"
+                                android:visibility="gone" />
+
+                            <TextView
+                                style="@style/edit_tabrow_hint"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gender"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <LinearLayout
+                                style="@style/edit_tabrow_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginRight="8dip"
+                                android:gravity="right|center_vertical" >
+
+                                <ImageView
+                                    android:id="@+id/img_sex"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/img_person_sex_male"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/edit_info_gender_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:textColor="#FF000000"
+                                    android:textSize="17sp" />
+                            </LinearLayout>
+
+                            <ImageView style="@style/edit_tabrow_next" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/bolid" />
+
+                        <LinearLayout
+                            android:id="@+id/edit_birthday_ll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1px"
+                            android:background="@drawable/table_down_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="10dip" >
+
+                            <ImageView
+                                android:id="@+id/img_birthday_finish"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dip"
+                                android:src="@drawable/img_info_finish"
+                                android:visibility="gone" />
+
+                            <TextView
+                                style="@style/edit_tabrow_hint"
+                                android:layout_height="wrap_content"
+                                android:text="@string/birthday"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <TextView
+                                android:id="@+id/edit_info_birthday_tv"
+                                style="@style/edit_tabrow_tv"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5.0dip"
+                                android:gravity="right" />
+
+                            <ImageView style="@style/edit_tabrow_next" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="20dip"
+                        android:background="@drawable/table_whole_bg"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/edit_mydcode_ll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dip"
+                            android:background="@drawable/table_up_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="10dip"
+                            android:visibility="gone" >
+
+                            <TextView
+                                style="@style/edit_tabrow_hint"
+                                android:layout_height="wrap_content"
+                                android:text="@string/userinfo_dcode_title"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <TextView
+                                android:id="@+id/edit_info_birthday_tv"
+                                style="@style/edit_tabrow_tv"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView style="@style/edit_tabrow_next" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/edit_locate_ll"
+                            style="@style/edit_info_ll"
+                            android:layout_margin="1px"
+                            android:background="@drawable/table_up_bg" >
+
+                            <ImageView
+                                android:id="@+id/img_address_finish"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dip"
+                                android:src="@drawable/img_info_finish"
+                                android:visibility="gone" />
+
+                            <TextView
+                                style="@style/edit_tabrow_hint"
+                                android:layout_height="wrap_content"
+                                android:text="@string/locate"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <TextView
+                                android:id="@+id/edit_info_locate_tv"
+                                style="@style/edit_tabrow_tv"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5.0dip"
+                                android:gravity="right" />
+
+                            <ImageView style="@style/edit_tabrow_next" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/bolid" />
+
+                        <LinearLayout
+                            android:id="@+id/edit_favgame_ll"
+                            style="@style/edit_info_ll"
+                            android:layout_margin="1px"
+                            android:background="@drawable/table_mid_bg"
+                            android:visibility="gone" >
+
+                            <TextView
+                                style="@style/edit_tabrow_hint"
+                                android:layout_height="wrap_content"
+                                android:text="@string/userinfo_gamefav_title"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <TextView
+                                android:id="@+id/edit_info_favgame_tv"
+                                style="@style/edit_tabrow_tv"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView style="@style/edit_tabrow_next" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/bolid"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/edit_info_tag_ll"
+                            style="@style/edit_info_ll"
+                            android:layout_margin="1px"
+                            android:background="@drawable/table_mid_bg" >
+
+                            <ImageView
+                                android:id="@+id/img_tag_finish"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dip"
+                                android:src="@drawable/img_info_finish"
+                                android:visibility="gone" />
+
+                            <TextView
+                                style="@style/edit_tabrow_hint"
+                                android:layout_height="wrap_content"
+                                android:text="@string/personal_tag"
+                                android:textColor="@color/edit_personal_left_text" />
+
+                            <TextView
+                                android:id="@+id/edit_info_tag_tv"
+                                style="@style/edit_tabrow_tv"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5.0dip"
+                                android:gravity="right"
+                                android:singleLine="true" />
+
+                            <ImageView style="@style/edit_tabrow_next" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/bolid" />
+
+                        <LinearLayout
+                            android:id="@+id/edit_info_sns_ll"
+                            style="@style/edit_info_ll_sina"
+                            android:layout_margin="1px"
+                            android:background="@drawable/table_down_bg" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/imprt_from_sina" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.0" >
+
+                                <TextView
+                                    android:id="@+id/txt_bindsns_state"
+                                    style="@style/edit_tabrow_hint"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dip"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text="@string/txt_bindsina"
+                                    android:textColor="@color/edit_personal_left_text" />
+
+                                <Button
+                                    android:id="@+id/btn_bindsns"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bind_telp_btn_xbg"
+                                    android:gravity="center"
+                                    android:text="@string/btn_bindtele_unbind_sns"
+                                    android:textColor="@color/bind_sns_text_state"
+                                    android:textSize="@dimen/main" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

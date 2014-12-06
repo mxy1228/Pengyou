@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/intro_player_gv_height"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:padding="8.0dip"
+    android:background="@drawable/item_xbg" xmlns:app="http://schemas.android.com/apk/res/com.cyou.mrd.pengyou">
+    
+    <com.cyou.mrd.pengyou.widget.RoundImageView
+        android:id="@+id/intro_player_item_avatar"
+        android:layout_width="@dimen/small_avatar_width"
+        android:layout_height="@dimen/small_avatar_height"
+        attrs:small="true"
+        attrs:bg_color="@color/empty_bg"/>
+    
+    <TextView
+        android:id="@+id/intro_player_item_nickname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="@dimen/sub_main"/>
+
+</LinearLayout>

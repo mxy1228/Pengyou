@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="5.0dip"
+    android:orientation="horizontal" >
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/main"
+            android:textColor="@color/main"
+            android:text="朋游新版本更新"/>
+        <ProgressBar 
+	        android:id="@+id/update_notification_pb"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:max="100"
+	        android:layout_marginTop="5.0dip"
+	        style="@android:style/Widget.ProgressBar.Horizontal"
+	        android:progressDrawable="@drawable/download_pb"/>
+        <TextView 
+            android:id="@+id/update_notification_tv"
+            android:layout_marginTop="5.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sub_main"
+            android:textSize="@dimen/sub_main"
+            android:text="下载完成，点击安装"/>
+    </LinearLayout>
+</LinearLayout>

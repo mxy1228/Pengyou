@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+    
+    
+
+    <RelativeLayout 
+        style="@style/header">
+	
+	    <TextView
+	        android:id="@+id/me_header_feedback_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="33dip"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:drawableLeft="@drawable/btn_feedback"
+	        android:background="@drawable/header_btn_xbg"
+	        android:layout_marginLeft="6.7dip"
+	        android:drawablePadding="4.6dip"
+	        android:text="@string/feed_back_btn"
+	        android:textColor="@color/white"
+	        android:visibility="gone" />
+	    
+	    <TextView
+	        android:id="@+id/me_header_tv"
+	        android:text="@string/me"
+	        style="@style/header_tv"
+	        android:layout_width="140.0dip"/>
+	
+	    <FrameLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="14.0dip"
+	        android:layout_marginRight="8.0dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true">
+	        <ImageButton
+	            android:id="@+id/me_header_right_btn"
+	            android:layout_width="40.0dip"
+	            android:layout_height="40.0dip"
+	            android:background="@null"
+	            android:layout_margin="6.0dip"
+	            android:adjustViewBounds="true"
+	            android:scaleType="center"
+	            android:layout_gravity="center_vertical"
+	            android:src="@drawable/header_bar_download_btn" />
+	        <TextView
+		        android:id="@+id/me_header_download_count_tv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|top"
+		        android:background="@drawable/message_count"
+		        android:gravity="center"
+		        android:visibility="gone"
+		        android:textColor="@color/msg_count_text_color"
+		        android:textSize="@dimen/msg_count_text_size"/>
+	    </FrameLayout>
+	    
+    </RelativeLayout>
+    
+    <RadioGroup
+        android:id="@+id/me_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="@dimen/me_tab_padding"
+        android:paddingRight="@dimen/me_tab_padding"
+        android:paddingTop="5.0dip" >
+
+        <RadioButton
+            android:id="@+id/me_personal_center_btn"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:text="@string/personal_center"
+            android:textColor="@color/tab_text_select" />
+
+        <RadioButton
+            android:id="@+id/me_myfriend_btn"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:text="@string/my_friend"
+            android:textColor="@color/tab_text_normal" />
+
+        <RadioButton
+            android:id="@+id/me_mynearby_btn"
+            style="@style/me_tab_rb"
+            android:background="@color/empty_bg"
+            android:text="@string/my_nearby"
+            android:textColor="@color/tab_text_normal" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="5px" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+
+        <TextView
+            android:id="@+id/me_anim_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="5px"
+            android:layout_marginLeft="@dimen/me_tab_padding"
+            android:background="#0094e9" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/me_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical" />
+
+</LinearLayout>

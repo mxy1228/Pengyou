@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/empty_bg">
+
+    <include
+    	android:id="@+id/layout_header"
+        layout="@layout/gamestore_sub_header" />
+
+    <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+        android:id="@+id/gamestore_friend_listview"
+    	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/empty_bg"
+        attrs:open_pull_refresh="true"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none" />
+    
+  	<RelativeLayout
+        android:id="@+id/gamestore_friend_fail"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+        <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+	   	    android:id="@+id/gamestore_friend_guess"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/empty_bg"
+	        android:layout_alignParentBottom="true"
+	        android:cacheColorHint="#00000000"
+	        android:fadingEdge="none" >
+	  	</com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView>  
+		<TextView
+	        android:id="@+id/gamestore_friend_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:background="@drawable/divider_bg"
+            android:gravity="center"
+            android:layout_above ="@+id/gamestore_friend_guess"
+            android:text="@string/mygame_guess_youlike_title"
+            android:textColor="@color/divider_text_color"
+            android:textSize="@dimen/divider_text_size" />
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+            android:layout_above ="@+id/gamestore_friend_divider"
+        	android:gravity="center"	
+        	android:orientation="vertical" >
+       		<ImageView                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+           		android:layout_width="wrap_content"
+           		android:layout_height="wrap_content"
+           	    android:scaleType="fitCenter"     
+           	    android:src="@drawable/gamestore_add_friend" />
+       		<TextView
+                android:layout_width="wrap_content"
+           		android:layout_height="wrap_content"
+           		android:gravity="center_horizontal"
+           		android:layout_marginTop="10dip"
+           		android:singleLine="true"
+           		android:text="@string/game_store_friend_add_more"
+           		android:textColor="#bdbdbd"
+           		android:textSize="16sp" />
+       		<Button
+           		android:id="@+id/gamestore_friend_add_btn"
+           		android:layout_width="wrap_content"
+           		android:layout_height="wrap_content"
+           		android:layout_marginTop="12dip"
+           		android:background="@drawable/game_store_add_friend"
+           		android:gravity="center"
+           		android:text="@string/game_store_friend_add"
+           		android:textSize="16sp"
+          		android:textColor="@color/white" />
+		</LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/recently_game_item_height"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="@drawable/item_xbg"
+    android:padding="@dimen/recent_game_padding">
+    <ImageView
+        android:id="@+id/recently_game_item_icon_iv"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_height"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_default"/>
+	<TextView
+	    android:id="@+id/recently_game_item_tv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="游戏AAA名称"
+	    android:ellipsize="middle"
+	    android:singleLine="true"
+	    android:textColor="@color/main"
+	    android:textSize="@dimen/sub_main"/>
+</LinearLayout>

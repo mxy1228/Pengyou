@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+      
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/empty_bg" >
+     <!-- 
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        android:padding="@dimen/padding" -->
+        <RelativeLayout 
+            android:id="@+id/game_classify_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/game_classify_icon_height" 
+        >
+            <ImageView
+                android:id="@+id/classify_item_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"      
+                android:src="@drawable/icon_default" />
+            <!-- <FrameLayout  
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+              	android:layout_alignParentRight="true"
+        		>  --> 
+				<TextView
+            		android:id="@+id/classify_item_tv"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content" 
+            		android:layout_alignParentBottom="true"
+              		android:layout_alignParentRight="true"
+            		android:layout_marginBottom="8dip"
+            		android:layout_marginRight="8dip" 
+            		android:singleLine="true" 
+            		android:textColor="@color/white"
+            		android:textSize="@dimen/game_classify_textsize" />
+           <!--</FrameLayout>   --> 
+        </RelativeLayout>
+    
+   
+   <!--  
+   </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_alignParentBottom="true" />
+	-->
+</RelativeLayout>

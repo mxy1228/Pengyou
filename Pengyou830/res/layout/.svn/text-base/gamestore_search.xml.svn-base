@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gamestore_top_default"
+    android:orientation="vertical" >
+
+	<include
+    	android:id="@+id/layout_header"
+        layout="@layout/sub_search_header_bar" />
+	<com.cyou.mrd.pengyou.widget.SearchBar
+        android:id="@+id/gamestore_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.cyou.mrd.pengyou.widget.SearchBar>
+    
+	<!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:id="@+id/gamestore_search_layout"
+        android:visibility="gone"
+        android:orientation="vertical" > 
+        </LinearLayout> -->
+		<com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+        	android:id="@+id/gamestore_search_lv"
+        	 android:visibility="gone"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0.0dip"
+        	android:layout_weight="1.0"
+        	android:cacheColorHint="#00000000" >
+    	</com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView>
+
+
+   	
+	<ScrollView 
+	    android:id="@+id/gamestore_search_container" 
+        android:fadingEdge="none"  
+        android:scrollbars="none" 
+        android:scrollingCache="false"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent" > 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    		<RelativeLayout     
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/gamestore_search_part" 
+        		android:background="@color/empty_bg"
+    		>   
+				<com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+		    		android:id="@+id/gamestore_search_result"
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:cacheColorHint="#00000000" >
+        		</com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView> 
+        		<Button
+            		android:id="@+id/gamestore_search_more_btn"
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:layout_below="@+id/gamestore_search_result"
+            		android:layout_gravity="center"
+            		android:layout_margin="8dip"
+            		android:visibility="gone"
+            		android:background="@drawable/game_store_refresh_btn"
+            		android:gravity="center"
+            		android:text="@string/search_game_more_string"
+            		android:textColor="@color/tab_text_normal"
+            		android:textSize="@dimen/mid_text" /> 
+        		<View
+            		android:layout_width="fill_parent"
+            		android:layout_height="2dip"
+            		android:layout_below="@+id/gamestore_search_more_btn"/>
+    		</RelativeLayout>
+    		<RelativeLayout     
+        		android:layout_width="fill_parent"
+        		android:layout_height="188dip"
+        		android:id="@+id/gamestore_search_no_data" 
+        		android:gravity="center"
+        		android:visibility="gone"
+        		android:background="@color/empty_bg"
+    		>   
+				<TextView
+        			android:layout_width="fill_parent"
+        			android:layout_height="fill_parent"
+        			android:gravity="center"
+        			android:singleLine="true"
+        			android:text="@string/game_search_nodata"
+        			android:textColor="#bdbdbd"
+        			android:textSize="16sp" />
+    		</RelativeLayout> 
+   		 	<RelativeLayout  
+        		android:id="@+id/gamestore_search_guess"   
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+       			android:background="@color/gamestore_top_default"
+        		android:orientation="vertical"
+    		> 
+
+    		    <View
+    		        android:id="@+id/gamestore_search_up_divider"
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="1dip"
+    		        android:background="#d0d1d2">
+        		</View>
+        		<View 
+            		android:id="@+id/gamestore_search_samll_divider"
+            		android:layout_below ="@+id/gamestore_search_up_divider"
+            		android:layout_width="fill_parent"
+            		android:layout_height="1dip" 
+            		android:background="#f7f7f7">
+        		</View>
+
+				<TextView
+				    android:id ="@+id/gamestore_search_divider"
+            		android:layout_width="fill_parent"
+            		android:layout_height="30dip"
+            		android:gravity="center"   
+            		android:layout_below ="@+id/gamestore_search_samll_divider" 
+            		android:layout_marginTop="2dip"    		
+            		android:text="@string/mygame_guess_youlike_title"
+            		android:textColor="@color/divider_text_color"
+            		android:textSize="@dimen/divider_text_size" />
+	    		<com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+	   	    		android:id="@+id/gamestore_search_guess_lstview"
+	        		android:layout_width="fill_parent"
+	        		android:layout_height="wrap_content"
+	        		android:layout_marginLeft="8dip"
+	    			android:layout_marginRight="8dip"
+	        		android:background="@drawable/gamestore_guess_background"
+	        		android:layout_below ="@+id/gamestore_search_divider"
+	        		android:cacheColorHint="#00000000"
+	        		android:fadingEdge="none" >
+	  			</com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView>
+	  			<View
+            		android:layout_width="fill_parent"
+            		android:layout_height="10dip"
+            		android:layout_below="@+id/gamestore_search_guess_lstview"/> 
+    		</RelativeLayout>
+    	</LinearLayout>
+    </ScrollView>	
+</LinearLayout>

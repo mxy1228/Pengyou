@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    
+    <ListView
+        android:id="@+id/my_game_lstview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="3px"
+        android:background="@color/empty_bg"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none" />
+
+</LinearLayout>

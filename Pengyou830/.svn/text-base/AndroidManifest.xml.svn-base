@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyou.mrd.pengyou"
+    android:versionCode="103006"
+    android:versionName="1.03.006-25" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:name=".CyouApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+
+        <!-- edit by Thundersoft luochuang  Junit lib -->
+
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.cyou.mrd.pengyou.ui.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MeActvity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="com.cyou.mrd.pengyou.RootWorker" >
+        </service>
+        
+        <service android:name="com.cyou.mrd.pengyou.service.DownloadIntentService" ></service>
+
+        <activity
+            android:name=".ui.AddFriendActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.MessageCenterActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cyou.mrd.pengyou.ui.MessageCenterActivity" />
+            </intent-filter>
+        </activity>
+        <!-- 互传文件 -->
+        <activity
+            android:name="com.cyou.mrd.pengyou.share.SendFileActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <!-- 引导 -->
+        <activity
+            android:name=".ui.guider.GuiderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 加载 -->
+        <activity
+            android:name=".ui.LaunchActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的关注 -->
+        <activity
+            android:name="com.cyou.mrd.pengyou.ui.MyFocusActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- 我的粉丝 -->
+        <activity
+            android:name="com.cyou.mrd.pengyou.ui.MyFansActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- 我的 -->
+        <activity
+            android:name=".ui.MyDynamicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 主页 -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="pengyou" />
+                <!--   itest替换为您的应用程序所定义的URL Scheme  -->
+            </intent-filter>
+        </activity>
+        <!-- 登陆-手机 -->
+        <activity
+            android:name=".ui.LoginFromTeleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 编辑个人信息 -->
+        <activity
+            android:name=".ui.EditInfoAcivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SearchGoodFriend"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 寻找好友 -->
+        <activity
+            android:name=".ui.FindFriendActivity"
+            android:screenOrientation="portrait" />
+        <!-- 猜你认识 -->
+        <activity
+            android:name=".ui.GuessYouKnowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 信息反馈 -->
+        <activity
+            android:name=".ui.FeedBackSubActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 游戏圈和游戏详情 -->
+        <activity
+            android:name=".ui.GameCircleDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.GameCircleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cyou.mrd.pengyou.ui.FriendInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="friendinfo"
+                    android:scheme="pengyou" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SendGameCircleDynamicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.GameStoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 游戏搜索 -->
+        <activity
+            android:name=".ui.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 完善密码 -->
+        <activity
+            android:name=".ui.EditPassWordAcivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 提示获取通讯 -->
+        <activity
+            android:name=".ui.GetContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".service.CoreService"
+            android:process=":push"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.cyou.mrd.pengyou.service.CoreService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.CountService"
+            android:process="com.android.acore">
+            <intent-filter >
+                <action android:name="com.cyou.mrd.pengyou.service.CountService"/>
+            </intent-filter>
+        </service>
+        
+        <!-- 地区选择 -->
+        <activity
+            android:name=".ui.LocationSelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的二维 -->
+        <activity
+            android:name=".ui.MyDcodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 修改昵称 -->
+        <activity
+            android:name=".ui.EditNickNameAcivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 修改签名 -->
+        <activity
+            android:name=".ui.EditSignAcivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 分享到关系圈 -->
+        <activity
+            android:name=".ui.ShareGameToFZoneAcivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 添加好友-通讯 -->
+        <activity
+            android:name=".ui.AddFriendContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".service.AsyncFriendsService" >
+        </service>
+        <service android:name=".service.LaunchService" >
+        </service>
+        <!-- 游戏分类详细页面 -->
+        <activity
+            android:name=".ui.ClassifyGameDetailActvity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 附近在玩页面 -->
+        <activity
+            android:name=".ui.GameNearbyPlayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 好友在玩页面 -->
+        <activity
+            android:name=".ui.GameFriendPlayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 猜你喜欢页面 -->
+        <activity
+            android:name=".ui.GameGuessYouLikeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 游戏分类页面 -->
+        <activity
+            android:name=".ui.GameClassifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--游戏搜索结果页 -->
+        <activity
+            android:name=".ui.GameSearchResultActivity"
+            android:theme="@style/game_search_transparent"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".ui.ShareToFriendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <!-- 下载管理 -->
+        <activity
+            android:name=".ui.DownloadActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.cyou.mrd.pengyou.download.DownloadService" >
+        </service>
+        <!-- <service android:name=".download.DownloadManagerService" > -->
+        <!-- </service> -->
+        <activity
+            android:name=".ui.DynamicDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- <service android:name=".download.DownloadManagerService" > -->
+        <!-- </service> -->
+        <!-- 搜索用户 -->
+        <activity
+            android:name=".ui.SearchUserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 关系 -->
+        <activity
+            android:name=".ui.RelationCircleActvity"
+            android:theme="@android:style/Theme.Light"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.cyou.mrd.pengyou.ui.IntroActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.RelationCommentActivity"
+            android:theme="@style/comment_style"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 分享游戏到新浪微-->
+        <activity
+            android:name=".ui.ShareGameToSinaAcivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 分享应用到新浪微-->
+        <activity
+            android:name=".ui.ShareAppToSinaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 微博注册后的显示信息页面 -->
+        <activity
+            android:name=".ui.SinaInfoAcivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 添加已加入朋游的微博好友 -->
+        <activity
+            android:name=".ui.AddFriendSinaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SendSMSActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 微博好友列表 -->
+        <activity
+            android:name=".ui.SNSFriendLstActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布动�? -->
+        <activity
+            android:name=".ui.SendMyDynamicAcivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.FeedBackActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.cyou.mrd.pengyou.ui.FeedBackActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 注册-手机 -->
+        <activity
+            android:name=".ui.RegisterForTelePhoneActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cyou.mrd.pengyou.ui.RegisterForTelePhoneActivity" />
+            </intent-filter>
+        </activity>
+        <!-- 注册- -->
+        <activity
+            android:name=".ui.RegisterForCodeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+
+        <!-- 最新游戏 -->
+        <activity
+            android:name=".ui.GameNewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 最热��游戏 -->
+        <activity
+            android:name=".ui.GameHotActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 精品推荐 -->
+        <activity
+            android:name=".ui.ReCommendedGameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 游戏专题 -->
+        <activity
+            android:name=".ui.GameSpecialTopicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 专题详情 -->
+        <activity
+            android:name=".ui.GameSpecialDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name=".service.CheckUpdateService" >
+        </service>
+
+        <activity
+            android:name=".ui.CaptruesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 搜索好友结果 -->
+        <activity
+            android:name=".ui.SearchUserResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 查看大图 -->
+        <activity
+            android:name=".ui.ShowPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/pic_detail" >
+        </activity>
+        <!-- 关系圈处查看大图 缩放、多点触 -->
+        <activity
+            android:name=".ui.ShowLargePhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 关系圈处查看大图 缩放、多点触 -->
+        <activity
+            android:name=".ui.LargerImageViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 礼包列表 -->
+        <activity
+            android:name=".ui.GameGiftListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 礼包详情 -->
+        <activity
+            android:name=".ui.GameGiftDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 监听玩一个游 -->
+        <receiver android:name=".receiver.PlayGameReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.playgame" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.InstallAppReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.UninstallAppReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.NotifyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.cyou.mrd.pengyou.notify" />
+            </intent-filter>
+        </receiver> 
+        <!--  <provider
+            android:name=".db.provider.LetterDBProvider"
+            android:authorities="com.cyou.mrd.pengyou" >
+        </provider>-->
+        <provider
+            android:name=".db.provider.FriendDBProvider"
+            android:authorities="com.cyou.mrd.pengyou.friend" >
+        </provider>
+
+        <activity
+            android:name=".ui.UpdateActivity"
+            android:theme="@style/my_update_dialog" >
+        </activity>
+        <activity
+            android:name=".ui.GameStoreWebActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <provider
+            android:name=".db.provider.MyGameProvider"
+            android:authorities="com.cyou.mrd.pengyou.mygame.game_changed" >
+        </provider>
+        
+        <provider
+            android:name=".db.provider.MyGamePlayRecordProvider"
+            android:authorities="com.cyou.mrd.pengyou.mygameplayrecord.changed" >
+        </provider>
+
+        <activity
+            android:name=".ui.CompleteRegistActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+        <!-- inmobi SDK -->
+        <receiver
+            android:name="com.inmobi.adtracker.androidsdk.IMAdTrackerReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <!-- inmobi SDK -->
+
+
+        <!-- 监听网络状�?变化 -->
+        <receiver android:name=".receiver.NetworkStateReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 玩游戏 -->
+        <activity
+            android:name=".ui.MyGameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我 -->
+        <activity
+            android:name=".ui.PersonalCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的好友 -->
+        <activity
+            android:name=".ui.MyFriendActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cyou.mrd.pengyou.ui.MyFriendActivity" />
+            </intent-filter>
+        </activity>
+        <!-- 我的附近 -->
+        <activity
+            android:name=".ui.MyNearByActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cyou.mrd.pengyou.ui.MyNearByActivity" />
+            </intent-filter>
+        </activity>
+        <!-- 我的收藏 -->
+        <activity
+            android:name=".ui.MyCollectionActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cyou.mrd.pengyou.ui.MyCollectionActivity" />
+            </intent-filter>
+        </activity>
+        <!-- 设置 -->
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cyou.mrd.pengyou.ui.SettingActivity" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 引导页的猜你认识（仅有同款 游戏） -->
+        <activity android:name=".ui.GuiderGuessActivity"
+            android:screenOrientation="portrait"></activity>
+        
+        <!-- 绑定手机的登录+注册页面 -->
+        <activity android:name=".ui.LoginAndRegistActivity"
+            android:screenOrientation="portrait"></activity>
+        
+        <!-- 手机号码验证页面 -->
+        <activity android:name=".ui.ValidateTelActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cyou.mrd.pengyou.ui.ValidateTelActivity" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ui.ExchangeIntegralWebActivity" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.cyou.mrd.pengyou.ui.ExchangeIntegralWebActivity" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Test Unit Tests"
+        android:targetPackage="com.cyou.mrd.pengyou" >
+    </instrumentation>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+</manifest>

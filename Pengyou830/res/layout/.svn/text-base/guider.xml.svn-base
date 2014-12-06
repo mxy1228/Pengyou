@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cyou.mrd.pengyou"
+    android:id="@+id/relative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/empty_bg">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guider_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <LinearLayout 
+        android:id="@+id/guider_indicator_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20.0dip"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/guider_dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dot_selected"/>
+        <ImageView
+            android:id="@+id/guider_dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="5.0dip"
+            android:src="@drawable/dot_unselected"/>
+        <ImageView
+            android:id="@+id/guider_dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="5.0dip"
+            android:src="@drawable/dot_unselected"/>
+        <ImageView
+            android:id="@+id/guider_dot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="5.0dip"
+            android:src="@drawable/dot_unselected"/>
+        <ImageView
+            android:id="@+id/guider_dot5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="5.0dip"
+            android:src="@drawable/dot_unselected"/>
+    </LinearLayout>
+    <!--  <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/guider_dot1"
+            android:layout_width="wrap_content"
+    </LinearLayout>-->
+    <!--  <org.taptwo.android.widget.ViewFlow
+        android:id="@+id/viewflow_recom_game"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:focusable="true" /> -->
+
+    <!--  <org.taptwo.android.widget.CircleFlowIndicator
+        android:id="@+id/indicator_recom_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/guide_circle_width"
+        app:activeColor="#FFFFFF"
+        app:activeType="fill"
+        app:circleSeparation="@dimen/guide_circle_width"
+        app:inactiveColor="@color/gray"
+        app:inactiveType="fill"
+        app:radius="4dip" />-->
+
+</RelativeLayout>

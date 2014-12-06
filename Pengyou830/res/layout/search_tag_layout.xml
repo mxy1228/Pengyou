@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/empty_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="40dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/search_tag_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/text_view_shap_one"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/search_tag_2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/text_view_shap_two"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/search_tag_3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/text_view_shap_three"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/search_tag_4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/text_view_shap_one"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/search_tag_5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/text_view_shap_two"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/search_tag_6"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/text_view_shap_three"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/search_tag_7"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/text_view_shap_one"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/search_tag_8"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/text_view_shap_two"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/search_tag_9"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/text_view_shap_three"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"  >
+
+            <TextView
+                android:id="@+id/search_tag_10"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/text_view_shap_one"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/search_tag"
+                android:textSize="@dimen/search_tag_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/guess_game_item_xbg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <ImageView
+	        android:id="@+id/guess_game_item_icon_iv"
+	        android:layout_width="@dimen/icon_height"
+	        android:layout_height="@dimen/icon_height"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/icon_default"
+	        android:adjustViewBounds="true"/>
+        
+        <RelativeLayout 
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_weight="1.0">
+            
+            <TextView
+                android:id="@+id/guess_game_item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="16.0sp"
+                android:text="名称"
+                android:textColor="#333333"/>
+            
+            <TextView
+                android:id="@+id/guess_game_item_playnum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#848484"
+                android:layout_below="@id/guess_game_item_name_tv"
+                android:layout_marginTop="3dip"
+                android:text="有XX个好友在玩"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+        
+        <Button
+            android:id="@+id/guess_game_item_download_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.7dip"
+            android:textSize="@dimen/download_btn_text_size"
+	        android:textColor="@color/white"
+	        android:text="@string/download"
+            android:background="@drawable/download_btn_xbg"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guess_game_item_recommend_pic"
+        android:scaleType="center"
+        android:layout_gravity="left|top"
+        android:adjustViewBounds="true"/>
+    
+</FrameLayout>

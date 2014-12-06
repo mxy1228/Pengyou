@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res/com.cyou.mrd.pengyou"
+    android:id="@+id/edit_personal_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/edit_personal_pwd_headerbar"
+        layout="@layout/sub_header_bar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_sina_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/empty_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="7.9"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lyot_icon"
+                style="@style/edit_info_ll"
+                android:layout_margin="10dip"
+                android:background="@drawable/telephone_gray_boder" >
+
+                <TextView
+                    android:id="@+id/txt_usericon"
+                    style="@style/edit_tabrow_hint"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="@string/userinfo_icon_title" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.0"
+                    android:background="@color/white"
+                    android:gravity="right" >
+
+                    <com.cyou.mrd.pengyou.widget.RoundImageView
+                        android:id="@+id/edit_info_header_iv"
+                        android:layout_width="@dimen/avatar_height_middle"
+                        android:layout_height="@dimen/avatar_height_middle"
+                        android:layout_marginRight="5.0dip"
+                        android:src="@drawable/avatar_defaul"
+                        attrs:bg_color="@color/white" />
+                </RelativeLayout>
+
+                <ImageView style="@style/edit_tabrow_next" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="4.0"
+                android:orientation="vertical"
+                android:padding="10.0dip" >
+
+                <EditText
+                    android:id="@+id/edit_nickname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/login_text_height"
+                    android:background="@drawable/telephone_gray_boder"
+                    android:hint="@string/userinfo_nickname_hint"
+                    android:paddingLeft="5dip" />
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/login_text_height"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/telephone_gray_boder"
+                    android:hint="@string/userinfo_sign_hint"
+                    android:paddingLeft="5dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

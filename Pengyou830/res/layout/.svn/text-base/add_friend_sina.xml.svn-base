@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_xbg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/edit_headerbar"
+        layout="@layout/sub_header_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1"
+        android:background="@color/empty_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/add_friend_contacts_content_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/add_friend_contacts_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@drawable/list_divider"
+                android:dividerHeight="3px"
+                android:fadingEdge="none" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

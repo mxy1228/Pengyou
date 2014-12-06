@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/popwindow_btn_width"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3.0dip"
+    android:paddingRight="3.0dip"
+    android:paddingBottom="3.0dip"
+    android:paddingTop="7.0dip"
+    android:orientation="vertical"
+    android:background="@drawable/friend_info_pop_bg">
+
+    <!--  <LinearLayout
+        android:id="@+id/nearby_male"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    	<TextView
+        	android:id="@+id/nearby_male_btn"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_horizontal"
+        	android:background="@null"
+        	android:drawableLeft="@drawable/boy_sign"
+        	android:drawablePadding="0dip"
+       	 	android:gravity="center"
+        	android:paddingBottom="15.0dip"
+        	android:paddingTop="15.0dip"
+        	android:text="@string/boy"
+        	android:textColor="@color/white"
+        	android:textSize="@dimen/main" />
+	</LinearLayout>-->
+	<LinearLayout 
+	    android:id="@+id/nearby_male_ll"
+	    android:layout_width="@dimen/popwindow_btn_width"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:background="@drawable/friend_info_pop_xbg">
+	    <TextView 
+		    android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:layout_gravity="center_horizontal"
+	       	android:background="@null"
+	       	android:drawableLeft="@drawable/boy_sign"
+	      	android:gravity="center"
+	       	android:paddingBottom="15.0dip"
+	       	android:paddingTop="15.0dip"
+	       	android:text="@string/boy"
+	       	android:drawablePadding="0.0dip"
+	       	android:textColor="@color/white"
+	       	android:textSize="@dimen/main"/>
+	</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="2px"
+        android:layout_marginRight="2px"
+        android:background="@color/black"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="2px"
+        android:layout_marginRight="2px"
+        android:background="#3c3c3c"/>
+    <LinearLayout 
+        android:id="@+id/nearby_female_ll"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_pop_xbg"
+        android:gravity="center">
+        <TextView
+	        android:layout_height="wrap_content"
+	       	android:layout_width="wrap_content"
+	       	android:layout_gravity="center_horizontal"
+	      	android:background="@null"
+	       	android:drawableLeft="@drawable/girl_sign"
+	       	android:gravity="center"
+	       	android:paddingBottom="15.0dip"
+	       	android:paddingTop="15.0dip"
+	       	android:text="@string/girl"
+	       	android:textColor="@color/white"
+	       	android:textSize="@dimen/main"/>
+    </LinearLayout>
+    
+    <!--  <LinearLayout
+        android:id="@+id/nearby_female"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    	<TextView
+        	android:id="@+id/nearby_female_btn"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:layout_gravity="center_horizontal"
+       	 	android:background="@null"
+        	android:drawableLeft="@drawable/girl_sign"
+        	android:gravity="center"
+        	android:paddingBottom="15.0dip"
+        	android:paddingTop="15.0dip"
+        	android:text="@string/girl"
+        	android:textColor="@color/white"
+        	android:textSize="@dimen/main" />
+    </LinearLayout>-->
+    
+   	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="2px"
+        android:layout_marginRight="2px"
+        android:background="@color/black"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="2px"
+        android:layout_marginRight="2px"
+        android:background="#3c3c3c"/>
+    
+    <Button 
+        android:id="@+id/nearby_all_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_pop_xbg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main"
+        android:text="@string/all"
+        android:paddingTop="15.0dip"
+        android:paddingBottom="15.0dip" />
+</LinearLayout>

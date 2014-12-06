@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/item_xbg">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/you_may_know_item_top_tv"
+        style="@style/divider"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:padding="@dimen/padding">
+	    
+		<com.cyou.mrd.pengyou.widget.RoundImageView
+		    android:id="@+id/you_may_known_item_avatar_iv"
+		    android:layout_width="@dimen/avatar_width"
+		    android:layout_height="@dimen/avatar_height"
+		    android:layout_marginRight="@dimen/padding"/>
+		
+		<LinearLayout 
+		    android:layout_width="0.0dip"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1.0"
+		    android:gravity="center_vertical"
+		    android:orientation="vertical">
+		    <TextView
+		        android:id="@+id/you_may_known_item_nickname_tv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/main"
+		        android:textSize="@dimen/main"
+		        android:singleLine="true"
+		        android:gravity="center_vertical"
+		        android:drawableRight="@drawable/boy_sign"/>
+		    <TextView 
+		        android:id="@+id/you_may_known_item_game_count_tv"
+		        android:layout_marginTop="@dimen/small_padding"
+		        android:singleLine="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical"
+		        android:textColor="@color/sub_main"
+		        android:textSize="@dimen/list_sub"/>
+		    <TextView
+		        android:id="@+id/you_may_known_item_content_tv"
+		        android:layout_marginTop="@dimen/small_padding"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:textColor="@color/sub_main"
+		        android:textSize="@dimen/list_sub"
+		        android:gravity="center_vertical"/>
+		</LinearLayout>    
+		
+		<Button 
+		    android:id="@+id/you_may_known_focus_ibtn"
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focus_btn_normal"
+            android:text="@string/focus"/>
+	</LinearLayout>
+	
+</LinearLayout>

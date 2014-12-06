@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_xbg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip"   
+        android:paddingRight="8dip"
+        android:paddingTop="3dip" >
+
+        <RelativeLayout     
+            android:id="@+id/layout_icon"
+            android:visibility="gone"
+            android:layout_marginLeft="8dip"
+            android:layout_width="@dimen/game_match_icon_width"
+            android:layout_height="@dimen/game_match_icon_height" >
+            <ImageView
+                android:id="@+id/img_gameicon"
+                android:layout_width="@dimen/game_match_icon_width"
+                android:layout_height="@dimen/game_match_icon_height"
+                android:scaleType="fitCenter"     
+                android:src="@drawable/icon_default" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout_history"
+            android:layout_width="14.3dip"
+            android:layout_height="41dip" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="41.0dip"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/history_gamename"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/main"
+                android:textSize="@dimen/search_history_text_size" />
+    	</LinearLayout>
+            <ImageButton 
+	         android:id="@+id/delete_gamename"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:background="@null"
+	         android:layout_marginRight="20.0dip"
+	         android:layout_gravity="center_vertical|right"
+	         android:src="@drawable/history_delete"/>
+  </LinearLayout>
+          <View 
+            android:id="@+id/divider"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="3px" 
+            android:background="@drawable/pull_fresh_list_divider">
+        </View>
+</LinearLayout>

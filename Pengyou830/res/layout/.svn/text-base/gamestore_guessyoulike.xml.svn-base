@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+	<include
+    	android:id="@+id/layout_header"
+        layout="@layout/gamestore_sub_header" />
+
+	<com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+	    android:id="@+id/lstview_guess"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"   
+	    android:layout_marginLeft="8dip"
+	    android:layout_marginRight="8dip"
+	    android:layout_marginTop="10dip"
+	    android:cacheColorHint="#00000000"
+	    android:background="@drawable/gamestore_guess_background" >
+	</com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView>
+	
+	<LinearLayout 
+	    android:id="@+id/gamestore_guessyoulike_refresh"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="1dip"
+	    android:layout_margin="8dip"
+	    android:visibility="gone"
+	    android:gravity="center"
+	    android:background="@drawable/game_store_refresh_btn">
+	    <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:background="@null"
+        	android:drawableRight="@drawable/game_store_refresh_img"
+        	android:gravity="center"
+        	android:text="@string/game_store_refresh"
+        	android:drawablePadding="3dip"
+        	android:textColor="@color/tab_text_normal"
+        	android:textSize="@dimen/mid_text" />
+	</LinearLayout>
+
+
+	
+</LinearLayout>

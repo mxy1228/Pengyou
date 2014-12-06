@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_xbg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/edit_headerbar"
+        layout="@layout/sub_header_bar" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/empty_text_color"
+      
+        android:id="@+id/tv_empty"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_height="fill_parent"
+        android:text="@string/contants_is_empty" />
+
+    <com.cyou.mrd.pengyou.widget.SearchBar
+        android:id="@+id/search_from_contact_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  />
+
+    <LinearLayout
+        android:id="@+id/ll_contact_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1"
+        android:background="@drawable/item_xbg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/add_friend_contacts_content_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"  >
+
+            <ListView
+                android:id="@+id/add_friend_contacts_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_divider"
+                android:dividerHeight="3px"
+                android:fadingEdge="none" >
+            </ListView>
+
+            <ListView
+                android:id="@+id/search_frienf_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/list_divider"
+                android:dividerHeight="3dip"
+                android:fadeScrollbars="true"
+                android:visibility="gone" >
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

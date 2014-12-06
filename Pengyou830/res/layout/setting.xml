@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/header_bar_height"
+	    android:orientation="horizontal" 
+	    android:gravity="center_vertical"
+	    android:background="@drawable/header_bar_bg">
+		<ImageButton 
+	        android:id="@+id/setting_back_ibtn"
+	        android:layout_width="50.0dip"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/back_btn_xbg"
+	        android:src="@drawable/back_btn_bg"/>
+	    <TextView
+	        android:layout_width="0.0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:text="@string/setting"
+	        android:textColor="@color/white"
+	        android:textSize="22.0sp" />
+		<ImageButton 
+	        android:layout_width="50.0dip"
+	        android:padding="8.0dip"
+	        android:layout_height="fill_parent"
+	        android:scaleType="fitCenter"
+	        android:background="@null"
+	        android:adjustViewBounds="true"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/setting_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_margin="10.0dip"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:layout_weight="1.0"/>
+    
+</LinearLayout>

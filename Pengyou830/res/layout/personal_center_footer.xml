@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="13.3dip"
+    android:paddingLeft="13.3dip"
+    android:paddingRight="13.3dip"
+    android:paddingBottom="10.0dip"
+    android:orientation="vertical"
+    android:background="@color/empty_bg">
+    <Button 
+	    android:id="@+id/personal_center_login_out_btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="40.0dip"
+	    android:text="@string/login_out"
+	    android:textSize="@dimen/main"
+	    android:gravity="center"
+	    android:textColor="@color/white"
+	    android:background="@drawable/login_out_btn_xbg"/>
+</LinearLayout>

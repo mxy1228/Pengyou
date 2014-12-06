@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        style="@style/header"
+        android:paddingRight="8.0dip"
+        android:paddingTop="8.0dip"
+        android:paddingBottom="8.0dip">
+        <TextView
+            android:id="@+id/complete_regist_header_tv"
+            android:text="@string/complete_regist"
+            style="@style/header_tv"/>
+        <Button 
+            android:id="@+id/complete_regist_header_complete_btn"
+            android:layout_width="60dip"
+            android:layout_height="31.3dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/header_btn_xbg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/btn_next"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/complete_regist_hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#646464"
+        android:textSize="20sp"
+        android:layout_marginLeft="10.7dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginBottom="13.3dip"
+        android:text="@string/complete_user_info"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/complete_user_info_bg"
+        android:layout_marginLeft="10.7dip"
+        android:layout_marginRight="10.7dip"
+        android:orientation="horizontal">
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.cyou.mrd.pengyou.widget.RoundImageView
+		        android:id="@+id/complete_regist_avatar_ibtn"
+		        android:layout_width="@dimen/avatar_width"
+		        android:layout_height="@dimen/avatar_height"
+		        attrs:bg_color="@color/white"
+		        android:layout_marginTop="4.0dip"
+		        android:layout_marginLeft="13dip"
+	            android:layout_marginRight="13dip"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userinfo_icon_title"
+                android:textSize="13.3sp"
+                android:layout_marginBottom="6.7dip"
+                android:textColor="#A5A29E"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d9d9d9"/>
+        
+        <LinearLayout 
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.0">
+            
+            <EditText 
+	            android:id="@+id/complete_regist_nickname_et"
+	            android:layout_width="match_parent"
+	            android:layout_height="0.0dip"
+	            android:layout_weight="1.0"
+	            android:background="@null"
+	            android:paddingLeft="3.0dip"
+	            android:paddingRight="3.0dip"
+	            android:gravity="center_vertical"
+	            android:singleLine="true"
+	            android:hint="@string/please_edit_your_nickname"/>
+            
+            <TextView 
+                android:id="@+id/complete_regist_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9d9d9"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_weight="1.0"
+                android:layout_height="0.0dip"
+                android:layout_margin="1px"
+                android:orientation="horizontal">
+                <LinearLayout 
+                    android:id="@+id/complete_regist_male_ll"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:layout_width="0.0dip"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boy"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="16.0sp"
+                        android:drawableLeft="@drawable/boy_sign"/>
+                </LinearLayout>
+                
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#d9d9d9"/>
+                
+                <LinearLayout 
+                    android:id="@+id/complete_regist_female_ll"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:layout_width="0.0dip"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/girl"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textSize="16.0sp"
+                        android:drawableLeft="@drawable/girl_sign"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--  <RadioGroup
+                android:id="@+id/complete_regist_gender_rg"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+                <RadioButton 
+                    android:id="@+id/complete_regist_male_rbtn"
+                    android:layout_width="0.0dip"
+                    android:layout_weight="1.0"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:button="@null"
+                    android:text="@string/boy"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/boy_sign"/>
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#d9d9d9"/>
+                <RadioButton 
+                    android:id="@+id/complete_regist_female_rbtn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:text="@string/girl"
+                    android:drawableLeft="@drawable/girl_sign"/>
+            </RadioGroup>-->
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <!--  <Button 
+        android:id="@+id/complete_regist_ignore_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点此跳过"
+        android:background="@null"
+        android:layout_gravity="right"/>-->
+</LinearLayout>

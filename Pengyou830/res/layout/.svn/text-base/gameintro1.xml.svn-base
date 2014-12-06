@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="12dip"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/empty_bg" >
+
+        <!-- 用户评分前 -->
+
+        <LinearLayout
+            android:id="@+id/gameintro_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@color/empty_bg"
+            android:orientation="vertical" >
+
+            <!-- 游戏头部 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="10.0dip" >
+
+                <ImageView
+                    android:id="@+id/intro_icon_iv"
+                    android:layout_width="@dimen/avatar_width"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_marginRight="12dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_default" />
+                <!-- 不是android平台时显示 -->
+
+                <ImageView
+                    android:id="@+id/platform_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/intro_icon_iv"
+                    android:layout_alignLeft="@id/intro_icon_iv"
+                    android:src="@drawable/ios"
+                    android:visibility="gone" />
+                <!-- 星评+版本助手Button -->
+
+                <LinearLayout
+                    android:id="@+id/intro_header_rb_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/gameintro_rl"
+                    android:layout_toRightOf="@id/intro_icon_iv"
+                    android:gravity="center_vertical"
+                 
+                    android:orientation="horizontal" >
+
+                    <RatingBar
+                        android:id="@+id/intro_rb"
+                        style="@style/middle_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="6.5dip"
+                        android:clickable="false"
+                        android:isIndicator="true"
+                        android:rating="5"
+                        android:stepSize="0.5" />
+
+                    <Button
+                        android:id="@+id/select_gameversion_ll"
+                        android:layout_width="wrap_content"
+                        android:minWidth="95dip"
+                        android:maxWidth="100dip"
+                        android:layout_height="28dip"                    
+                        android:gravity="center_vertical|left"
+                       android:background="@drawable/btn_back"
+                        android:drawableRight="@drawable/triangle"
+                        android:paddingLeft="6.0dip"
+                        android:paddingRight="6.0dip"
+                        android:singleLine="true"
+                        android:textColor="@color/main"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/intro_game_info_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/intro_header_rb_ll"
+                    android:layout_below="@id/intro_header_rb_ll"
+                    android:layout_marginBottom="3dip"
+                    android:singleLine="true"
+                    android:textColor="@color/sub_main"
+                    android:textSize="@dimen/sub_main" />
+                <!-- 全网下载量 -->
+
+                <TextView
+                    android:id="@+id/intro_download_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/intro_header_rb_ll"
+                    android:layout_below="@id/intro_game_info_tv"
+                    android:layout_marginBottom="3dip"
+                    android:singleLine="true"
+                    android:textColor="@color/sub_main"
+                    android:textSize="@dimen/sub_main" />
+
+                <!-- 游戏安全提示 -->
+
+                <LinearLayout
+                    android:id="@+id/game_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/intro_header_rb_ll"
+                    android:layout_below="@id/intro_download_count_tv"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dip" >
+
+                    <ImageView
+                        android:id="@+id/game_tip_image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/game_tip_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13.0dip"
+                        android:singleLine="true"
+                        android:textColor="@color/sub_main"
+                        android:textSize="@dimen/sub_main"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/game_tip_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/game_tip_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13.0dip"
+                        android:singleLine="true"
+                        android:textColor="@color/sub_main"
+                        android:textSize="@dimen/sub_main"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/game_tip_image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/game_tip_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13.0dip"
+                        android:singleLine="true"
+                        android:textColor="@color/sub_main"
+                        android:textSize="@dimen/sub_main"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/game_tip_image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dip"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/game_tip_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13.0dip"
+                        android:singleLine="true"
+                        android:textColor="@color/sub_main"
+                        android:textSize="@dimen/sub_main"
+                        android:visibility="gone" />
+                </LinearLayout>
+ <!-- 安全提示结束,最多显示三个提示 -->
+            </RelativeLayout>
+
+ <!-- 游戏头部结束 -->
+            <!-- 好友在玩（） -->
+
+            <TextView
+                android:id="@+id/intro_player_count_tv"
+                style="@style/divider"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:id="@+id/intro_header_friend_sv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/intro_player_gv_height"
+                android:background="@color/empty_bg"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/intro_player_gv_height"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/intro_player_gv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/intro_player_gv_height"
+                        android:layout_gravity="center"
+                        android:listSelector="@null" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/gamedetail_divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d8d9da" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/gamedetail_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white"
+                android:visibility="gone" />
+  <!-- 游戏截图 -->
+            <HorizontalScrollView
+                android:id="@+id/intro_capture_sv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/empty_bg"
+                android:fadingEdge="none"
+                android:scrollbars="none" 
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/capture_height"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/intro_captrue_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/capture_height"
+                        android:background="@color/empty_bg"
+                        android:listSelector="@null" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!-- 游戏介绍 -->
+
+            <TextView
+                android:id="@+id/intro_introduce_tv"
+                style="@style/divider"
+                android:text="@string/game_intro" 
+                android:visibility="gone"/>
+
+<!--             <RelativeLayout -->
+<!--                 android:id="@+id/intro_introduce" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:paddingLeft="@dimen/padding" -->
+<!--                 android:paddingRight="@dimen/padding" -->
+<!--                 android:paddingTop="@dimen/padding" -->
+<!--                 android:visibility="gone" > -->
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/intro_info_tv" -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:maxLines="3" -->
+<!--                     android:textColor="@color/main" -->
+            <!-- android:textSize="@dimen/mid_text" /> -->
+
+            <com.cyou.mrd.pengyou.widget.CollapsibleTextView
+                android:id="@+id/collapsibletextview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:visibility="gone" />
+<!--             </RelativeLayout> -->
+        </LinearLayout>
+        <!-- 用户评分 -->
+
+        <TextView
+            android:id="@+id/appraisal_text_divider"
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gameintro_rl"
+            android:text="@string/appraisal" />
+
+        <LinearLayout
+            android:id="@+id/user_appraisal"
+            android:layout_width="fill_parent"
+            android:layout_height="128dip"
+            android:layout_below="@id/appraisal_text_divider"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingBottom="20dip"
+            android:paddingLeft="8.0dip"
+            android:paddingTop="15.0dip" >
+
+            <ImageView
+                android:id="@+id/appraisal_stars_image"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8.0dip"
+                android:src="@drawable/appraisal_starsgroup" />
+            <!-- 评分的进度条组 -->
+
+            <LinearLayout
+                android:id="@+id/appraisal_stars_group"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingTop="4.0dip" 
+                android:layout_weight="1"
+                >
+                    <ProgressBar
+                    android:id="@+id/tv_stars5"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:layout_marginBottom="8.9dip"
+                    android:max="100"                    
+                    android:progressDrawable="@drawable/appraisal_pb5_bg" />
+                     <ProgressBar
+                    android:id="@+id/tv_stars4"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:layout_marginBottom="8.9dip"
+                    android:max="100"                    
+                    android:progressDrawable="@drawable/appraisal_pb4_bg" />
+                     <ProgressBar
+                    android:id="@+id/tv_stars3"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:layout_marginBottom="8.9dip"
+                    android:max="100"                    
+                    android:progressDrawable="@drawable/appraisal_pb3_bg" />
+                    <ProgressBar
+                    android:id="@+id/tv_stars2"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:layout_marginBottom="8.9dip"
+                    android:max="100"                    
+                    android:progressDrawable="@drawable/appraisal_pb2_bg" />
+                     <ProgressBar
+                    android:id="@+id/tv_stars1"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:layout_marginBottom="8.9dip"
+                    android:max="100"                    
+                    android:progressDrawable="@drawable/appraisal_pb1_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/appraisal_show"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="17dip" 
+                android:layout_gravity="right"
+                android:paddingRight="17dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/average"
+                    android:textColor="#7c7c7c"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/arg_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff6600"
+                    android:textSize="16sp" />
+            </LinearLayout>
+     </LinearLayout>
+  <!--去评分-->     
+
+        <RelativeLayout
+            android:id="@+id/go_appraisal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_appraisal"
+            android:background="@drawable/goappraisal_back"
+            android:gravity="center"
+            android:paddingBottom="18dip"
+            android:paddingTop="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/go_appraisaltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="5dip"
+                android:text="@string/appraisal_tip1"
+                android:textColor="@color/main"
+                android:textSize="@dimen/mid_text" />
+
+            <Button
+                android:id="@+id/appraisal_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/go_appraisaltxt"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/go_appraisal2"
+            android:layout_width="fill_parent"
+            android:layout_height="70.5dip"
+            android:layout_below="@id/go_appraisal"
+            android:background="@drawable/goappraisal_back"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/gogogo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/go_appraisaltxt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:text="@string/appraisal_tip3"
+                    android:textColor="@color/divider_text_color"
+                    android:textSize="@dimen/search_tag_text_size" />
+
+                <RatingBar
+                    android:id="@+id/goappraisal_ratingbar"
+                    style="@style/middle_ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:rating="5"
+                    android:stepSize="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gogogo"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/already_appraisal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/already_appraisalimg" />
+
+                <TextView
+                    android:id="@+id/go_appraisaltxt31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获得"
+                    android:textColor="@color/gamedetail_receive_jifen"
+                    android:textSize="@dimen/game_specail_name_text_size" />
+
+                <TextView
+                    android:id="@+id/go_appraisaltxt32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gamedetail_receive_jifen"
+                    android:textSize="@dimen/gamedetail_jifen" />
+
+                <TextView
+                    android:id="@+id/go_appraisaltxt33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:textColor="@color/gamedetail_receive_jifen"
+                    android:textSize="@dimen/game_specail_name_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+<!-- 喜歡這個遊戲的人還喜歡 -->
+
+        <TextView
+            android:id="@+id/text_divider"
+            style="@style/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/go_appraisal2"
+            android:text="@string/you_may_like" 
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/text_divider_ly"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recommend_friend_item_height"
+            android:layout_below="@id/text_divider"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding" 
+            android:visibility="gone">
+
+            <GridView
+                android:id="@+id/intro_guess_game"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/game_guess_list_height"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1.0"
+                android:listSelector="@null"
+                android:numColumns="3" />
+
+            <LinearLayout
+                android:layout_width="30.0dip"
+                android:layout_height="70dip"
+                android:layout_gravity="top"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/intro_reflush_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dip"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/my_friend_refresh_btn" />
+
+                <ProgressBar
+                    android:id="@+id/intro_reflush_pb"
+                    style="@style/loading_progressbar"
+                    android:layout_width="23dip"
+                    android:layout_height="23dip"
+                    android:indeterminate="false"
+                    android:indeterminateDrawable="@anim/loading_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

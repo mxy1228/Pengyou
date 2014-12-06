@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/empty_bg" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.6dip"
+        android:layout_marginTop="2.6dip" >
+
+        <TextView
+            android:id="@+id/txt_friend_play_static"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1.3dip"
+            android:layout_weight="1"
+            android:background="@drawable/gamestore_frdplay_xbg"
+            android:drawableTop="@drawable/gamestore_friend_play"
+            android:gravity="center"
+            android:paddingBottom="4dip"
+            android:paddingTop="5dip"
+            android:text="@string/game_store_friend_play"
+            android:textColor="#ffffff"
+            android:textSize="13.5sp" />
+
+        <TextView
+            android:id="@+id/txt_near_play_static"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.3dip"
+            android:layout_marginRight="1.3dip"
+            android:layout_weight="1"
+            android:background="@drawable/gamestore_nearplay_xbg"
+            android:drawableTop="@drawable/gamestore_near_play"
+            android:gravity="center"
+            android:paddingBottom="4dip"
+            android:paddingTop="5dip"
+            android:text="@string/game_store_nearby_play"
+            android:textColor="#ffffff"
+            android:textSize="13.5sp" />
+
+        <TextView
+            android:id="@+id/txt_classify_static"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.3dip"
+            android:layout_marginRight="1.3dip"
+            android:layout_weight="1"
+            android:background="@drawable/gamestore_classify_xbg"
+            android:drawableTop="@drawable/gamestore_classify"
+            android:gravity="center"
+            android:paddingBottom="4dip"
+            android:paddingTop="5dip"
+            android:text="@string/game_store_classify_play"
+            android:textColor="#ffffff"
+            android:textSize="13.5sp" />
+
+        <TextView
+            android:id="@+id/txt_you_may_like_static"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.3dip"
+            android:layout_weight="1"
+            android:background="@drawable/gamestore_youmaylike_xbg"
+            android:drawableTop="@drawable/gamestore_you_may_like"
+            android:gravity="center"
+            android:paddingBottom="4dip"
+            android:paddingTop="5dip"
+            android:text="@string/game_store_youmaylike_play"
+            android:textColor="#ffffff"
+            android:textSize="13.5sp" />
+    </LinearLayout>
+</LinearLayout>

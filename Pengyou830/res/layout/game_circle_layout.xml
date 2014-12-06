@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/gamecircle_title_bar"
+        layout="@layout/game_circle_headerview" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/gamecircle_rg"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@color/empty_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/search_bar_height"
+            android:paddingRight="@dimen/search_bar_height"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/gamedetail"
+                style="@style/me_tab_rb"
+                android:layout_gravity="center"
+                android:background="@color/empty_bg"
+                android:text="@string/game_intro_head"
+                android:textColor="@color/tab_text_normal"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/gamecircle"
+                style="@style/me_tab_rb"
+                android:layout_gravity="center"
+                android:background="@color/empty_bg"
+                android:text="@string/game_circle"
+                android:textColor="@color/tab_text_normal"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/gamecircle_rg_line"
+            android:layout_below="@id/gamecircle_rg"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="@color/empty_bg" >
+
+            <TextView
+                android:id="@+id/tab_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#d9d9d9"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/gamecircle_anim_tv"
+                android:layout_width="100dip"
+                android:layout_height="3dip"
+                android:layout_marginLeft="50dip"
+                android:background="#0094e9"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.cyou.mrd.pengyou.widget.CYViewPage
+            android:id="@+id/game_circle_viewpager"
+            android:layout_below="@id/gamecircle_rg_line"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/empty_bg"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:id="@+id/guess_game_pop"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dip"
+            android:background="@color/bg_color"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/guessyoulike_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center_horizontal"
+                android:text="@string/mygame_guess_youlike_title"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/guess_youlike_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/cancle_popup" />
+
+            <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+                android:id="@+id/guess_youlike_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guessyoulike_title"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/gamestore_guess_background"
+                android:cacheColorHint="#00000000" >
+            </com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gamecircle_download_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_download_ll_height"
+        android:layout_weight="0"
+        android:background="@drawable/intro_download_daodutiao"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_padding"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/gamecircle_fav_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="5.0dip"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/img_unfav" />
+
+        <com.cyou.mrd.pengyou.widget.IntroDownloadBtn
+            android:id="@+id/gamecircle_download_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="1.5dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/gamecircle_share_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="1dip"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/intro_share_btn_xbg" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     android:orientation="vertical" > -->
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/collapsible_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding"
+                >
+    <TextView
+        android:id="@+id/desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="4.0dip"
+        android:gravity="center_vertical"
+        android:textColor="@color/main"
+        android:textSize="@dimen/mid_text" />
+
+<!--     <TextView -->
+<!--         android:id="@+id/desc_op_tv" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginTop="4.0dip" -->
+<!--         android:gravity="center" -->
+<!--         android:singleLine="true" -->
+<!--         android:textColor="@color/main" -->
+<!--         android:textSize="@dimen/mid_text" -->
+<!--         android:visibility="gone" /> -->
+ <ImageButton
+                    android:id="@+id/intro_info_pack_up_btn"
+                    android:layout_width="40.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/desc_tv"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:scaleType="center"
+                    android:src="@drawable/intro_comment_item_open_pic" 
+                    android:visibility="gone"/>
+         
+</RelativeLayout>

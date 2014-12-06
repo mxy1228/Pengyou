@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlyt_game_tile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_bg"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <TextView
+            android:id="@+id/txt_favgame_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/game_update_title"
+            android:textColor="@color/divider_text_color" />
+
+        <Button
+            android:id="@+id/btn_update_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/all_update_btn_xbg"
+            android:gravity="center_vertical|right"
+            android:paddingRight="5dip"
+            android:textSize="@dimen/downlaod_game_all_size"
+            android:textColor="@color/main"
+            android:text="@string/allupdate_game_txt" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mygame_lstview"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1"
+        android:divider="@drawable/pull_fresh_list_divider"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"/>
+
+    <TextView
+        android:id="@+id/txt_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text=""
+        android:textColor="@color/empty_date_text"
+        android:textSize="@dimen/empty_text_size"
+        android:visibility="gone" />
+
+</LinearLayout>

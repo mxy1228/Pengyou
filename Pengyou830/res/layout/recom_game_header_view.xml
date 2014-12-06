@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cyou.mrd.pengyou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/empty_bg">
+
+    <RelativeLayout
+        android:id="@+id/layout_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/empty_bg">
+
+        <org.taptwo.android.widget.ViewFlow
+            android:id="@+id/viewflow_recom_game"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#212737"
+            android:focusable="true" />
+
+        <org.taptwo.android.widget.CircleFlowIndicator
+            android:id="@+id/indicator_recom_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:visibility="gone"
+            app:activeColor="#ff630d"
+            app:activeType="fill"
+            app:inactiveColor="#FFFFFF"
+            app:inactiveType="fill"
+            app:radius="4.0dip" />
+    </RelativeLayout>
+
+    <!--
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/empty_bg"
+        android:orientation="vertical" >
+    -->
+
+    <TextView
+        android:id="@+id/txt_guess"
+        style="@style/divider"
+        android:layout_below="@id/layout_top_view"
+        android:text="@string/recommend_guess_youlike_title" />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/game_guess_list_height"
+        android:layout_below="@id/txt_guess"
+        android:gravity="center_vertical"
+        android:background="@color/empty_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding" >
+
+        <GridView
+            android:id="@+id/grid_guess_game"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/guess_game_bg"
+            android:gravity="center_vertical"
+            android:listSelector="@drawable/guess_game_bg"
+            android:numColumns="3" />
+
+        <LinearLayout
+            android:layout_width="30.0dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_reflush_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_friend_refresh_btn" />
+
+            <ProgressBar
+                android:id="@+id/regame_reflush_pb"
+                style="@style/loading_progressbar"
+                android:layout_width="23dip"
+                android:layout_height="23dip"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@anim/loading_small"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/divider"
+        android:layout_below="@id/layout_info"
+        android:text="@string/recommend_good_title" />
+    <!-- </LinearLayout> -->
+
+</RelativeLayout>

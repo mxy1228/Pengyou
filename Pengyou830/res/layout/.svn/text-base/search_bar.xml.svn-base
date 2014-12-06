@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_bar_height"
+    android:orientation="horizontal"
+    android:paddingLeft="9.0dip"
+    android:paddingRight="9.0dip"
+    android:paddingTop="1.0dip"
+    android:paddingBottom="1.0dip"
+    android:gravity="center_vertical"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/friend_search_bg" > 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+    	<LinearLayout
+       		android:layout_width="0.0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="5.0"
+        	android:layout_gravity="center_vertical"
+        	android:background="@drawable/search_et_bg"
+        	android:gravity="center_vertical"
+        	android:paddingLeft="5.0dip"
+        	android:paddingRight="5.0dip"
+        	android:orientation="horizontal" >
+
+        	<EditText 
+	        	android:id="@+id/search_bar_et"
+	         	android:layout_width="0.0dip"
+	         	android:layout_weight="1.0"
+	         	android:layout_height="@dimen/search_height"
+	         	android:imeOptions="actionSearch"
+	         	android:inputType="text"
+	         	android:drawableLeft="@drawable/search_pic"
+	         	android:background="@null"
+	         	android:gravity="center_vertical"
+	         	android:textColorHint="@color/textColorHint"
+	         	android:hint="@string/search"/>
+
+        	<ImageButton 
+	         	android:id="@+id/search_bar_ibtn"
+	         	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	         	android:background="@null"
+	         	android:layout_gravity="center_vertical|right"
+	         	android:src="@drawable/search_cancel_btn_xbg"/>
+    	</LinearLayout>
+
+    	<Button
+        	android:id="@+id/search_button_cancel"
+        	android:layout_width="0.0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1.0"
+        	android:layout_gravity="right|center_vertical"
+        	android:layout_marginLeft="10.0dip"
+            android:visibility="gone"
+        	android:background="@drawable/play_btn_xbg"
+        	android:textColor="@color/white"
+        	android:text="@string/search" />
+    </LinearLayout>
+
+</FrameLayout>

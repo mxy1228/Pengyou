@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/divider" >
+
+    <TextView
+        android:id="@+id/classify_title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:text="@string/game_classify"
+        android:textColor="@color/divider_text_color"
+        android:textSize="@dimen/divider_text_size" />
+
+</LinearLayout>

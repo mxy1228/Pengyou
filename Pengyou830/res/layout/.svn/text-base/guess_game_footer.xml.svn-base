@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/empty_bg"
+    android:paddingTop="10.0dip"
+    android:paddingBottom="10.0dip">
+    
+    <RelativeLayout 
+        android:id="@+id/guess_game_change_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/game_store_refresh_btn">
+        <TextView
+            android:id="@+id/guess_game_footer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            android:layout_centerInParent="true"
+            android:textSize="14.7sp"
+            android:textColor="#7c7c7c"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_friend_refresh_btn"
+            android:layout_toRightOf="@id/guess_game_footer_tv"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="center"/>
+    </RelativeLayout>
+
+</LinearLayout>

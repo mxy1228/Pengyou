@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="empty_bg">#f3f3f3</color>
+    <color name="contact_empty">#f5f5f5</color>
+    <color name="main">#333333</color>
+    <color name="sub_main">#7c7c7c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="edit_normal">#f8f8f8</color>
+    <color name="edit_press">#e2e5ea</color>
+    <color name="upload_failed">#ffea00</color>
+    <color name="security_green">#66aa35</color>
+    <color name="security_red">#ff4e00</color>
+    <color name="search_tag">#505050</color>
+    <!-- 色值 -->
+    <color name="red">#7f00</color>
+    <color name="green">#3fc802</color>
+    <color name="blue">#770000ff</color>
+    <color name="yellow">#77ffff00</color>
+    <color name="mygreen">#90EE90</color>
+    <color name="myblue">#87CEEB</color>
+    <color name="orange">#FF2400</color>
+    <color name="gray">#808080</color>
+    <color name="bolid">#dbdbdb</color>
+    <color name="black">#000000</color>
+    <color name="tab_text_select">#333333</color>
+    <color name="tab_text_normal">#7c7c7c</color>
+    <color name="msg_count_text_color">#ffffffff</color>
+    <color name="game_downloading_text_color">#6f6d6e</color>
+    <color name="gamestore_guess_color">#b0b0b0</color>
+
+    <!-- 二维码 -->
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="loadingview_hint">#adadad</color>
+    <color name="divider_text_color">#666666</color>
+    <color name="list_item_normal_bg">#f3f3f3</color>
+    <color name="dynamic_comment_bg">#e3e9f1</color>
+    <color name="list_divider">#cbccd0</color>
+    <color name="more_hint">#a5a5a5</color>
+    <color name="empty_date_text">#cccccc</color>
+    <color name="rank_title_default">#00FFFFFF</color>
+    <color name="gamestore_top_default">#e8e8e8</color>
+    <color name="bottom_normal_text_color">#7c7c7c</color>
+    <color name="empty_text_color">#cccccc</color>
+    <color name="edit_personal_left_text">#7c7c7c</color>
+    <color name="bind_sns_text">#999999</color>
+    <color name="bind_sns_text_state">#333333</color>
+    <color name="game_detail_table_line">#d8d9da</color>
+    <color name="game_detail_text_bg_color">#0066aa35</color>
+
+	
+	<color name="downloading_text">#6e6e6e</color>
+	<color name="textColorHint">#c0c0c0</color>
+	<drawable name="backcolor">#f3f3f3</drawable>
+    <drawable name="pressbackcolor">#FFFFFF</drawable>
+    <drawable name="linecolor">#d8d9da</drawable> 
+    <drawable name="presslinecolor">#66aa35</drawable>
+    <drawable name="unpress_linecolor">#d8d9da</drawable>
+
+    <color name="tip_green">#66aa35</color>
+    <color name="tip_red">#ff4e00 </color>
+    <color name="gift_welcome">#8f8f8f</color>
+
+    <color name="publish_un_clickable">#4e80b5</color>
+	<color name="relation_circle_seg_line">#D9D9D9</color>
+
+	<!-- 引导页属性 -->
+	<color name="guider_tv1_textcolor">#333333</color>
+	
+	<color name="game_special_default_color">#eaeaea</color>
+	<!-- more -->
+	<color name="gamestore_more">#7c7c7c</color>
+	
+	<color  name="gamestore_frdplay_normal">#FFA200</color>
+	<color  name="gamestore_frdplay_parse">#7f5100</color>
+	
+	<color  name="gamestore_classify_normal">#02C719</color>
+	<color  name="gamestore_classify_parse">#01630c</color>
+	<color  name="gamestore_youmaylike_normal">#FE5574</color>
+	<color  name="gamestore_youmaylike_parse">#7f2a3a</color>
+	<color  name="gamestore_nearplay_normal">#188ffd</color>
+	<color  name="gamestore_nearplay_parse">#0c477e</color>
+	 <color name="gamedetail_receive_jifen">#ff6600</color>
+</resources>

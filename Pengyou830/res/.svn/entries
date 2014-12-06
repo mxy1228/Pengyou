@@ -1,0 +1,76 @@
+10
+
+dir
+6333
+svn://10.127.131.22/PU/programme/android/Pengyou830/res
+svn://10.127.131.22/PU
+
+
+
+2013-12-19T02:19:22.539525Z
+6288
+CY5723
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+790bf51a-136b-4aef-9346-c6821dd5aaa0
+
+values-sw720dp-land
+dir
+
+drawable
+dir
+
+anim
+dir
+
+values-zh-rTW
+dir
+
+raw
+dir
+
+drawable-xhdpi
+dir
+
+values-zh-rCN
+dir
+
+values
+dir
+
+values-en
+dir
+
+values-sw600dp
+dir
+
+drawable-hdpi
+dir
+
+menu
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+values-th
+dir
+
+layout
+dir
+

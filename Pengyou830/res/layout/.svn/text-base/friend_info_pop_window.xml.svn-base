@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/friend_info_pop_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/friend_info_shield_dynamic_lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/friend_info_shield_dynamic_btn"
+            android:layout_width="@dimen/popwindow_btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/friend_info_pop_xbg"
+            android:gravity="center"
+            android:paddingBottom="10.5dip"
+            android:paddingTop="10.5dip"
+            android:text="@string/shield_dynamic"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#3c3c3c" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_info_shield_letter_lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/friend_info_shield_letter_btn"
+            android:layout_width="@dimen/popwindow_btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/friend_info_pop_xbg"
+            android:gravity="center"
+            android:paddingBottom="10.5dip"
+            android:paddingTop="10.5dip"
+            android:text="@string/shield_letter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#3c3c3c" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_info_cancel_focus_lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/friend_info_cancel_focus_btn"
+            android:layout_width="@dimen/popwindow_btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/friend_info_pop_xbg"
+            android:gravity="center"
+            android:paddingBottom="10.5dip"
+            android:paddingTop="10.5dip"
+            android:text="@string/cancel_focus"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#3c3c3c" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/friend_info_back_home_btn"
+        android:layout_width="@dimen/popwindow_btn_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/friend_info_pop_xbg"
+        android:gravity="center"
+        android:paddingBottom="10.5dip"
+        android:paddingTop="10.5dip"
+        android:text="@string/go_back_home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main" />
+
+</LinearLayout>

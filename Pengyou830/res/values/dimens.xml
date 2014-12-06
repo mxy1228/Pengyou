@@ -1,0 +1,141 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_bottom_height">50dip</dimen>
+    <dimen name="header_bar_text_size">21.0sp</dimen>
+    <dimen name="main_botton_text_size">12.0sp</dimen>
+    <dimen name="game_list_sub">12sp</dimen>
+    <dimen name="guess_game_item_size">14sp</dimen>
+    <dimen name="list_sub">12.0sp</dimen>
+    <dimen name="date_size">12.0sp</dimen>
+    <dimen name="padding_left">10.0dip</dimen>
+    <dimen name="padding_right">10.0dip</dimen>
+    <dimen name="padding_bottom">10.0dip</dimen>
+    <dimen name="padding_top">10.0dip</dimen>
+    <dimen name="padding_game">10dip</dimen>
+    <dimen name="padding_pensonal">4.0dip</dimen>
+    <dimen name="header_bar_height">48.0dip</dimen>
+    <dimen name="search_height">35.0dip</dimen>
+    <dimen name="gamecircledetail_tab_leftpadding">42.0dip</dimen>
+    <dimen name="add_friend_btn_height">40.0dip</dimen>
+    <dimen name="avatar_height_middle">55.0dip</dimen>
+    <dimen name="avatar_width_middle">55.0dip</dimen>
+    <dimen name="top_tab_height">30.0dip</dimen>
+    <dimen name="contact_title">30.0dip</dimen>
+    <dimen name="me_tab_padding">20.0dip</dimen>
+    <dimen name="my_friend_refresh_btn_size">30.0dip</dimen>
+    <dimen name="recommend_friend_item_height">103.0dip</dimen>
+    <dimen name="guider_recommend_height">206.dip</dimen>
+    <dimen name="game_guess_list_height">90dip</dimen>
+    <dimen name="nearby_item_border_width">2px</dimen>
+    <dimen name="title_btn">16.0sp</dimen>
+    <dimen name="title">23.0sp</dimen>
+    <dimen name="game_name">16.0sp</dimen>
+    <dimen name="local_item_divider">16.0sp</dimen>
+    <dimen name="person_icon_width">60dip</dimen>
+    <dimen name="person_icon_height">60dip</dimen>
+    <dimen name="person_dcode_width">60dip</dimen>
+    <dimen name="person_dcode_height">60dip</dimen>
+    <dimen name="recently_game_item_height">84.0dip</dimen>
+    <dimen name="share_to_friend_et_height">100.0dip</dimen>
+    <dimen name="list_padding_right">10.0dip</dimen>
+    <dimen name="list_padding_left">10.0dip</dimen>
+    <dimen name="list_padding_top_bottom">10.0dip</dimen>
+    <dimen name="avatar_small">48.0dip</dimen>
+    <dimen name="avatar_large">72.0dip</dimen>
+    <dimen name="capture_width">240px</dimen>
+    <dimen name="capture_height">400px</dimen>
+    <dimen name="intro_download_ll_height">50.0dip</dimen>
+    <dimen name="game_download_btn_size">40dip</dimen>
+    <dimen name="game_download_text_size_new">16.0sp</dimen>
+    <dimen name="game_download_text_size">12sp</dimen>
+    <dimen name="login_text_height">60dip</dimen>
+    <dimen name="mygame_guess_bar_height">50dip</dimen>
+    <dimen name="search_bar_height">40.0dip</dimen>
+    <dimen name="empty_text_size">16sp</dimen>
+    <dimen name="person_size">12sp</dimen>
+    <dimen name="person_tag_size">14sp</dimen>
+    <dimen name="title_bar_height">24dip</dimen>
+    <dimen name="recommend_friend_name_text_size">14.0sp</dimen>
+    <dimen name="recent_game_padding">8.0dip</dimen>
+    <dimen name="intro_player_gv_height">80.0dip</dimen>
+    <dimen name="popwindow_btn_width">160.0dip</dimen>
+    <dimen name="nearby_popwindow_btn_width">100.0dip</dimen>
+    <dimen name="game_download_btn_size_width">50dip</dimen>
+    <dimen name="game_download_btn_size_height">29dip</dimen>
+    <dimen name="game_center_comment_size">10dip</dimen>
+
+    <!-- 可复用 -->
+    <dimen name="main">16.0sp</dimen>
+    <dimen name="mid_text">14.0sp</dimen>
+    <dimen name="sub_main">12.0sp</dimen>
+    <dimen name="padding">6.0dip</dimen>
+    <dimen name="small_padding">0.0dip</dimen>
+    <dimen name="avatar_height">48.0dip</dimen>
+    <dimen name="avatar_width">48.0dip</dimen>
+    <dimen name="avatar_height_new">66.0dip</dimen>
+    <dimen name="avatar_width_new">66.0dip</dimen>
+    <dimen name="avatar_relayout_widht">60.0dip</dimen>
+    <dimen name="avatar_relayout_widht_progress">65dip</dimen>
+    <dimen name="small_avatar_width">48.0dip</dimen>
+    <dimen name="small_avatar_height">48.0dip</dimen>
+    <dimen name="support_avatar_width">45.0dip</dimen>
+    <dimen name="support_avatar_height">45.0dip</dimen>
+    <dimen name="round_avatar_width">35.0dip</dimen>
+    <dimen name="round_avatar_height">35.0dip</dimen>
+    <dimen name="icon_height">48.0dip</dimen>
+    <dimen name="icon_width">48.0dip</dimen>
+    <dimen name="padding_left_right">6.0dip</dimen>
+    <dimen name="divider_height">24.0dip</dimen>
+    <dimen name="divider_text_size">13sp</dimen>
+    <dimen name="divider_padding">8.0dip</dimen>
+    <dimen name="pic_height">300px</dimen>
+    <dimen name="pic_width">200px</dimen>
+    <dimen name="publish_pic_height">300px</dimen>
+    <dimen name="publish_pic_width">180px</dimen>
+    <dimen name="search_history_text_size">17.0sp</dimen>
+    <dimen name="search_tag_text_size">15.0sp</dimen>
+    <dimen name="game_search_icon_height">63.0dip</dimen>
+    <dimen name="game_search_icon_width">63.0dip</dimen>
+    <dimen name="game_match_icon_height">31.0dip</dimen>
+    <dimen name="game_match_icon_width">31.0dip</dimen>
+    <dimen name="game_classify_icon_height">80.0dip</dimen>
+    <dimen name="game_classify_icon_width">142.0dip</dimen>
+    <dimen name="game_classify_textsize">17.0sp</dimen>
+    <dimen name="my_game_item_banner_margin">3.0dip</dimen>
+    <!-- 红点中数字字体大小 -->
+    <dimen name="msg_count_text_size">8sp</dimen>
+    <!-- 可复用 -->
+    <!-- 引导页底部circle宽度大小 -->
+    <dimen name="guide_circle_width">26dip</dimen>
+    <dimen name="person_progress_size">8sp</dimen>
+    <dimen name="dynamic_margin_left">12.0dip</dimen>
+    <dimen name="download_btn_text_size">13sp</dimen>
+	<dimen name="my_game_list_bar_height">55.0dip</dimen>
+	
+	<dimen name="pull_fresh_foot_height">40.0dip</dimen>
+	<dimen name="personal_center_item_margin">12.0dip</dimen>
+	<dimen name="personal_center_item_padding">10.0dip</dimen>
+	<!-- 游戏专题图片的宽度、高度 -->
+	<dimen name="game_specail_picture_width">304.0dip</dimen>
+	<dimen name="game_specail_picture_height">90.7dip</dimen>
+	
+	<!-- 精品推荐图片的宽度、高度 -->
+	<dimen name="recommended_game_picture_width">148.0dip</dimen>
+	<dimen name="recommended_game_picture_height">54.7dip</dimen>
+	<!-- 游戏专题名称字体大小-->
+	<dimen name="game_specail_name_text_size">16.0sp</dimen>
+	
+	<!-- 游戏专题游戏ICon宽度、高度-->
+	<dimen name="game_specail_icon_width">40.0dip</dimen>
+	<dimen name="game_specail_icon_height">40.0dip</dimen>
+	
+	<!-- 精品推荐标题和描述字体大小-->
+	<dimen name="recommended_game_title_size">12.0sp</dimen>
+	<dimen name="recommended_game_desc_size">10.0sp</dimen>
+	<!-- 下载管理全部暂停，全部开始，全部更新字体大小-->
+	<dimen name="downlaod_game_all_size">13.0sp</dimen>
+	<dimen name="gamedetail_jifen">22.0sp</dimen>
+</resources>

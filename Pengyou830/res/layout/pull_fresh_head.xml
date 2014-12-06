@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:background="#f1f2f5"
+    android:orientation="horizontal"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+  	<ImageView 
+	    android:id="@+id/pull_fresh_arrowiv" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:src="@drawable/pull_fresh_arrows_fresh" 
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="20.0dip"
+	    android:scaleType="fitCenter"  />
+  	<ProgressBar 
+        android:id="@+id/pull_fresh_pb" 
+        android:layout_width="23dip" 
+        android:layout_height="23dip" 
+        style="@style/pull_fresh_pb"
+		android:indeterminate="false"
+		android:visibility="gone"
+		android:layout_marginLeft="60.0dip"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:indeterminateDrawable="@anim/pull_fresh_loading"/>
+  	<LinearLayout 
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="20.0dip"
+  	    android:layout_centerInParent="true"
+  	    android:gravity="center"
+  	    android:orientation="vertical">
+  	    <TextView 
+            android:textSize="14.0sp" 
+            android:textColor="#545454" 
+            android:id="@+id/pull_fresh_tipstv" 
+            android:text="@string/pull_to_refresh"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" />
+        <TextView 
+            android:textSize="12sp" 
+            android:textColor="#b4b4b4" 
+            android:layout_marginBottom="4.0dip"
+            android:id="@+id/pull_fresh_timetv" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" />
+  	</LinearLayout>
+  	<TextView
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="3px"
+  	    android:layout_alignParentBottom="true"
+  	    android:background="@drawable/pull_fresh_list_divider"/>
+</RelativeLayout>

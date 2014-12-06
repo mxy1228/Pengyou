@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/download_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:divider="@drawable/pull_fresh_list_divider"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/download_empty_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/no_download_task_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/no_download_task"
+            android:textColor="@color/loadingview_hint"
+            android:textSize="@dimen/sub_main" />
+    </LinearLayout>
+
+</LinearLayout>

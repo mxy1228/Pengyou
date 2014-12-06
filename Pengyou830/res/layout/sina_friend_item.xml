@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_xbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/contact_item_top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30.0dip"
+        android:background="@drawable/divider_bg"
+        android:gravity="center_vertical"
+        android:text="你可能认识的人"
+        android:textColor="@color/main"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/contact_item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/main"
+                android:textSize="@dimen/main"
+                />
+
+            <TextView
+                android:id="@+id/contact_item_nickname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/main" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contact_item_num_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/main"
+            android:textSize="@dimen/main" />
+
+     
+        <Button
+            android:id="@+id/contact_item_letter_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/focus_btn_xbg" android:text="@string/focus"/>    </LinearLayout>
+
+</LinearLayout>

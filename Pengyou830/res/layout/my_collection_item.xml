@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/item_xbg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:padding="8.0dip">
+    
+    <ImageView 
+        android:id="@+id/my_collection_item_icon_iv"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_height"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_default"
+        android:adjustViewBounds="true"/>
+    
+	<RelativeLayout 
+	    android:layout_width="0.0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="6.7dip"
+	    android:layout_weight="1.0">
+	    <TextView
+	        android:id="@+id/my_collection_item_name_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="游戏名称"
+	        android:textSize="16.0sp"
+	        android:singleLine="true"
+	        android:textColor="#333333"/>
+	    <RatingBar
+            android:id="@+id/my_collection_item_rb"
+            style="@style/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_collection_item_name_tv"
+            android:layout_marginTop="4dip"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="0.5" />
+	    <TextView
+	        android:id="@+id/my_collection_item_friend_count_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:textColor="#838383"
+	        android:layout_marginTop="6.7dip"
+	        android:layout_below="@id/my_collection_item_rb"
+	        android:text="有2个玩家在玩"/>
+	</RelativeLayout>
+	
+	<Button
+       android:id="@+id/my_collection_item_download_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/download_btn_xbg"
+       android:layout_marginLeft="16.7dip"
+       android:text="@string/download"
+       android:textColor="@color/white"
+       android:textSize="@dimen/download_btn_text_size" />
+	
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listitem"
+    android:layout_width="289dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+     android:background="@drawable/list_bg"
+    
+ >
+    
+<!--  <View android:id="@+id/firstline" -->
+<!--         android:layout_height="1dip" -->
+<!--         android:layout_width="288.5dip" -->
+<!--         android:background="@color/game_detail_table_line" -->
+<!--         android:visibility="gone"/>               -->
+  
+
+    <LinearLayout 
+        android:layout_height="36dip"
+        android:layout_width="289dip"
+        android:orientation="horizontal"        
+        >
+        
+
+<!--            <View android:id="@+id/line" -->
+<!--            android:layout_height="36dip" -->
+<!--            android:layout_width="1dip" -->
+<!--            android:focusable="true"  -->
+<!--             android:background="@drawable/gamedetail_table_line" -->
+<!--            />  -->
+<!--    android:background="@color/game_detail_table_line"          " -->
+           
+      
+       <TextView android:id="@+id/source"
+           android:layout_width="76dip"
+           android:layout_height="36dip"
+           android:textSize="13sp"
+           android:textColor="@color/divider_text_color"
+           android:gravity="center_vertical|center_horizontal"
+           android:singleLine="true"/>
+<!--        <View -->
+<!--            android:layout_height="36dip" -->
+<!--            android:layout_width="1dip" -->
+<!--            android:background="@color/game_detail_table_line"/>  -->
+        <LinearLayout
+            android:id="@+id/safe_tip"
+            android:layout_height="36dip"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5.0dip"
+            android:orientation="horizontal"
+            >
+<!--             android:layout_width="130dip" -->
+            <ImageView 
+               android:id="@+id/imageview1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dip"
+               android:visibility="gone"
+              />
+            <ImageView 
+               android:id="@+id/imageview2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dip"
+               android:visibility="gone"
+               />
+            <ImageView 
+               android:id="@+id/imageview3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dip"
+               android:visibility="gone"
+                
+                />
+            <ImageView 
+               android:id="@+id/imageview4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               />
+        </LinearLayout>
+<!--         <View -->
+<!--            android:layout_height="36dip" -->
+<!--            android:layout_width="1dip" -->
+<!--            android:background="@color/game_detail_table_line"/> -->
+        <TextView android:id="@+id/size"
+            android:textSize="13sp"
+            android:layout_width="78dip"
+            android:layout_height="36dip"
+            android:gravity="center"
+            android:textColor="@color/divider_text_color"
+            android:singleLine="true"/>
+<!--         <View -->
+<!--            android:layout_height="37dip" -->
+<!--            android:layout_width="1dip" -->
+<!--            android:background="@color/game_detail_table_line" -->
+         />
+        
+<!--         <View -->
+<!--            android:layout_height="1dip" -->
+<!--            android:layout_width="288dip" -->
+<!--            android:background="@color/game_detail_table_line"/>  -->
+    </LinearLayout>
+<!--       <View -->
+<!--         android:layout_height="1dip" -->
+<!--         android:layout_width="288.5dip" -->
+<!--         android:background="@color/game_detail_table_line"/> -->
+  
+</LinearLayout>

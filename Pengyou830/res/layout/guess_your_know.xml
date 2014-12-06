@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/empty_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/sub_header_guess_your_know"
+        layout="@layout/sub_header_bar" />
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/empty_text_color"
+      
+        android:id="@+id/tv_empty"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_height="fill_parent"
+        android:text="@string/guess_is_empty" />
+
+    <com.cyou.mrd.pengyou.widget.pull2refresh.PullToRefreshListView
+        android:id="@+id/guess_your_know_search_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:cacheColorHint="#00000000" />
+
+</LinearLayout>

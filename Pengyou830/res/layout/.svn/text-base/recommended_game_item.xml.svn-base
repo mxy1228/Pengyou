@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_xbg"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:paddingTop="10dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:id="@+id/recommended_game_layout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="4dip"
+        android:background="@drawable/recommended_game_item_bg"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/recomend_game_pic_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="@drawable/gamestore_recommend_defaul_bg"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/recmomend_game_name_first"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="游戏名称游.."
+                android:textColor="@color/main"
+                android:textSize="@dimen/recommended_game_title_size" />
+            <RatingBar
+                android:id="@+id/rb_game_first"
+                style="@style/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dip"
+                android:layout_gravity="center_vertical"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:rating="3"
+                android:stepSize="0.5" />
+        </LinearLayout>
+        <TextView
+                android:id="@+id/txt_playercount_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="5dip"
+                android:text="好多好多蚊子好多"
+                android:singleLine="true"
+                android:textColor="@color/sub_main"
+                android:textSize="@dimen/recommended_game_desc_size" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/recommended_game_layout_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dip"
+        android:background="@drawable/recommended_game_item_bg"
+        android:orientation="vertical">
+        <ImageView 
+            android:id="@+id/recomend_game_pic_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="@drawable/gamestore_recommend_defaul_bg"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/recmomend_game_name_second"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="游戏名称"
+                android:textColor="@color/main"
+                android:textSize="@dimen/recommended_game_title_size" />
+            <RatingBar
+                android:id="@+id/rb_game_second"
+                style="@style/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dip"
+                android:layout_gravity="center_vertical"
+                android:isIndicator="true"
+                android:max="5"
+                android:rating="3.5"
+                android:numStars="5"
+                android:stepSize="0.5" />
+        </LinearLayout>
+        <TextView
+                android:id="@+id/txt_playercount_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="0dip"
+                android:layout_marginBottom="3dip"
+                android:text="好多好多蚊子好多"
+                android:singleLine="true"
+                android:textColor="@color/sub_main"
+                android:textSize="@dimen/recommended_game_desc_size" />
+    </LinearLayout>
+</LinearLayout>
